@@ -1,0 +1,83 @@
+@@include('header.html')
+<div data-sub-content class="content welcome">
+	@@include('sub_visual.html')
+	<div class="sub_header">
+		<div class="container">
+			<h2 class="tit">Notice</h2>
+			@@include('breadcrumb.html',{
+			"context" : {
+			"path" : ["Media", "Notice"]
+			}
+			})
+		</div>
+	</div>
+	<div class="container">
+		<div class="sub_content">
+
+			<div data-board-view>
+				<div class="view_header">
+					<div class="info">
+						<div class="tit">
+							<h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+							<div class="date">9999-99-99</div>
+						</div>
+						<div class="misc">
+							<div class="misc_wrap">
+								<ul>
+									<li class="view">
+										<span class="item">999</span>
+									</li>
+									<li class="file">
+										<a class="item" href="#">첨부파일</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="view_content" data-editor>
+					<!-- [D] 에디터 삽입 영역 -->
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+					Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+					unknown printer took a galley of type and scrambled it to make a type specimen book.
+					It has survived not only five centuries,
+					<!-- [D] //에디터 삽입 영역 -->
+				</div>
+				<div class="file_upload">
+					<ul>
+						<li>
+							<a href="#">filename.zip</a>
+						</li>
+					</ul>
+				</div>
+				<div class="single_paging">
+					<ul>
+						<li class="prev">
+							<a href="javascript:return false;">
+								<span class="hidden">이전글</span>
+								<span class="txt">No data.</span>
+							</a>
+						</li>
+						<li class="next">
+							<a href="#">
+								<span class="hidden">다음글</span>
+								<span class="txt">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+									Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+									unknown printer took a galley of type and scrambled it to make a type specimen book.
+									It has survived not only five centuries,
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div data-ctr-btn>
+					<a href="#" data-btn>List</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+@@include('footer.html')

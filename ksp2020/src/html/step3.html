@@ -1,0 +1,108 @@
+@@include('header.html')
+@@include('sub_header.html', {
+"tit" : "참가신청",
+"sub_tit" : "Registration"
+})
+<div data-content-box class="step3">
+
+	<div data-step>
+		<ol>
+			<li>
+				<div class="txt_wrap">
+					행사개요<br>
+					<span class="mobile">/</span>
+					Overview
+				</div>
+			</li>
+			<li>
+				<div class="txt_wrap">
+					프로그램<br>
+					<span class="mobile">/</span>
+					Program
+				</div>
+			</li>
+			<li class="on">
+				<div class="txt_wrap">
+					참가방식<br>
+					<span class="mobile">/</span>
+					Method of Participation
+				</div>
+			</li>
+			<li>
+				<div class="txt_wrap">
+					참가자 정보<br>
+					<span class="mobile">/</span>
+					Personal Information
+				</div>
+			</li>
+		</ol>
+	</div>
+
+	<div data-column-box>
+		<h3 class="column_tit">참가방식 / Method of Participation</h3>
+		<p class="column_txt">
+			‘현장 참가’과 ‘온라인 참가’ 중 1가지를 선택해 주십시오.<br>
+			Please select one of 'On-site participation' and 'Online participation'.
+		</p>
+		<div class="attend_wrap">
+			<ul class="attend">
+				<li class="online">
+					<div class="box">
+						<div class="tit_wrap">
+							<span class="tit">
+								온라인 참가<br>
+								<small>Online Attendance</small>
+							</span>
+						</div>
+						<ul data-list class="type1">
+							<li>컨퍼런스를 온라인으로 시청하실 분</li>
+							<li>사전 등록 후 행사 당일 성명, 이메일 주소로 로그인하여 시청</li>
+						</ul>
+						<ul data-list class="type1">
+							<li>Those who want to watch the conference online</li>
+							<li>After pre-registration, log in with your name and email address on the day of the event
+								to
+								watch
+							</li>
+						</ul>
+					</div>
+					<label>
+						<input type="radio" name="attend">
+						<span></span>
+					</label>
+				</li>
+				<li class="onsite">
+					<div class="box">
+						<div class="tit_wrap">
+							<span class="tit">
+								현장 참가<br>
+								<small>Onsite Visit</small>
+							</span>
+						</div>
+						<ul data-list class="type1">
+							<li>행사 현장에 직접 방문해 참가를 희망하시는 분</li>
+							<li style="color:yellow;">사전 등록 마감 후 신청자의 소속 분야, 직책, 신청 시기 등으로 고려해
+								현장 참석 가능여부를 별도로 공지하여 드립니다.</li>
+						</ul>
+						<ul data-list class="type1">
+							<li>Those who wish to visit the event in person and participate</li>
+							<li style="color:yellow;">After the pre-registration deadline, the applicant's field,
+								position, and application period. We will separately notify you
+								whether you can attend the site.</li>
+						</ul>
+					</div>
+					<label>
+						<input type="radio" name="attend">
+						<span></span>
+					</label>
+				</li>
+			</ul>
+		</div>
+		<div class="btn_wrap">
+			<a href="javascript:history.back();" class="cancel" data-btn>이전 / Previous</a>
+			<a href="#" data-btn>다음 / Next</a>
+		</div>
+	</div>
+
+</div>
+@@include('footer.html')

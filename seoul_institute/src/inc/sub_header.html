@@ -1,0 +1,9 @@
+<div data-sub-header>
+	<h2 class="page_tit">@@title</h2>
+	<ol class="breadcrumb">
+		<li>홈</li>
+		@@for(var i = 0; i < context.path.length; i++){ 
+		<li>`+context.path[i]+`</li>
+		}
+	</ol>
+</div>

@@ -1,0 +1,192 @@
+@@include('header.html')
+<div data-sub-content class="content">
+	@@include('sub_visual.html')
+	<div class="sub_header">
+		<div class="container">
+			<h2 class="tit">Opening Ceremony</h2>
+			@@include('breadcrumb.html',{
+			"context" : {
+			"path" : ["Program", "Opening Ceremony"]
+			}
+			})
+		</div>
+	</div>
+	<div class="container">
+		<div class="sub_content">
+
+			<div data-sub-box>
+				<h3 class="content_tit">개막식</h3>
+				<ul data-list class="type2">
+					<li>일시: ‘20. 9. 1.(화) 11:00</li>
+					<!-- <li>장소: 전주 국립무형유산원 얼쑤마루 대공연장</li>
+					<li>참석: 국내&middot;외 초청인사, 주요기관 관계자 100여명</li>
+					<li>주요내용: 식전행사, 개회사, 환영사, 축사, 지니어워즈, 축하공연 등</li> -->
+				</ul>
+				<!-- <p>※ 개막식 행사 후 전북국제금융컨퍼런스 기조연설 및 연계행사 참관, 오찬 진행</p> -->
+				<p style="color:blue;">※ 프로그램 일정에 따라 온라인 생중계로 진행됩니다.</p>
+			</div>
+
+			<div data-sub-box>
+				<h3 class="content_tit">프로그램(안)</h3>
+
+				<div data-table>
+					<p class="ps">* 온라인 생중계</p>
+					<!-- <table class="center">
+						<colgroup>
+							<col style="width:10%;">
+							<col style="width:20%;">
+							<col style="width:10%;">
+							<col>
+							<col style="width:15%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" colspan="3">시간</th>
+								<th scope="col">주요내용</th>
+								<th scope="col">비고</th>
+							</tr>
+						</thead>
+						<tbody>							
+							<tr>
+								<td>식전행사</td>
+								<td>09:30 ~ 10:00</td>
+								<td>30'</td>
+								<td class="left">
+									등록 및 VIP 차담회
+								</td>
+								<td>로비</td>
+							</tr>
+							<tr>
+								<td rowspan="5">개막식</td>
+								<td>10:00 ~ 10:05</td>
+								<td>5'</td>
+								<td class="left">
+									개식선언, 국민의례
+								</td>
+								<td>사회자</td>
+							</tr>
+							<tr>
+								<td>10:05 ~ 10:10</td>
+								<td>5'</td>
+								<td class="left">
+									주요 내빈 소개
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>10:10 ~ 10:30</td>
+								<td>20'</td>
+								<td class="left">
+									개회사, 환영사, 축사
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>10:30 ~ 10:50</td>
+								<td>20'</td>
+								<td class="left">
+									지니어워즈
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>10:50 ~ 11:00</td>
+								<td>10'</td>
+								<td class="left">
+									축하공연
+								</td>
+								<td>전라북도립<br>국악원</td>
+							</tr>
+						</tbody>
+					</table> -->
+					<table class="center">
+						<colgroup>
+							<col style="width:20%;">
+							<col style="width:10%;">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" colspan="2">시간</th>
+								<th scope="col">주요내용</th>
+							</tr>
+						</thead>
+						<!--tbody>
+							<tr>
+								<td colspan="3">개회식</td>
+							</tr>
+						</tbody-->
+						<tbody>
+							<tr>
+								<td>11:00-11:03</td>
+								<td>3'</td>
+								<td class="left">
+									<ul data-list class="type2">
+										<li>개식선언</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>11:03-11:09</td>
+								<td>6'</td>
+								<td class="left">
+									<strong>[개회사]</strong>
+									<ul data-list class="type1">
+										<li>김사열 국가균형발전위원장</li>
+									</ul>
+									<br>
+									<strong>[환영사]</strong>
+									<ul data-list class="type1">
+										<li>송하진 전라북도지사</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>11:09-11:30</td>
+								<td>21'</td>
+								<td class="left">
+									<strong>[축사]</strong>
+									<ul data-list class="type1">
+										<li>정세균 국무총리</li>
+										<li>은성수 금융위원장</li>
+										<li>국회의원, 전라북도의회 의장</li>
+										<li>김승수 전주시장</li>
+										<li>김용진 국민연금공단 이사장</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>11:30-11:35</td>
+								<td>5'</td>
+								<td class="left">
+									<ul data-list class="type2">
+										<li>지니어워즈</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>11:35-11:40</td>
+								<td>5'</td>
+								<td class="left">
+									<strong>[해외인사 축사]</strong>
+								</td>
+							</tr>
+							<tr>
+								<td>11:40-11:45</td>
+								<td>5'</td>
+								<td class="left">
+									<ul data-list class="type2">
+										<li>기념촬영</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+@@include('footer.html')

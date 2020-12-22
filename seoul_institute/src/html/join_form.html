@@ -1,0 +1,453 @@
+@@include('header.html')
+<div data-sub-content class="content join">
+
+	@@include('sub_visual.html')
+	<!-- 탭메뉴 -->
+	<div class="container">
+		<div data-tab-menu role="tablist">
+			<ul class="type4">
+				<li aria-controls aria-selected="true" class="on">
+					<a href="#" tabindex="0">
+						<span>서울도시인문학 공모 안내</span>
+					</a>
+				</li>
+				<li aria-controls aria-selected="false">
+					<a href="#" tabindex="-1">
+						<span>중간공유회</span>
+					</a>
+				</li>
+				<li aria-controls aria-selected="false">
+					<a href="#" tabindex="-1">
+						<span>결과물</span>
+					</a>
+				</li>
+				<li aria-controls aria-selected="false">
+					<a href="#" tabindex="-1">
+						<span>논평</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //탭메뉴 -->
+
+	<div class="container">
+
+		@@include('sub_header.html',{
+		"title" : "서울도시인문학 공모 안내",
+		"context" : {
+		"path" : ["서울도시인문학 지원사업", "서울도시인문학 공모 안내", "공모 참가신청서"]
+		}
+		})
+
+		<div data-content-box>
+			<div data-column-box>
+				<div data-input-form>
+					<p class="notice">※ 모든 항목은 필수 입력항목입니다.</p>
+					<table>
+						<colgroup>
+							<col style="width:18%;">
+							<col>
+						</colgroup>
+						<thead>
+
+							<!-- 공모부문 -->
+							<tr>
+								<th scope="row">
+									<label for="radio_a1">공모부문</label>
+								</th>
+								<td>
+									<div class="part">
+										<span class="tit">일반부문</span>
+										<div data-radio>
+											<ul>
+												<li>
+													<input type="radio" name="radio_a" id="radio_a1">
+													<label for="radio_a1">연구부문</label>
+												</li>
+												<li>
+													<input type="radio" name="radio_a" id="radio_a2">
+													<label for="radio_a2">번역부문</label>
+												</li>
+												<li>
+													<input type="radio" name="radio_a" id="radio_a3">
+													<label for="radio_a3">출판부문</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="part">
+										<span class="tit">특별부문</span>
+										<div data-radio>
+											<ul>
+												<li>
+													<input type="radio" name="radio_a" id="radio_a4">
+													<label for="radio_a4">창작부문</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<!-- //공모부문 -->
+
+							<!-- 신청유형 -->
+							<tr>
+								<th scope="row">
+									<label for="radio_b1">신청유형</label>
+								</th>
+								<td>
+									<div data-radio>
+										<ul>
+											<li>
+												<input type="radio" name="radio_b" id="radio_b1">
+												<label for="radio_b1">개인</label>
+											</li>
+											<li>
+												<input type="radio" name="radio_b" id="radio_b2">
+												<label for="radio_b2">공동(5인 이하)</label>
+											</li>
+											<li>
+												<input type="radio" name="radio_b" id="radio_b3">
+												<label for="radio_b3">단체/기관/출판사</label>
+											</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<!-- //신청유형 -->
+
+							<!-- 최종결과물 -->
+							<tr>
+								<th scope="row">
+									<label for="select_a1">최종결과물</label>
+								</th>
+								<td>
+									<div class="part">
+										<span class="tit">형식</span>
+										<div data-select-box>
+											<select id="select_a1" style="width:220px;">
+												<option>1</option>
+												<option>2</option>
+											</select>
+										</div>
+									</div>
+									<div class="part">
+										<span class="tit">분량</span>
+										<input type="text" style="width:100px;">
+										<span class="txt">장</span>
+									</div>
+								</td>
+							</tr>
+							<!-- //최종결과물 -->
+
+							<!-- 신청금액 -->
+							<tr>
+								<th scope="row">
+									<label for="input_a1">신청금액</label>
+								</th>
+								<td>
+									<input type="text" id="input_a1" style="width:120px;">
+									<span class="txt">만원</span>
+									<p>(※ 범위(만 원): 연구: 500~2,000만원, 번역: 500~1,000만원, 출판: 1,000~2,000, 창작: 400~500만원)</p>
+								</td>
+							</tr>
+							<!-- //신청금액 -->
+
+							<!-- 대표자 -->
+							<tr>
+								<th scope="row">
+									<label for="input_b1">대표자<br>(총괄책임자)</label>
+								</th>
+								<td class="inner">
+
+									<!-- 테이블 내 입력폼 -->
+									<div data-input-form>
+										<table>
+											<colgroup>
+												<col style="width:15%;">
+												<col>
+												<col style="width:15%;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">
+														<label for="input_b1">성명</label>
+													</th>
+													<td>
+														<input type="text" id="input_b1">
+													</td>
+													<th scope="row">
+														<label for="input_b2">생년월일</label>
+													</th>
+													<td>
+														<input type="text" id="input_b2">
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														<label for="input_b3">연락처</label>
+													</th>
+													<td>
+														<input type="text" id="input_b3">
+													</td>
+													<th scope="row">
+														<label for="input_b4">이메일</label>
+													</th>
+													<td>
+														<input type="text" id="input_b4">
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														<label for="input_b5">소속</label>
+													</th>
+													<td>
+														<input type="text" id="input_b5">
+													</td>
+													<th scope="row">
+														<label for="input_b6">직책</label>
+													</th>
+													<td>
+														<input type="text" id="input_b6">
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														<label for="input_b7">주소</label>
+													</th>
+													<td colspan="3">
+														<input type="text" id="input_b7">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- //테이블 내 입력폼 -->
+
+								</td>
+							</tr>
+							<!-- //대표자 -->
+
+							<!-- 참여자 -->
+							<tr>
+								<th scope="row">
+									<label for="input_c11">참여자<br>(대표자 외)</label>
+								</th>
+								<td class="inner">
+
+									<!-- 테이블 내 입력폼 -->
+									<div data-input-form>
+										<table>
+											<colgroup>
+												<col style="width:15%;">
+												<col>
+												<col>
+												<col>
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">순번</th>
+													<th scope="col">성명</th>
+													<th scope="col">생년월일</th>
+													<th scope="col">소속</th>
+													<th scope="col">직책</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row">
+														<label for="input_c11">참여자 1</label>
+													</th>
+													<td data-cell="name">
+														<input type="text" id="input_c11">
+													</td>
+													<td data-cell="birth">
+														<input type="text" id="input_c12">
+													</td>
+													<td data-cell="part">
+														<input type="text" id="input_c13">
+													</td>
+													<td data-cell="grade">
+														<input type="text" id="input_c14">
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														<label for="input_c21">참여자 2</label>
+													</th>
+													<td data-cell="name">
+														<input type="text" id="input_c21">
+													</td>
+													<td data-cell="birth">
+														<input type="text" id="input_c22">
+													</td>
+													<td data-cell="part">
+														<input type="text" id="input_c23">
+													</td>
+													<td data-cell="grade">
+														<input type="text" id="input_c24">
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														<label for="input_c31">참여자 3</label>
+													</th>
+													<td data-cell="name">
+														<input type="text" id="input_c31">
+													</td>
+													<td data-cell="birth">
+														<input type="text" id="input_c32">
+													</td>
+													<td data-cell="part">
+														<input type="text" id="input_c33">
+													</td>
+													<td data-cell="grade">
+														<input type="text" id="input_c34">
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														<label for="input_c41">참여자 4</label>
+													</th>
+													<td data-cell="name">
+														<input type="text" id="input_c41">
+													</td>
+													<td data-cell="birth">
+														<input type="text" id="input_c42">
+													</td>
+													<td data-cell="part">
+														<input type="text" id="input_c43">
+													</td>
+													<td data-cell="grade">
+														<input type="text" id="input_c44">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- //테이블 내 입력폼 -->
+									
+								</td>
+							</tr>
+							<!-- //참여자 -->
+
+							<!-- 구성원수 -->
+							<tr>
+								<th scope="row">
+									<label for="">구성원수</label>
+								</th>
+								<td>
+									<span class="txt"><strong>0</strong>명(대표자 포함)</span>
+								</td>
+							</tr>
+							<!-- //구성원수 -->
+
+							<!-- 공모 제목 -->
+							<tr>
+								<th scope="row">
+									<label for="input_a2">공모 제목</label>
+								</th>
+								<td>
+									<input type="text" id="input_a2" style="width:100%;">
+								</td>
+							</tr>
+							<!-- //공모 제목 -->
+
+							<!-- 내용요약 -->
+							<tr>
+								<th scope="row">
+									<label for="textarea_a1">내용요약</label>
+								</th>
+								<td>
+									<textarea id="textarea_a1" cols="30" rows="10"></textarea>
+								</td>
+							</tr>
+							<!-- //내용요약 -->
+
+							<!-- 개인정보 수집 및 이용 동의 -->
+							<tr>
+								<th scope="row">
+									<label for="radio_c1">개인정보 수집 및 이용 동의</label>
+								</th>
+								<td>
+									<ul data-list class="type1">
+										<li>수집&middot;이용 목적: 2020년 「서울 도시인문학」 지원사업 운영 관련 안내사랑 통보</li>
+										<li>수집&middot;이용할 항목: 소속명, 직책, 성명, 생년월일, 주소, 이메일, 연락처</li>
+										<li>개인정보 보유&middot;이용 기간: 이용목적 달성 시까지</li>
+										<li>동의를 거부할 권리가 있으며, 거부할 경우 도시인문학 지원사업과 관련한 서비스를 받을 수 없음</li>
+										<li>공동&middot;단체/기관의 경우 모든 참가자가 동의한 것으로 간주함</li>
+									</ul>
+									<div data-radio style="margin-top:15px;">
+										<ul>
+											<li>
+												<input type="radio" name="radio_c" id="radio_c1">
+												<label for="radio_c1">동의</label>
+											</li>
+											<li>
+												<input type="radio" name="radio_c" id="radio_c2">
+												<label for="radio_c2">동의하지 않음</label>
+											</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<!-- //개인정보 수집 및 이용 동의 -->
+
+						</thead>
+					</table>
+					<p class="notice" style="margin:0; margin-top:15px;">※ 수집한 개인정보는 정보주체의 동의 없이 수집한 목적 외로 사용하지 않습니다.
+					</p>
+				</div>
+			</div>
+			<div data-column-box>
+				<div data-input-form>
+					<p class="notice" style="text-align:left;">※ 공모전 안내 페이지에서 제출서류 다운로드 받으신 파일을 작성하신 후 제출 바랍니다.</p>
+					<table>
+						<colgroup>
+							<col style="width:18%;">
+							<col>
+						</colgroup>
+						<thead>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row" style="background:#f0f6ce;">
+									<label for="file_a1">공모계획서 제출파일</label>
+								</th>
+								<td>
+									<div class="inline file">
+										<input type="text" class="dummy" disabled style="width:350px;">
+										<input type="file" id="file_a1">
+										<label for="file_a1" class="btn">파일찾기</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" style="background:#f0f6ce;">
+									<label for="file_a2">지원금 집행계획서 파일</label>
+								</th>
+								<td>
+									<div class="inline file">
+										<input type="text" class="dummy" disabled style="width:350px;">
+										<input type="file" id="file_a2">
+										<label for="file_a2" class="btn">파일찾기</label>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div data-ctr-btn>
+					<a href="javascript:history.back();" data-btn class="small cancel">취소</a>
+					<button type="submit" data-btn class="small">제출하기</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+@@include('footer.html')

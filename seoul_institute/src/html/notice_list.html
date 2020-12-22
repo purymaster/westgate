@@ -1,0 +1,109 @@
+@@include('header.html')
+<div data-sub-content class="content">
+
+	@@include('sub_visual.html')
+	<!-- 탭메뉴 -->
+	<div class="container">
+		<div data-tab-menu role="tablist">
+			<ul class="type2">
+				<li aria-controls aria-selected="true" class="on">
+					<a href="#" tabindex="0">
+						<span>공지사항</span>
+					</a>
+				</li>
+				<li aria-controls aria-selected="false">
+					<a href="#" tabindex="-1">
+						<span>자유게시판</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //탭메뉴 -->
+
+	<div class="container">
+
+		@@include('sub_header.html',{
+		"title" : "공지사항",
+		"context" : {
+		"path" : ["공지사항", "공지사항"]
+		}
+		})
+
+		<div data-content-box>
+			<div data-search>
+				<div class="search_wrap">
+					<input type="text" title="검색어" placeholder="검색어 입력" name="search_input">
+					<button type="submit">
+						<span>검색</span>
+					</button>
+				</div>
+			</div>
+
+			<div data-gallery>
+				<ul>
+					<li class="notice">
+						<div class="gallery_wrap">
+							<span class="notice_icon">공지</span>
+							<img src="https://picsum.photos/300/400" alt="">
+							<div class="txt_wrap">
+								<a href="#" class="tit">로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)</a>
+								<dl class="info">
+									<div>
+										<dt>저자</dt>
+										<dd>홍길동</dd>
+									</div>
+									<div>
+										<dt>등록일</dt>
+										<dd>9999-99-99</dd>
+									</div>
+									<div>
+										<dt>조회수</dt>
+										<dd>999999</dd>
+									</div>
+								</dl>
+								<p class="txt">
+									로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서 폰트, 타이포그래피, 레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기 텍스트로, 최종 결과물에 들어가는 실제적인 문장 내용이 채워지기 전에 시각 디자인 프로젝트 모형의 채움 글로도 이용된다. 이런 용도로 사용할 때 로렘 입숨을 그리킹(greeking)이라고도 부르며, 때로 로렘 입숨은 공간만 차지하는 무언가를 지칭하는 용어로도 사용된다.
+								</p>
+								<a href="#" class="download">원본</a>
+								<!-- <a href="#" class="download">URL</a> -->
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery_wrap">
+							<img src="https://via.placeholder.com/300x400" alt="">
+							<div class="txt_wrap">
+								<a href="#" class="tit">로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)</a>
+								<dl class="info">
+									<div>
+										<dt>저자</dt>
+										<dd>홍길동</dd>
+									</div>
+									<div>
+										<dt>등록일</dt>
+										<dd>9999-99-99</dd>
+									</div>
+									<div>
+										<dt>조회수</dt>
+										<dd>999999</dd>
+									</div>
+								</dl>
+								<p class="txt">
+									로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서 폰트, 타이포그래피, 레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기 텍스트로, 최종 결과물에 들어가는 실제적인 문장 내용이 채워지기 전에 시각 디자인 프로젝트 모형의 채움 글로도 이용된다. 이런 용도로 사용할 때 로렘 입숨을 그리킹(greeking)이라고도 부르며, 때로 로렘 입숨은 공간만 차지하는 무언가를 지칭하는 용어로도 사용된다.
+								</p>
+								<a href="#" class="download">원본</a>
+								<!-- <a href="#" class="download">URL</a> -->
+							</div>
+						</div>
+					</li>
+					<!-- <li style="text-align:center;">게시물이 존재하지 않습니다.</li> -->
+				</ul>
+			</div>
+			@@include('paging.html')
+		</div>
+
+	</div>
+
+</div>
+@@include('footer.html')

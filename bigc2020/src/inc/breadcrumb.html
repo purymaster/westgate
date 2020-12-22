@@ -1,0 +1,9 @@
+<div data-breadcrumb>
+	<div class="container">
+		<ol>
+			<li>Home</li>
+			@@for(var i = 0; i < context.path.length; i++){ <li>`+context.path[i]+`</li>
+				}
+		</ol>
+	</div>
+</div>

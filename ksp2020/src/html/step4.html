@@ -1,0 +1,162 @@
+@@include('header.html')
+@@include('sub_header.html', {
+"tit" : "참가신청",
+"sub_tit" : "Registration"
+})
+<div data-content-box class="step4">
+
+	<div data-step>
+		<ol>
+			<li>
+				<div class="txt_wrap">
+					행사개요<br>
+					<span class="mobile">/</span>
+					Overview
+				</div>
+			</li>
+			<li>
+				<div class="txt_wrap">
+					프로그램<br>
+					<span class="mobile">/</span>
+					Program
+				</div>
+			</li>
+			<li>
+				<div class="txt_wrap">
+					참가방식<br>
+					<span class="mobile">/</span>
+					Method of Participation
+				</div>
+			</li>
+			<li class="on">
+				<div class="txt_wrap">
+					참가자 정보<br>
+					<span class="mobile">/</span>
+					Personal Information
+				</div>
+			</li>
+		</ol>
+	</div>
+
+	<div data-column-box>
+		<h3 class="column_tit">참가자 정보 / Personal Information</h3>
+		<div data-input-form>
+			<p class="notice"><span style="color:red;">*</span> 필수 입력항목</p>
+			<table>
+				<colgroup>
+					<col style="width:20%;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">
+							<label for="region">
+								국 가<br>
+								Nationality
+							</label>
+						</th>
+						<td>
+							<div data-select-box>
+								<select id="region">
+									<option value="">1</option>
+									<option value="">2</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							<label for="name">
+								성 명<span style="color:red;">*</span><br>
+								Name<span style="color:red;">*</span>
+							</label>
+						</th>
+						<td>
+							<input type="text" id="name" required>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							<label for="organ">
+								소 속<br>
+								Organization
+							</label>
+						</th>
+						<td>
+							<input type="text" id="organ">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							<label for="position">
+								직 책<br>
+								Position
+							</label>
+						</th>
+						<td>
+							<input type="text" id="position">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							<label for="phone">
+								연락처<span style="color:red;">*</span><br>
+								Phone Number<span style="color:red;">*</span>
+							</label>
+						</th>
+						<td>
+							<div class="inline phone">
+								<input type="text" title="전화번호 국가번호" maxlength="4" id="phone" placeholder="+82">
+								<span class="bar">-</span>
+								<input type="text" title="전화번호 앞자리" maxlength="4" placeholder="10">
+								<span class="bar">-</span>
+								<input type="text" title="전화번호 중간자리" maxlength="4" placeholder="1234">
+								<span class="bar">-</span>
+								<input type="text" title="전화번호 끝자리" maxlength="4" placeholder="5678">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							<label for="mail">
+								이메일<span style="color:red;">*</span><br>
+								E-Mail<span style="color:red;">*</span>
+							</label>
+						</th>
+						<td>
+							<input type="email" id="mail" required>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							<label>
+								개인정보 활용동의<br>
+								Privacy Policy
+							</label>
+						</th>
+						<td>
+							<div class="term_area">
+								@@include('term.html')
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div data-checkbox>
+			<ul>
+				<li>
+					<input type="checkbox" id="agree" name="privacy">
+					<label for="agree">개인정보 활용에 대한 안내를 확인하였으며 개인정보 제공에 동의합니다. / I have reviewed the Privacy Policy and I
+						agree to it.</label>
+				</li>
+			</ul>
+		</div>
+		<div class="btn_wrap">
+			<a href="javascript:history.back();" class="cancel" data-btn>이전 / Previous</a>
+			<button type="submit" data-btn><span>참가신청 / Submission</span></button>
+		</div>
+	</div>
+
+</div>
+@@include('footer.html')

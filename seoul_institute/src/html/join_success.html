@@ -1,0 +1,61 @@
+@@include('header.html')
+<div data-sub-content class="content join">
+
+	@@include('sub_visual.html')
+	<!-- 탭메뉴 -->
+	<div class="container">
+		<div data-tab-menu role="tablist">
+			<ul class="type4">
+				<li aria-controls aria-selected="true" class="on">
+					<a href="#" tabindex="0">
+						<span>서울도시인문학 공모 안내</span>
+					</a>
+				</li>
+				<li aria-controls aria-selected="false">
+					<a href="#" tabindex="-1">
+						<span>중간공유회</span>
+					</a>
+				</li>
+				<li aria-controls aria-selected="false">
+					<a href="#" tabindex="-1">
+						<span>결과물</span>
+					</a>
+				</li>
+				<li aria-controls aria-selected="false">
+					<a href="#" tabindex="-1">
+						<span>논평</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //탭메뉴 -->
+
+	<div class="container">
+
+		@@include('sub_header.html',{
+		"title" : "서울도시인문학 공모 안내",
+		"context" : {
+		"path" : ["서울도시인문학 지원사업", "서울도시인문학 공모 안내", "공모 참가신청서"]
+		}
+		})
+
+		<div data-content-box>
+			<div class="success">
+				<div class="txt_wrap">
+					<p class="tit">
+						감사합니다!<br>
+						<strong>공모 참가신청을 정상적으로 제출하셨습니다.</strong>
+					</p>
+					<p class="txt">
+						제출서류는 심사 후 결과는 제출하신 이메일주소로 연락드릴 예정입니다.<br>
+						공모 관련 문의사항은 <a href="mailto:uh2020@si.re.kr"> uh2020@si.re.kr</a>로 연락 주시기 바랍니다.
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+@@include('footer.html')

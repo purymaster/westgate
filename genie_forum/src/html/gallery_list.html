@@ -1,0 +1,80 @@
+@@include('header.html')
+<div data-sub-content class="content welcome">
+	@@include('sub_visual.html')
+	<div class="sub_header">
+		<div class="container">
+			<h2 class="tit">Gallery</h2>
+			@@include('breadcrumb.html',{
+			"context" : {
+			"path" : ["Media", "Gallery"]
+			}
+			})
+		</div>
+	</div>
+	<div class="container">
+		<div class="sub_content">
+
+			<div data-search>
+				<div data-select-box>
+					<select>
+						<option>All</option>
+						<option>Title</option>
+						<option>Author</option>
+					</select>
+				</div>
+				<div class="search_wrap">
+					<input type="text" title="Search Keyword" placeholder="Enter keyword" name="search_input">
+					<button type="submit">Search</button>
+				</div>
+			</div>
+
+			<div data-gallery>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="https://via.placeholder.com/380x240?text=No+Image" alt="">
+							<div class="txt_wrap">
+								<p class="tit">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								<span class="time">9999-99-99</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://picsum.photos/380/240" alt="">
+							<div class="txt_wrap">
+								<p class="tit">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<span class="time">9999-99-99</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://picsum.photos/380/240" alt="">
+							<div class="txt_wrap">
+								<p class="tit">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<span class="time">9999-99-99</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://picsum.photos/380/240" alt="">
+							<div class="txt_wrap">
+								<p class="tit">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<span class="time">9999-99-99</span>
+							</div>
+						</a>
+					</li>
+					<!-- <li style="width:100%; padding:0; line-height:2.5em; text-align:center;">데이터가 존재하지 않습니다.</li> -->
+				</ul>
+			</div>
+
+			<!-- 페이징 -->
+			@@include('paging.html')
+			<!-- //페이징 -->
+
+		</div>
+	</div>
+</div>
+@@include('footer.html')

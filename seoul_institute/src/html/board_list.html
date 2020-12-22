@@ -1,0 +1,93 @@
+@@include('header.html')
+<div data-sub-content class="content">
+
+	@@include('sub_visual.html')
+	<!-- 탭메뉴 -->
+	<div class="container">
+		<div data-tab-menu role="tablist">
+			<ul class="type2">
+				<li aria-controls aria-selected="false">
+					<a href="#" tabindex="0">
+						<span>공지사항</span>
+					</a>
+				</li>
+				<li aria-controls aria-selected="true" class="on">
+					<a href="#" tabindex="-1">
+						<span>자유게시판</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //탭메뉴 -->
+
+	<div class="container">
+
+		@@include('sub_header.html',{
+		"title" : "자유게시판",
+		"context" : {
+		"path" : ["공지사항", "자유게시판"]
+		}
+		})
+
+		<div data-content-box>
+			<div data-search>
+				<div class="search_wrap">
+					<input type="text" title="검색어" placeholder="검색어 입력" name="search_input">
+					<button type="submit">
+						<span>검색</span>
+					</button>
+				</div>
+			</div>
+
+			<div data-board-list>
+				<table>
+					<colgroup>
+						<col style="width:7%;">
+						<col>
+						<col style="width:10%;">
+						<col style="width:10%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">제목</th>
+							<th scope="col">작성일</th>
+							<th scope="col">조회수</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- [D] 공지글은 tr에 notice 클래스 추가 -->
+						<tr class="notice">
+							<td data-type="number"><span class="notice_icon">공지</span></td>
+							<td data-type="title" class="tit">
+								<a href="#">
+									로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서
+								</a>
+							</td>
+							<td data-type="date">99.99.99</td>
+							<td data-type="view">999,999</td>
+						</tr>
+						<tr>
+							<td data-type="number">999</td>
+							<td data-type="title" class="tit">
+								<a href="#">
+									로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서
+								</a>
+							</td>
+							<td data-type="date">99.99.99</td>
+							<td data-type="view">999,999</td>
+						</tr>
+						<!-- <tr>
+						<td colspan="4">게시물이 존재하지 않습니다.</td>
+					</tr> -->
+					</tbody>
+				</table>
+			</div>
+			@@include('paging.html')
+		</div>
+
+	</div>
+
+</div>
+@@include('footer.html')

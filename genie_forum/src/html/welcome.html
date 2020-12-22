@@ -1,0 +1,54 @@
+@@include('header.html')
+<div data-sub-content class="content welcome">
+	@@include('sub_visual.html')
+	<div class="sub_header">
+		<div class="container">
+			<h2 class="tit">Welcome Message</h2>
+			@@include('breadcrumb.html',{
+			"context" : {
+			"path" : ["GENIE Forum", "Welcome Message"]
+			}
+			})
+		</div>
+	</div>
+	<div class="container">
+		<div class="sub_content">
+			
+			<div class="msg">
+
+				<!-- <div class="photo">
+					<img src="../img/img/img_governor.jpg" class="governor" alt="Governor of Jeollabuk-do, Song Ha-jin's photo">
+					Governor of Jeollabuk-do
+					<img src="../img/img/img_sign.jpg" class="sign" alt="Governor of Jeollabuk-do, Song Ha-jin's signature">
+				</div> -->
+
+				<div class="txt_wrap">
+					<p>
+						가장 한국적인 도시, 전라북도 전주에서 제1회 지니포럼(GENIE<sup>*</sup> Forum)을 개최합니다.
+					</p>
+					
+					<div class="footnote">
+						<strong style="color:red;">*</strong>
+						Global Emerging Netwok in Economy
+					</div>
+
+					<p>
+						'지역혁신성장을 위한 글로벌 경제 네크워크 구축'이라는 주제를 가지고 국내 최초로 우리 경제의 新 성장동력을 한 자리에 펼쳐보이는 뜻깊은 자리에 국&middot;내외 다양한 분야의 오피니언 리더들을 모시고자 합니다.
+					</p>
+					<p>
+						'지니포럼'은 글로벌 금융을 선도하는 개척자들에게 새로운 이정표를 제시하고, 4차 미래산업과 기후환경 기술 분야의 투자유치를 지원할 것입니다. 다른 한편에서는 균형발전을 선도하는 중소벤처기업과 지역 우수 인재들의 만남이 이루어지고, 아울러 국제 공익활동가들의 혁신 퍼포먼스와 한류 문화 행사가 동시다발적으로 펼쳐질 것입니다.
+					</p>
+					<p>
+						대한민국의 미래 청사진을 제시하고 새로운 도약을 알리는 지니포럼, 그 축제의 장으로 여러분을 초대합니다.
+					</p>
+					<p style="text-align:right;">
+						<strong>지니포럼 국제조직위원회</strong>
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+@@include('footer.html')

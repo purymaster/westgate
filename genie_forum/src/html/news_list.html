@@ -1,0 +1,99 @@
+@@include('header.html')
+<div data-sub-content class="content welcome">
+	@@include('sub_visual.html')
+	<div class="sub_header">
+		<div class="container">
+			<h2 class="tit">News</h2>
+			@@include('breadcrumb.html',{
+			"context" : {
+			"path" : ["Media", "News"]
+			}
+			})
+		</div>
+	</div>
+	<div class="container">
+		<div class="sub_content">
+
+			<div data-search>
+				<div data-select-box>
+					<select>
+						<option>All</option>
+						<option>Title</option>
+						<option>Author</option>
+					</select>
+				</div>
+				<div class="search_wrap">
+					<input type="text" title="Search Keyword" placeholder="Enter keyword" name="search_input">
+					<button type="submit">Search</button>
+				</div>
+			</div>
+
+			<div data-board-list>
+				<table>
+					<colgroup>
+						<col class="no">
+						<col>
+						<col class="cnt">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th class="number" scope="row">9999</th>
+							<td class="tit">
+								<a href="#">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+								</a>
+								<span class="date">9999-99-99</span>
+							</td>
+							<td class="misc">
+								<div class="misc_wrap">
+									<ul>
+										<li class="file">
+											<a class="item" href="#" title="Download">file</a>
+										</li>
+										<li class="view">
+											<span class="item">9999</span>
+										</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th class="number" scope="row">9999</th>
+							<td class="tit">
+								<a href="#">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+									Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+									unknown printer took a galley of type and scrambled it to make a type specimen book.
+									It has survived not only five centuries,
+								</a>
+								<span class="date">9999-99-99</span>
+							</td>
+							<td class="misc">
+								<div class="misc_wrap">
+									<ul>
+										<li class="file">
+											<a class="item" href="#" title="Download">file</a>
+										</li>
+										<li class="view">
+											<span class="item">9999</span>
+										</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<!-- <tr>
+						<td colspan="3" style="text-align:center;">No data.</td>
+					</tr> -->
+					</tbody>
+				</table>
+
+				<!-- 페이징 -->
+				@@include('paging.html')
+				<!-- //페이징 -->
+
+			</div>
+
+		</div>
+	</div>
+</div>
+@@include('footer.html')

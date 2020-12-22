@@ -1,0 +1,232 @@
+@@include('header.html')
+<div data-sub-content class="content map">
+	@@include('sub_visual.html')
+	<div class="sub_header">
+		<div class="container">
+			<h2 class="tit">Location</h2>
+			@@include('breadcrumb.html',{
+			"context" : {
+			"path" : ["GENIE Forum", "Location"]
+			}
+			})
+		</div>
+	</div>
+	<div class="container">
+		<div class="sub_content">
+
+			<div data-sub-box>
+				<h3 class="content_tit">행사장 안내</h3>
+
+				<p style="margin-top:15px;">
+					<strong>전라북도 전주시 한옥마을 일원</strong><br>
+					유네스코가 세계문화유산으로 지정한 판소리 본고장 전주, 한옥·한식 ·한지 등 한국적인 전통문화와 풍요, 여유로움을 꽃 피우고, 멋과 맛을 담고 있는 도시
+				</p>
+
+				<div class="map_view">
+					<div id="map"></div>
+					<ul class="spot_list">
+						<li>
+							<div class="txt_wrap">
+								<strong>1. 향교</strong>
+								<div class="txt">
+									<em>환영리셉션</em><br>
+									전라북도 전주시 완산구 풍남동 향교길 139
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="txt_wrap">
+								<strong>2. 한벽문화관</strong>
+								<div class="txt">
+									<em>Better Together Talk, 제1회 K-뷰티 글로벌 페스티벌</em><br>
+									전라북도 전주시 완산구 풍남동 전주천동로 20
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="txt_wrap">
+								<strong>3. 국립무형유산원</strong>
+								<div class="txt">
+									<em>개막식 및 공식행사, 전북국제금융컨퍼런스(JIFIC 2020), 기후환경기술,<br> K-Food 전국 한식 요리 경연 대회</em><br>
+									전라북도 전주시 완산구 동서학동 서학로 95
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="txt_wrap">
+								<strong>4. 전주교육대학교</strong>
+								<div class="txt">
+									<em>스토리지 데모데이(STORAGE Demoday), 상생 일자리 EXPO</em><br>
+									전라북도 전주시 완산구 동서학동 서학로 50
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div data-sub-box>
+				<h3 class="content_tit">교통편(국립무형유산원 기준)</h3>
+
+				<div class="traffic">
+					<div class="traffic_box">
+						<h4>버스</h4>
+						<div>
+							<h5>전주고속터미널 출발</h5>
+							<ol class="traffic_list">
+								<li>
+									&middot; 101번: 국민은행금암지점 승차
+								</li>
+								<li>
+									승암마을 하차
+								</li>
+							</ol>
+							<ol class="traffic_list">
+								<li>
+									&middot; 190번: 국민은행금암지점 승차
+								</li>
+								<li>
+									좁은목 하차
+								</li>
+							</ol>
+							<ol class="traffic_list">
+								<li>
+									&middot; 725번: 국민은행금암지점 승차
+								</li>
+								<li>
+									국립무형유산원 하차
+								</li>
+							</ol>
+						</div>
+						<div style="margin-top:10px;">
+							<h5>전주시외버스터미널 출발</h5>
+							<ol class="traffic_list">
+								<li>
+									&middot; 101번: 기린대로금암광장 승차
+								</li>
+								<li>
+									승암마을 하차
+								</li>
+							</ol>
+							<ol class="traffic_list">
+								<li>
+									&middot; 190번: 기린대로금암광장 승차
+								</li>
+								<li>
+									좁은목 하차
+								</li>
+							</ol>
+							<ol class="traffic_list">
+								<li>
+									&middot; 725번: 금암광장, 청담한방병원 승차
+								</li>
+								<li>
+									국립무형유산원 하차
+								</li>
+							</ol>
+						</div>
+						<div style="margin-top:10px;">
+							<h5>전라선 전주역</h5>
+							<ol class="traffic_list">
+								<li>
+									&middot; 1000번: 전주역첫마중길 승차
+								</li>
+								<li>
+									남고사입구 하차
+								</li>
+							</ol>
+						</div>
+					</div>
+
+					<div class="traffic_box">
+						<h4>자가용</h4>
+						&middot; 주소 : 전북 전주시 완산구 서학로 85(국립무형유산원)
+						<ol class="traffic_list">
+							<li>
+								동전주IC
+							</li>
+							<li>
+								동전주IC교차로
+							</li>
+							<li>
+								백자삼거리 좌회전
+							</li>
+							<li>
+								동부대로를 따라 5.4km 이동
+							</li>
+							<li>
+								안적교 우회전
+							</li>
+							<li>
+								춘향로를 따라 3km 이동
+							</li>
+							<li>
+								서학로 방면 좌회전 후 국립무형유산원 주차장 진입
+							</li>
+						</ol>
+					</div>
+
+					<!-- <div class="traffic_box">
+						<h4>기차</h4>
+						<h5>전라선 전주역 출발</h5>
+						<ol class="traffic_list">
+							<li>
+								전주역첫마중길 정류장까지 횡단보도를 이용하여 약 249m 이동 후 버스 이용
+							</li>
+							<li>
+								본선 1000번 남고사 입구에서 하차 (소요시간:1시간 배차시간:30~45분)
+							</li>
+						</ol>
+					</div> -->
+				</div>
+
+			</div>
+
+			<script>
+				function initMap() {
+					var map = new google.maps.Map(document.getElementById('map'), {
+						center: { lat: 35.811217, lng: 127.158043 },
+						zoom: 17
+					});
+
+					var locations = {
+						spot1: ["향교", 35.812907, 127.157118],
+						spot2: ["한벽문화관", 35.812152, 127.158622],
+						spot3: ["국립무형유산원", 35.810353, 127.160610],
+						spot4: ["전주교육대학교", 35.809364, 127.155125]
+					};
+
+					for (var i = 0; i < Object.keys(locations).length; i++) {
+						var marker = new google.maps.Marker({
+							id: i,
+							position: new google.maps.LatLng(
+								(locations[Object.keys(locations)[i]])[1],
+								(locations[Object.keys(locations)[i]])[2]
+							),
+							map: map,
+							icon: {
+								url: "../img/ico/ico_marker.png",
+								scaledSize: new google.maps.Size(24, 38),
+								labelOrigin: { x: 15, y: 50 },
+							},
+							label: {
+								color: '#0361b9',
+								fontFamily: 'Noto Sans KR',
+								fontSize: '14px',
+								fontWeight: 'bold',
+								text: (i + 1) + ". " + (locations[Object.keys(locations)[i]])[0],
+							},
+						});
+					};
+
+				};
+			</script>
+			<script
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSUnSOhfav4RQsEncwd-mNNHFZfickJoA&callback=initMap"
+				async defer></script>
+
+		</div>
+	</div>
+</div>
+@@include('footer.html')
