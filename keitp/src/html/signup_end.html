@@ -1,0 +1,69 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type1",
+    "eng_tit" : "Sign-up",
+    "tit" : "참가등록"
+    })
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div class="signup_end" data-sub-content>
+        <div class="container">
+
+            <div class="column grey">
+                <div class="container inner">
+                    <h3 class="column_tit">
+                        Your registration is completed! 평가단 등록 완료! 
+                    </h3>
+
+                    <div class="info_box">
+                        <p style="font-size:1.1em;">
+                            Confirmation letter of registration will be sent to your email.<br>
+                            등록하신 이메일로 등록 확인 메일이 발송 됩니다.
+                        </p>
+                        <dl data-result-table>
+                            <div>
+                                <dt>Email(ID)</dt>
+                                <dd>jun0326@naver.com</dd>
+                            </div>
+                            <div>
+                                <dt>First Name 이름</dt>
+                                <dd>Jun</dd>
+                            </div>
+                            <div>
+                                <dt>Last Name 성</dt>
+                                <dd>SEMOON</dd>
+                            </div>
+                            <div>
+                                <dt>Company Name 소속기관</dt>
+                                <dd>Westgate</dd>
+                            </div>
+                            <div>
+                                <dt>Job Title 직책</dt>
+                                <dd>Ceo</dd>
+                            </div>
+                            <div>
+                                <dt>Mobile Phone Number 휴대폰 번호</dt>
+                                <dd>010-1234-5678</dd>
+                            </div>
+                        </dl>
+                        <p>
+                            ※ You can check and modify your registration information on My page.<br>
+                            등록정보는 마이 페이지에서 확인 및 수정이 가능 합니다.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div data-ctr-btn>
+                <a href="#" data-btn>My page<br>마이페이지</a>
+            </div>
+
+
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

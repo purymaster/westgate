@@ -1,0 +1,158 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type1",
+    "eng_tit" : "Application",
+    "tit" : "투어 신청"
+    })
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div class="tour_view" data-sub-content>
+        <div class="container">
+
+            <div class="column">
+                <div class="container inner">
+
+                    <div data-search>
+                        <div class="search_wrap">
+                            <a href="javascript:history.back();">Back(뒤로)</a>
+                        </div>
+                    </div>
+
+                    <div data-tour-view>
+
+                        <div class="tour_wrap">
+                            <!-- 사진 슬라이드 -->
+                            <div class="slider">
+                                <div data-slide>
+                                    <div class="slide">
+                                        <img src="https://via.placeholder.com/370x300" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="https://picsum.photos/id/1/370/300" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="https://picsum.photos/id/2/370/300" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                $(function () {
+                                    $('[data-tour-view] [data-slide]').each(function () {
+                                        if ($(this).find('.slide').length > 1) {
+                                            $(this).slick({
+                                                arrows: false,
+                                                autoplay: true,
+                                                autoplaySpeed: 5000,
+                                                dots: true,
+                                                adaptiveHeight: true
+                                            });
+                                        }
+                                    });
+                                });
+                            </script>
+                            <!-- //사진 슬라이드 -->
+
+                            <!-- 여행 정보 -->
+                            <div class="tour_info">
+                                <h3 class="tour_tit">
+                                    Seoul Lotte Tower &amp; World Adventure Tour<br>
+                                    <div style="font-size:.8em;">서울 롯데타워 및 월드 어드벤처 투어</div>
+                                </h3>
+                                <div class="detail">
+                                    <ul data-list class="type2">
+                                        <li>
+                                            Period (여행일자 선택)
+                                            <div class="date_select">
+                                                <div data-radio>
+													<ul>
+														<li>
+															<input type="radio" id="date01" name="select_date" checked>
+															<label for="date01">12.31-12.31</label>
+														</li>
+														<li>
+															<input type="radio" id="date02" name="select_date">
+															<label for="date02">12.31-12.31</label>
+														</li>
+                                                        <li>
+															<input type="radio" id="date03" name="select_date">
+															<label for="date03">12.31-12.31</label>
+														</li>
+														<li>
+															<input type="radio" id="date04" name="select_date">
+															<label for="date04">12.31-12.31</label>
+														</li>
+                                                        <li>
+															<input type="radio" id="date05" name="select_date">
+															<label for="date05">12.31-12.31</label>
+														</li>
+														<li>
+															<input type="radio" id="date06" name="select_date">
+															<label for="date06">12.31-12.31</label>
+														</li>
+                                                        <li>
+															<input type="radio" id="date07" name="select_date">
+															<label for="date07">12.31-12.31</label>
+														</li>
+														<li>
+															<input type="radio" id="date08" name="select_date">
+															<label for="date08">12.31-12.31</label>
+														</li>
+                                                        <li>
+															<input type="radio" id="date09" name="select_date">
+															<label for="date09">12.31-12.31</label>
+														</li>
+														<li>
+															<input type="radio" id="date10" name="select_date">
+															<label for="date10">12.31-12.31</label>
+														</li>
+													</ul>
+												</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            Tour City (여행도시) : Seoul(서울)
+                                        </li>
+                                        <li>
+                                            Number of departures (출발인원) : 10 persons
+                                        </li>
+                                        <li>
+                                            Travel agency (운영 여행사) : Kims Travel (킴스 여행사) / Email : <a
+                                                href="mailto:info@kimstravel.co.kr">info@kimstravel.co.kr</a>
+                                        </li>
+                                    </ul>
+
+                                    <button type="submit">
+                                        <span>Application (신청하기)</span>
+                                    </button>
+
+                                </div>
+                            </div>
+                            <!-- //여행 정보 -->
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column top">
+                <div class="container inner">
+                    <h3 class="column_tit">
+                        Tour Plans 여행일정
+                    </h3>
+                    <img src="https://picsum.photos/id/1/1200/1500" alt="">
+                </div>
+            </div>
+
+            <div class="bottom_btn">
+                <a href="javascript:history.back();">Back(뒤로)</a>
+            </div>
+
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

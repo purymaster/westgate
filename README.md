@@ -15,3 +15,4 @@
 - [2020 Korea Eureka Day](https://purymaster.github.io/westgate/eureka)
 - [2020 경제발전경험공유사업 성과공유 컨퍼런스](https://purymaster.github.io/westgate/ksp2020)
 - [2020 영비즈니스 리더포럼 Online](https://purymaster.github.io/westgate/yblf2020)
+- [대한민국 우수 인센티브 관광프로그램 모니터링 팸투어](https://purymaster.github.io/westgate/keitp)

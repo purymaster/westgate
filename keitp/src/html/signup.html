@@ -1,0 +1,392 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type1",
+    "eng_tit" : "Sign-up",
+    "tit" : "참가등록"
+    })
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div class="signup" data-sub-content>
+        <div class="container">
+
+            <div class="column grey">
+                <div class="container inner">
+                    <h3 class="column_tit">
+                        평가단 등록 안내
+                    </h3>
+
+                    <div class="info_box">
+                        <div class="tit_wrap">
+                            <h4 class="info_tit">Registration Period 등록기간</h4>
+                        </div>
+                        <p style="font-size:1.5em;">
+                            <strong>2021. 7. 1(Thur) ~ 9. 10(Fri.)</strong>
+                        </p>
+                        <p class="alert">* 회원가입 선착순 100명에게 KTO 기념품 제공 (추후 공개 예정)</p>
+                    </div>
+
+                    <div class="info_box">
+                        <div class="tit_wrap">
+                            <h4 class="info_tit">참가자격</h4>
+                        </div>
+                        <p style="font-size:1.5em;">
+                            <strong>“한국의 관광지를 구석구석 체험하고 싶은 외국인!”</strong>
+                        </p>
+                        <ul data-list class="type1">
+                            <li>Foreigners who live in Korea, working people (한국에 거주하는 외국인 직장인)</li>
+                            <li>International Students (대학생 혹은 대학원생)</li>
+                            <li>Active Social Media User (a.k.a Influencers) (인스타그램 팔로워 1,000명 이상 글로벌 인플루언서)</li>
+                        </ul>
+                    </div>
+
+                    <div class="info_box">
+                        <div class="tit_wrap">
+                            <h4 class="info_tit">Notice 유의사항</h4>
+                        </div>
+                        <ul data-list class="type1">
+                            <li>온라인 등록이 완료되면 ‘신청 확인 이메일’이 자동으로 발송되며, ‘신청 확인 이메일’ 확인 후 투어 프로그램 신청 가능하십니다.</li>
+                            <li>모든 프로그램의 출발지점은 서울 시내 입니다. 서울 이외 거주자께서는 투어 참가를 위해 서울내 출발지점으로 와야 하며, 중간 지점에서의 합류는
+                                불가합니다.<br>
+                                * 제주 여행의 출발지점은 제주공항 입니다.</li>
+                            <li>투어는 정해진 일정에 따라 진행되며 개별적으로 호텔 숙박 연장 및 교통편 변경은 불가합니다.</li>
+                            <li>투어 진행 중 한국관광공사에서 요청하는 관광지 만족도 조사와 투어 프로그램 관련 설문조사에 필수로 참여해야 합니다.</li>
+                            <li>투어 진행 중 각 프로그램 홍보 영상이 촬영되며, 초상권 사용 및 공중송신권 사용 동의서에 동의해야 투어 신청이 가능합니다.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="container inner">
+
+                    <h3 class="column_tit">
+                        개인정보 수집 &middot; 제공 &middot; 활용 동의서<br>
+                        <div class="small">Consent Form for the Collection and Use of Personal Information</div>
+                    </h3>
+
+                    <div class="info_box">
+                        <div class="box term_wrap">
+                            <button type="button" data-target="#term1" data-open-modal><span>약관보기 (View Terms)</span></button>
+                            <div class="term_agree">
+                                <input type="checkbox" name="" id="termCheck1">
+                                <label for="termCheck1">
+                                    개인정보처리방침을 읽었으며 이에 동의합니다.<br>
+                                    I agree to the privacy policy and the matters on provision to a third party.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column top">
+                <div class="container inner">
+
+                    <h3 class="column_tit">
+                        초상권 사용동의서<br>
+                        <div class="small">Consent Form for the usage of Portrait Rights &amp; Online Transmission
+                            Rights
+                        </div>
+                    </h3>
+
+                    <div class="info_box">
+                        <div class="box term_wrap">
+                            <button type="button" data-target="#term2" data-open-modal><span>약관보기 (View Terms)</span></button>
+                            <div class="term_agree">
+                                <input type="checkbox" name="" id="termCheck2">
+                                <label for="termCheck2">
+                                    초상권 활용 방침을 읽었으며 이에 동의합니다.<br>
+                                    I agree to the terms and conditions – Use of Portrait Rights &amp; Online
+                                    Transmission
+                                    Rights
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div data-ctr-btn>
+                <a href="#" data-btn>Register<br>등록하기</a>
+            </div>
+
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+    <!-- 약관 팝업 -->
+    <section data-modal data-type="fix" id="term1" style="height: 100%;">
+        <div class="modal">
+            <h1 class="modal_tit">
+                <div style="font-size:1.25em;">개인정보 수집 &middot; 제공 &middot; 활용 동의서</div>
+                Consent Form for the Collection and Use of Personal Information
+            </h1>
+            <div class="modal_cont term">
+                <div class="term_box eng">
+                    <h2 class="tit">
+                        Consent Form for the Collection and Use of Personal Information
+                    </h2>
+                    <div class="row">
+                        <h3 class="tit">
+                            1. Use &amp; Purpose of Personal Information Collection
+                        </h3>
+                        <p>
+                            As the host of the “Korean Incentive Program : Fam Tour”, KTO protects all personal
+                            information
+                            held or collected, and may collect and use your personal information exclusively for the
+                            following purposes.<br>
+                            - Management of personal information of the “Korean Incentive Program : Fam Tour”<br>
+                            - Information delivery and communication related to the “Korean Incentive Program : Fam
+                            Tour”
+                        </p>
+                    </div>
+                    <div class="row">
+                        <h3 class="tit">
+                            2. Personal Information &amp; Presentation Materials Collected
+                        </h3>
+                        <p>
+                            (1) Collected Fields<br>
+                            - Contents required in the registration form : Name, email, Gender,
+                            Affiliated Organization, Position, a copy of Business Card or Employee ID, Nationality, a
+                            copy
+                            of Passport, Tel, Cellular phone number, City of Resident<br>
+                            - Results of survey and satisfaction survey<br>
+                            - Filmed videos of photos
+                        </p>
+                        <p>
+                            (2) Collection Method : official website, written forms
+                        </p>
+                    </div>
+                    <div class="row">
+                        <h3 class="tit">
+                            3. Handling of Personal Information(Matters on Provision to a third party)
+                        </h3>
+                        <p>
+                            As the host of the “Korean Incentive Program : Fam Tour” KTO is, for the purpose of
+                            providing
+                            better services, handling personal information and related tasks on a third party,
+                            consignment
+                            to the following companies :
+                        </p>
+                        <div data-table="">
+                            <table class="center">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col style="width:30%;">
+                                    <col>
+                                    <col style="width:30%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Third Party</th>
+                                        <th scope="col">Purpose</th>
+                                        <th scope="col">Personal Information Collected</th>
+                                        <th scope="col">Retention</th>
+                                        <th scope="col">Notice for the right to reject the agreement</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Opener DOC(Secretariat Office), Travel Agencies
+                                        </td>
+                                        <td>
+                                            Management and Promotion
+                                        </td>
+                                        <td>
+                                            Name, email, Gender, Affiliated Organization, Position, a copy of Business
+                                            Card or Employee ID, Nationality, a copy of Passport, Tel, Cellular phone
+                                            number, City of Resident
+                                        </td>
+                                        <td>
+                                            2021. 12. 31
+                                        </td>
+                                        <td>
+                                            You have the right to reject the Agreement of providing personal information
+                                            to a third party. However, please note that if you do not agree you may be
+                                            limited to register to these tour programme.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3 class="tit">
+                            4. Consent &amp; Rights of the Visitor
+                        </h3>
+                        <p>
+                            Pursuant to the Act on the Protection of Personal Information, you may reject the agreement
+                            for
+                            the collection and use of personal information in which case you will not be able to attend
+                            these tour programme.
+                        </p>
+                    </div>
+                </div>
+                <div class="term_box kor">
+                    <h2 class="tit">
+                        개인정보 수집 &middot; 제공 &middot; 활용 동의서
+                    </h2>
+                    <div class="row">
+                        <h3 class="tit">
+                            개인정보 수집 및 이용 &middot; 목적
+                        </h3>
+                        <p>
+                            “대한민국 우수 인센티브 관광 팸투어” 주관 기관인 한국관광공사는 귀하의 개인정보를 보호하며, 다음과 같은 사항에 한하여 개인정보를 이용 및 수집하고
+                            있습니다.<br>
+                            - 온라인 등록자 및 팸투어 참가자 정보 관리<br>
+                            - 행사 관련 정보전달 및 연락
+                        </p>
+                    </div>
+                    <div class="row">
+                        <h3 class="tit">
+                            2. 수집하는 개인정보 항목 및 수집방법
+                        </h3>
+                        <p>
+                            (1) 수집항목<br>
+                            - 등록 신청서에 기재된 내역 : 이름, email, 성별, 소속기관, 직책, 명함 혹은 사원증, 국적, 여권사본, 연락처, 휴대폰, 거주 도시<br>
+                            - 설문조사와 만족도 조사 결과
+                            - 관광지 홍보 영상 촬영 등
+                        </p>
+                        <p>
+                            (2) 수집방법 : 온라인 등록 신청 혹은 서면양식
+                        </p>
+                    </div>
+                    <div class="row">
+                        <h3 class="tit">
+                            3. 개인정보의 제3자 제공
+                        </h3>
+                        <p>
+                            “대한민국 우수 인센티브 관광 팸투어” 주관 기관인 한국관광공사는 보다 나은 서비스 제공과 원활한 업무 수행을 위하여 다음과 같이 개인정보 취급 업무를 외부 전문 업체에 위탁하여 운영하고 있습니다. 이에 개인정보 취급의 제3자 제공을 안내 드립니다.
+                        </p>
+                        <div data-table="">
+                            <table class="center">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col style="width:30%;">
+                                    <col>
+                                    <col style="width:30%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">제공받는 자</th>
+                                        <th scope="col">제공 목적</th>
+                                        <th scope="col">수집하는 개인정보 항목</th>
+                                        <th scope="col">제공정보의 보유 및 이용기간</th>
+                                        <th scope="col">개인정보 제공 동의 
+                                            거절에 대한 안내</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            오프너디오씨 주식회사(운영사무국), 각 투어 담당 여행사
+                                        </td>
+                                        <td>
+                                            행사 참가자 정보 관리, 관련 정보전달 및 연락
+                                        </td>
+                                        <td>
+                                            이름, email, 성별, 소속기관, 직책, 명함 혹은 사원증, 국적, 여권사본, 연락처, 휴대폰, 거주 도시
+                                        </td>
+                                        <td>
+                                            2021. 12. 31
+                                        </td>
+                                        <td>
+                                            개인정보 제공 이용 동의를 거부할 수 있으며, 동의하지 않을 경우 행사참석 불가함
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3 class="tit">
+                            4. 개인정보 수집 및 이용에 관한 동의 거부
+                        </h3>
+                        <p>
+                            개인정보 보호법에 의해 개인정보 수집 &middot; 이용 동의를 거부할 수 있으며, 동의하지 않을 경우 행사참석이 불가합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="close">Close Popup</button>
+        </div>
+    </section>
+
+    <section data-modal data-type="fix" id="term2" style="height: 100%;">
+        <div class="modal">
+            <h1 class="modal_tit">
+                <div style="font-size:1.25em;">초상권 및 공중송신권(녹화영상 송출 등) 사용 동의서</div>
+                Consent Form for the usage of Portrait Rights &amp; Online Transmission Rights
+            </h1>
+            <div class="modal_cont term">
+                <div class="term_box eng">
+                    <h2 class="tit">
+                        Consent Form for the usage of Portrait Rights &amp; Online Transmission Rights
+                    </h2>
+                    <p>
+                        I agree to grant permission of the copyrights and use personal information, photos and/or videos
+                        specified here to the KTO, Secretariat Office and Travel Agencies for non-profit purposes and to
+                        give participants more information on these Korean Excellent Incentive Tourism Programme.
+                    </p>
+                    <p>
+                        In addition, I grant the right to use and film the video and captured image materials of this
+                        tour programme to the KTO, Secretariat Office and Travel Agencies. Promotional video and
+                        captured image materials can be uploaded to the official homepage, KTO &amp; Travel agencies’
+                        homepage, and YouTube etc. for promotional activities.
+                    </p>
+                    <p>
+                        I agree that my portrait rights and online transmission rights are jointly owned with the
+                        organization committee and can be used in promotional activities by the Secretariat Office and
+                        Travel agencies.
+                    </p>
+                    <p>
+                        - Media platforms used: Official homepage, KHIDI homepage, printed materials, promotion
+                        materials, SNS (YouTube, Facebook, Instagram, Twitter etc.), Specific media platforms (shared by
+                        KTO) etc.
+                    </p>
+                    <p>
+                        I am aware that in case I desire to cancel the agreement regarding the use of portrait and
+                        online transmission rights, it may not apply to participating in tour programme) due to prior
+                        consent.
+                    </p>
+                </div>
+                <div class="term_box kor">
+                    <h2 class="tit">
+                        초상권 및 공중송신권(녹화영상 송출 등) 사용 동의서
+                    </h2>
+                    <p>
+                        본 행사 참가자는 주관 기관 및 운영 사무국, 투어 담당 여행사가 여행 상품(프로그램 포함)의 사전/사후 홍보의 목적을 위한 홍보영상 제작 &amp; 영상송출(한국관광공사
+                        웹사이트/SNS 게재) 및 기록보관용 영상 및 캡쳐 이미지 활용 시에 대한 초상권 및 이의 사용, 녹화영상 송출에 동의합니다.
+                    </p>
+                    <p>
+                        이에 따라 본인은 여행 상품 홍보영상 제작 &amp; 영상송출, 기록보관용 영상 및 캡쳐 이미지의 초상권 활용 권리를 행사 주관기관 및 행사 운영사무국에 부여합니다. 제작된
+                        여행
+                        상품 홍보영상은 상품 홍보를 위하여 한국관광공사 관계기관 및 여행사의 홈페이지, 유튜브, 인스타그램 등에 업로드 될 수 있으며 주관 기관인 한국관광공사가 주최/주관하는
+                        홍보영상 등의 자료로 사용될 수 있습니다.
+                    </p>
+                    <p>
+                        홍보영상의 저작권은 주관 기관 및 여행사가 공동 소유하며, 홍보함에 있어 운영 사무국이 활용하는 것에 동의합니다.
+                    </p>
+                    <p>
+                        - 사용매체: 한국관광공사 및 여행사 공식 홈페이지, SNS(유튜브, 페이스북, 인스타그램, 트위터 등), 미디어 등
+                    </p>
+                    <p>
+                        초상권 및 공중송신권에 대한 동의 사실을 철회할 수 있으며, 참가자의 철회 의견 표명 이전에 사용된 초상권 및 공중송신권(제작 중 혹은 제작이 완료된 홍보영상 등)에
+                        대해서는 동의 변경 사실이 적용되지 않을 수 있음을 인지하였습니다.
+                    </p>
+                </div>
+            </div>
+            <button type="button" class="close">Close Popup</button>
+        </div>
+    </section>
+    <!-- //약관 팝업 -->
+
+</div>
+@@include('footer.html')

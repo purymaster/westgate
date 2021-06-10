@@ -1,0 +1,94 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type1",
+    "eng_tit" : "Application",
+    "tit" : "투어 신청"
+    })
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div class="tour_list" data-sub-content>
+        <div class="container">
+
+            <div class="column">
+                <div class="container inner">
+
+                    <div data-search>
+                        <div class="search_wrap">
+                            <!-- <input type="text" title="검색어" placeholder="검색어 입력" name="search_input"> -->
+                            <div data-select-box>
+                                <select name="" id="">
+                                    <option value="">Tour City</option>
+                                    <option value="">Seoul</option>
+                                </select>
+                            </div>
+                            <button type="submit">
+                                <span>검색</span>
+                            </button>
+                        </div>
+                    </div>
+        
+                    <div data-tour-list>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img_wrap" style="background-image:url(https://via.placeholder.com/150)"></div>
+                                    <span class="tit">
+                                        혼인과 가족생활은 개인의 존엄과 양성의 평등을 기초로 성립되고 유지되어야 하며, 국가는 이를 보장한다. 모든 국민은 건강하고 쾌적한 환경에서 생활할 권리를
+                                        가지며, 국가와 국민은 환경보전을 위하여 노력하여야 한다.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img_wrap" style="background-image:url(https://picsum.photos/id/1/150/150)"></div>
+                                    <span class="tit">
+                                        보성 녹차밭
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img_wrap" style="background-image:url(https://picsum.photos/id/2/150/150)"></div>
+                                    <span class="tit">
+                                        보성 녹차밭
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img_wrap" style="background-image:url(https://picsum.photos/id/3/150/150)"></div>
+                                    <span class="tit">
+                                        보성 녹차밭
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img_wrap" style="background-image:url(https://picsum.photos/id/4/150/150)"></div>
+                                    <span class="tit">
+                                        보성 녹차밭
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img_wrap" style="background-image:url(https://picsum.photos/id/5/150/150)"></div>
+                                    <span class="tit">
+                                        보성 녹차밭
+                                    </span>
+                                </a>
+                            </li>
+                            <!-- <li style="text-align:center; width:100%;">투어 내역이 존재하지 않습니다. No data.</li> -->
+                        </ul>
+                    </div>                    
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')
