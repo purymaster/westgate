@@ -587,9 +587,11 @@ input[type='email'] {line-height:38px; padding:0 10px; border:1px solid #ccc; fo
 [data-header] header nav .sub-menu li a {display:block; position:relative; line-height:1.5em; padding:15px 20px; font-size:16px; color:#fff; -webkit-transition:all .3s; transition:all .3s;}
 [data-header] header nav .sub-menu li:last-child a {border:0;}
 [data-header] header nav .sub-menu li a:hover {background:#8b59ba;}
-[data-header] header .top_menu {overflow:hidden; position:absolute; top:28px; right:0; width:230px; background:#0da5b8; font-size:0; text-align:center;}
-[data-header] header .top_menu li {display:inline-block;}
-[data-header] header .top_menu li a {display:block; font-size:13px; color:#fff; line-height:75px; padding:0 12px;}
+[data-header] header .top_menu {overflow:hidden; position:absolute; top:28px; right:0; width:230px; background:#0da5b8; font-size:0; text-align:center; padding:25px 0;}
+[data-header] header .top_menu li {display:inline-block; padding:0 12px;}
+[data-header] header .top_menu li a {display:block; position:relative; font-size:13px; color:#fff; line-height:25px;}
+[data-header] header .top_menu li a:after {content:""; position:absolute; left:0; bottom:0; width:0; height:2px; background:#fff; transition:all .3s;}
+[data-header] header .top_menu li a:hover:after {width:100%;}
 
 @media (max-width:1366px) {
 	[data-header] header .menu_wrap {padding-left:120px;}
@@ -739,11 +741,14 @@ footer .txt:after {content:''; position:absolute; bottom:0; left:0; width:100%; 
 .main_page .info .notice_wrap .more:after {content:''; position:absolute; top:50%; left:50%; width:2px; height:48px; margin:-24px 0 0 -1px; background:#d7d7d7;}
 .main_page .info .notice_wrap .more:after {transform:rotate(90deg);}
 .main_page .info .link {float:left; font-size:0;}
-.main_page .info .link a {display:inline-block; position:relative; height:300px; margin-left:20px; font-size:16px; vertical-align:top;}
+.main_page .info .link a {display:inline-block; position:relative; height:300px; margin-left:20px; font-size:16px; vertical-align:top; transition:all .3s;}
 .main_page .info .link .tour {background:#8b59ba; width:340px;}
 .main_page .info .link .korea {background:#2cd2e6; width:300px;}
+.main_page .info .link .tour:hover {background:#755791;}
+.main_page .info .link .korea:hover {background:#3aa3af;}
 .main_page .info .link a .txt {position:absolute; left:40px; bottom:40px;}
-.main_page .info .link .tour:after {content:""; position:absolute; width:60px; height:20px; border-right:2px solid #fff; border-bottom:2px solid #fff; right:50px; bottom:50px; transform:skew(55deg);}
+.main_page .info .link .tour:after {content:""; position:absolute; width:60px; height:20px; border-right:2px solid #fff; border-bottom:2px solid #fff; right:60px; bottom:50px; transform:skew(55deg); transition:all .3s;}
+.main_page .info .link .tour:hover:after {right:50px;}
 .main_page .info .link .tour .txt {color:#fff; font-size:20px; line-height:1.5em;}
 .main_page .info .link .tour .txt .eng {font-size:1.2em;}
 .main_page .info .link .korea .txt {font-size:18px;}
@@ -758,6 +763,7 @@ footer .txt:after {content:''; position:absolute; bottom:0; left:0; width:100%; 
 	.main_page .info .link a .txt {left:20px; bottom:20px; font-size:16px !important;}
 	.main_page .info .link a .txt img {margin-bottom:10px !important;}
 	.main_page .info .link .tour:after {right:25px; bottom:30px; width:30px; height:5px; transform:skew(45deg);}
+	.main_page .info .link .tour:hover:after {right:20px;}
 	.main_page .info .link .tour .txt .eng {font-size:1em;}
 }
 
@@ -996,4 +1002,45 @@ footer .txt:after {content:''; position:absolute; bottom:0; left:0; width:100%; 
 
 @media (max-width:599px) {
 	.tour_guide .process .txt_wrap {font-size:12px;}
+}
+
+/* Login */
+.login_wrap {max-width:800px; margin:110px auto 70px; padding:25px 0 40px; border:1px solid #d7d7d7;}
+.login_wrap .login_box {max-width:540px; margin:0 auto; text-align:center;}
+.login_wrap h2 {font-family:'Roboto'; font-size:34px; font-weight:400;}
+.login_wrap .txt {margin-top:10px; padding:10px 0 15px; border-top:1px solid #d7d7d7; font-size:16px;}
+.login_wrap .login_form {overflow:hidden; text-align:left;}
+.login_wrap .login_form .input {float:left; width:calc(100% - 140px);}
+.login_wrap .login_form input[type='text'],
+.login_wrap .login_form input[type='password'] {width:100%; height:60px; line-height:60px; padding:0 15px; border:1px solid #d7d7d7; font-size:16px;}
+.login_wrap .login_form input[type='text'] {margin-bottom:10px;}
+.login_wrap .login_form .check {margin-top:10px;}
+.login_wrap .login_form .check label {font-size:14px;}
+.login_wrap .login_form .btn {float:left; width:140px; padding-left:10px;}
+.login_wrap .login_form .btn button {width:100%; height:130px; background:#0da5b8; font-size:16px; color:#fff;}
+.login_wrap .another {margin-top:30px;}
+.login_wrap .another a {display:block; line-height:50px; text-align:center;}
+.login_wrap .another .temp {margin-bottom:10px; background:#eee; font-size:14px;}
+.login_wrap .another .temp span {position:relative; padding-left:25px;}
+.login_wrap .another .temp span:before {content:''; position:absolute; top:50%; left:0; width:16px; height:16px; margin-top:-8px; background:url(../img/ico/ico_temp.png);}
+.login_wrap .another .signup {background:#8b59ba; font-size:16px; color:#fff;}
+
+@media (max-width:1024px) {
+	.login_wrap {max-width:100%; margin:50px 30px; padding:15px;}
+	.login_wrap .login_box {max-width:100%;}
+	.login_wrap h2 {font-size:24px;}
+	.login_wrap .txt {font-size:14px;}
+	.login_wrap .login_form input[type="text"], 
+	.login_wrap .login_form input[type="password"] {font-size:14px; line-height:40px; height:40px;}
+	.login_wrap .login_form .btn button {height:90px; font-size:14px;}
+	.login_wrap .login_form .check label {font-size:12px;}
+	.login_wrap .another .signup {font-size:14px;}
+}
+
+@media (max-width:599px) {
+	.login_wrap {margin:30px 15px;}
+	.login_wrap h2 {font-size:20px;}
+	.login_wrap .txt {font-size:12px;}
+	.login_wrap .login_form .input {width:calc(100% - 100px);}
+	.login_wrap .login_form .btn {width:100px;}
 }
