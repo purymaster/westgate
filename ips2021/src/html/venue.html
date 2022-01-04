@@ -1,0 +1,59 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type1",
+    "tit" : "Summit Venue"
+    })
+
+    <div class="container">
+        <div class="breadcrumb">
+            <ol>
+                <li>Home</li>
+                @@include('breadcrumb.html', {
+                "context" : {
+                "use" : true,
+                "value" : ["General Info", "Summit Venue"]
+                }
+                })
+            </ol>
+        </div>
+    </div>
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div data-sub-content>
+        <div class="container">
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Summit Venue
+                </h3>
+
+                <div class="img_cont block">
+                    <div class="img_box">
+                        <div class="img_wrap">
+                            <img src="../img/photo/kpex2021/01.jpg" alt="">
+                        </div>
+                        <div class="img_wrap">
+                            <img src="../img/photo/kpex2021/02.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="txt_wrap">
+                        <ul class="type1" data-list>
+                            <li>Location : 30, Eulji-ro, Jung-gu, Seoul, Korea
+                            </li>
+                            <li>Tel : <a href="tel:+82-2-771-1000">+82-2-771-1000</a></li>
+                            <li>Fax : +82-2-773-4910</li>
+                            <li>Web : <a href="https://www.lottehotel.com/seoul-hotel/en.html" target="_blank" data-link>https://www.lottehotel.com/seoul-hotel/en.html</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

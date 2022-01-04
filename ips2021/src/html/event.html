@@ -1,0 +1,113 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type1",
+    "tit" : "Previous Event"
+    })
+
+    <div class="container">
+        <div class="breadcrumb">
+            <ol>
+                <li>Home</li>
+                @@include('breadcrumb.html', {
+                "context" : {
+                "use" : true,
+                "value" : ["About IPS", "Previous Event"]
+                }
+                })
+            </ol>
+        </div>
+    </div>
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div data-sub-content>
+        <div class="container">
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    International Police Summit in Seoul, 2019
+                </h3>
+
+                <div class="img_cont">
+                    <div class="txt_wrap">
+                        <p>
+                            The second IPS took place at Shilla Hotel in Seoul, Korea, from 20th to 23rd October 2019.
+                            The theme of the meeting was 'Global Partnership for Smart Policing.' The event was
+                            participated by 103 police leaders and officers from 28 police organizations. The
+                            participants included:
+                        </p>
+                        <ul data-list class="type1">
+                            <li>Two ministers from the Russian Federation and the Republic of Uzbekistan;</li>
+                            <li>The United Nations Assistant-Secretary-General for Rule of Law and Security
+                                Institutions;</li>
+                            <li>Two vice-ministers from the People's Republic of China and the Socialist Republic of
+                                Vietnam;</li>
+                            <li>Five national or federal police heads from Angola, Jordan, Saudi Arabia, Mongolia, and
+                                Myanmar;</li>
+                            <li>Eight deputy heads from Fiji, Germany, Italy, the Netherlands, Rwanda, South Africa,
+                                Turkey, and the United Arab Emirates; and</li>
+                            <li>Nine Director-Generals from Cambodia, Canada, Malaysia, New Zealand, Oman, the
+                                Philippines, Singapore, Uganda, and the United States. </li>
+                        </ul>
+                        <p>
+                            At the plenary meeting, the participants shared their views on promoting international
+                            discussion on policing and law enforcement. They suggested that the global multi-lateral
+                            summits should discuss security and policing issues more often, and sub-committees should be
+                            established on international police cooperation. Using technology for smart policing was
+                            essential, and countries should share their experiences and knowledge in this regard.
+                            Participants also had bilateral talks on investigation cooperation, police training and
+                            capacity building, and infrastructure development in law enforcement. They also agreed to do
+                            more on deporting criminals and protecting foreign nationals.
+                            The delegations also visited the Korea Police World Expo, where they showed much interest in
+                            technology and equipment for smart policing.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    International Police Summit 2015
+                </h3>
+
+                <div class="img_cont">
+                    <div class="txt_wrap">
+                        <p>
+                            The first summit for global police leaders was held at multiple places in Seoul, Korea, from
+                            19th to 23rd October 2015. The main theme of the event was 'Together for a safer world.' 70
+                            police leaders and officers from 16 countries and Interpol came to Korea to attend the
+                            meeting. The participants were:
+                        </p>
+                        <ul data-list class="type1">
+                            <li>Ministers from China and Uzbekistan;</li>
+                            <li>Vice ministers from Indonesia and Vietnam;</li>
+                            <li>Heads of the Police from Guatemala, Mongolia, Papua New Guinea, Sri Lanka, Tunisia, and
+                                the United Arab Emirates;
+                            </li>
+                            <li>Executive Director of the Interpol;</li>
+                            <li>Deputy heads from Cambodia, Hong Kong, Jordan, and the Philippines; and/li>
+                            <li>Director Generals from Japan, Thailand, and Qatar.</li>
+                        </ul>
+                        <p>
+                            The event was mainly composed of bilateral meetings between participating delegates and the
+                            Korean Police leadership to discuss current critical issues. Besides, the Korean Police
+                            introduced its 'K-Cop Wave Program' to support other countries in building police capacity.
+                            The Participants visited Seoul Metropolitan Police Agency to see its 112 police dispatch
+                            system and traffic information center. A police equipment exhibition took place at the
+                            Agency’s mobile police headquarters. The event closed with a cultural experience and
+                            farewell dinner at Sebit island on Han River.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

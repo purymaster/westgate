@@ -1,0 +1,91 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type1",
+    "tit" : "Seoul at a Glance"
+    })
+
+    <div class="container">
+        <div class="breadcrumb">
+            <ol>
+                <li>Home</li>
+                @@include('breadcrumb.html', {
+                "context" : {
+                "use" : true,
+                "value" : ["General Info", "Seoul at a Glance"]
+                }
+                })
+            </ol>
+        </div>
+    </div>
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div data-sub-content>
+        <div class="container">
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    About Seoul
+                </h3>
+
+                <div class="img_cont block">
+                    <div class="img_box">
+                        <div class="img_wrap">
+                            <img src="../img/photo/about/seoul_01.jpg" alt="">
+                            <div class="img_info">
+                                <strong>HANWHA 63 CITY CORPORATION</strong><br>
+                                Photo provided by 이범수 - Korea Tourism Organization
+                            </div>
+                        </div>
+                        <div class="img_wrap">
+                            <img src="../img/photo/about/seoul_02.jpg" alt="">
+                            <div class="img_info">
+                                <strong>Night view of Seoul</strong><br>
+                                Photo provided by 카멜프레스 - Korea Tourism Organization
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="txt_wrap">
+                        <p>
+                            Seoul, the capital of the Republic of Korea, is the heart of Korea's culture and education as well as the heart of political life and the economy. It is located in the western center of the Korean peninsula. With the Han River running across the city and magnificent and splendid mountains surrounding it, it is indeed the center of the peninsula, boastful of scenery rivaling that of any city in the world.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Cultural Heritages
+                </h3>
+
+                <div class="img_cont block">
+                    <div class="img_box">
+                        <div class="img_wrap">
+                            <img src="../img/photo/about/seoul_03.jpg" alt="">
+                            <div class="img_info">
+                                <strong>Gyeongbokgung Palace</strong><br>
+                                Photo provided by 두드림 - Korea Tourism Organization
+                            </div>
+                        </div>
+                        <div class="img_wrap">
+                            <img src="../img/photo/about/seoul_04.jpg" alt="">
+                            <div class="img_info">
+                                <strong>Changgyeonggung Palace</strong><br>
+                                Photo provided by 김지호 - Korea Tourism Organization
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt_wrap">
+                        <p>
+                            Seoul is embracing the cultural heritages of Korea with five well-preserved ancient palaces and 5 World Heritage Sites designated by UNESCO. There is no exaggeration to say that Seoul, the most traditional but Modern city, which makes it definitely attractive to the visitors from overseas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

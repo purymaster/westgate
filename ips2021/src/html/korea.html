@@ -1,0 +1,133 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type1",
+    "tit" : "About Korea"
+    })
+
+    <div class="container">
+        <div class="breadcrumb">
+            <ol>
+                <li>Home</li>
+                @@include('breadcrumb.html', {
+                "context" : {
+                "use" : true,
+                "value" : ["General Info", "About Korea"]
+                }
+                })
+            </ol>
+        </div>
+    </div>
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div data-sub-content>
+        <div class="container">
+
+            <div data-column-box>
+                <div class="img_cont">
+                    <p>
+                        The Republic of Korea (herein after Korea) is a country visited by approximately ten million
+                        international travelers every year. With its long history in culture and tradition, the country
+                        has a lot to offer to travelers.
+                    </p>
+                </div>
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Where is Korea?
+                </h3>
+
+                <div class="img_cont block">
+                    <div class="img_box">
+                        <div class="img_wrap">
+                            <img src="../img/photo/about/korea_01.jpg" alt="">
+                            <div class="img_info">
+                                Photo provided by 조우진 - Korea Tourism Organization
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt_wrap">
+                        <p>
+                            The Korean peninsula, roughly 1,030 kilometers long and 175 kilometers wide at its narrowest
+                            point, is located in Northeast Asia. With Seoul as its capital city, Korea's total land area
+                            is 100,363 kilometers squared. Korea's neighbors include Japan to the east, China to the
+                            west, and Democratic People's Republic of Korea (North Korea) across the northern border.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Korean Currency
+                </h3>
+
+                <div class="img_cont">
+                    <div class="txt_wrap">
+                        <p>
+                            Korea's official monetary unit is the won.<br>
+                            When you need to exchange your foreign currency into Korean won, visit a bank or authorized
+                            exchange service center. Banks are generally open 09:00-16:00 on weekdays. Please be aware
+                            that money exchange of old currency may not be accepted at certain locations. Make sure to
+                            check if banks or authorized exchange service centers accept old currency beforehand.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Electricity and Voltage
+                </h3>
+
+                <div class="img_cont">
+                    <div class="txt_wrap">
+                        <p>
+                            The standard voltage in Korea is 220 volts at 60 Hertz, and the outlet has two round holes. If you do not have a multi-voltage travel adapter, you may ask to borrow or purchase one from your hotel's front desk. You can also find them at the airport, retail stores, major duty-free shops, and even convenience stores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    SIM Card Purchase (Korea SIM card)
+                </h3>
+
+                <div class="img_cont">
+                    <div class="txt_wrap">
+                        <p>
+                            Travelers can purchase a SIM card to insert in their personal cell phone device to enjoy unlimited data or receive a personal number while traveling in Korea. These prepaid SIM cards usually cost less than roaming services and offer unlimited data for a period of 5, 10 or 30 days. The SIM cards can be purchased at convenience stores at Incheon International Airport and Korea SIM Card’s official website. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    BUSINESS HOURS
+                </h3>
+
+                <div class="img_cont">
+                    <div class="txt_wrap">
+                        <ul data-list class="type1">
+                            <li>
+                                <strong>Banks</strong><br>
+                                Weekday: 09:00-16:00 / Closed weekends & public holidays
+                            </li>
+                            <li>
+                                <strong>Government Offices and Organizations</strong><br>
+                                Weekday: 09:00-18:00 / Closed weekends & public holidays
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

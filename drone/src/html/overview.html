@@ -1,0 +1,126 @@
+@@include('header.html')
+<div class="content">
+
+    <div data-sub-visual>
+        <div class="container box">
+            <img src="../img/bg/bg_sub_type1.png" alt="">
+            <div class="txt_wrap">
+                <div class="txt_info">
+                    <div class="tit">박람회</div>
+                    <p class="sub_txt">
+                        대한민국 드론 박람회를 소개합니다.<br>
+                        야외비행시연, 테마별 전시관, 드론체험관 등 <br>
+                        다양한 프로그램을 제공합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub_page expo_info">
+        <div class="container">
+
+            <div data-tab-menu>
+                <ul class="type3">
+                    <li class="on"><a href="#none">박람회 소개</a></li>
+                    <li><a href="#none">전시장 배치도</a></li>
+                    <li><a href="#none">COVID-19 방역대책 안내</a></li>
+                </ul>
+            </div>
+
+            <section data-sub-content>
+                <h1>박람회 소개</h1>
+                <dl>
+                    <div>
+                        <dt>
+                            <span>행사개요</span>
+                        </dt>
+                        <dd>
+                            2021 제 2회 대한민국 드론박람회 (KOREA DRONE EXPO 2021)
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>
+                            <span>기ㅤㅤ간</span>
+                        </dt>
+                        <dd>
+                            2021년 12월 16일(목) ~ 12월 18일(일) / 3일간
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>
+                            <span>장ㅤㅤ소</span>
+                        </dt>
+                        <dd>
+                            [전시회] 여의도공원 광장 문화의 마당<br>
+                            [컨퍼런스] 여의도 루나미엘레
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>
+                            <span>전시내용</span>
+                        </dt>
+                        <dd>
+                            [야외 비행시연] 드론 실증도시 / 규제 샌드박스 사업자 실증내용 야외 비행시연<br>
+                            [테마별 전시관] 레저·관광, 배송·물류, 안전점검, 감시·정찰, UAM전시관, 실증도시&샌드박스 전시관, 부처별 R&D관<br>
+                            [드론 체험관] 직접 참여 가능한 드론 체험관
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>
+                            <span>부대행사</span>
+                        </dt>
+                        <dd>
+                            컨퍼런스 : 드론 관련 기관 및 협단체 컨퍼런스 
+                            <small>(*상기 부대행사는 변경될 수 있습니다)</small>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>
+                            <span>주ㅤㅤ최</span>
+                        </dt>
+                        <dd>
+                            국토교통부, 과학기술정보통신부, 산업통상자원부
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>
+                            <span>주ㅤㅤ관</span>
+                        </dt>
+                        <dd>
+                            항공안전기술원, 한국교통안전공단, 한국항공우주연구원, 국토교통과학기술진흥원 등
+                        </dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section data-sub-content>
+                <h1>오시는 길</h1>
+                <div data-column-box>
+                    <div id="map" style="height:400px;"></div>
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSUnSOhfav4RQsEncwd-mNNHFZfickJoA&callback=initMap&region=kr"></script>
+                    <script>
+                        var map, marker;
+                        function initMap() {
+                            map = new google.maps.Map(document.getElementById('map'), {
+                                center: { lat: 37.524476, lng: 126.9203925 },
+                                zoom: 15
+                            })
+                            marker = new google.maps.Marker({
+                                map: map,
+                                draggable: true,
+                                position: { lat: 37.524476, lng: 126.9203925 },
+                            })
+                        }
+                        initMap();
+                    </script>
+                    <p style="margin-top:1.5em;">여의도공원 광장 문화의 마당(서울 영등포구 여의도동)</p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+</div>
+@@include('footer.html')

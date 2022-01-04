@@ -1,0 +1,70 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type3",
+    "tit" : "Register"
+    })
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div data-sub-content>
+        <div class="container">
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Payment Method
+                </h3>
+                <div class="payment_box">
+                    <label class="option"><input type="radio" name="payment" id="payment1">
+                        Online Credit Card Payment
+                    </label>
+                    <label class="option"><input type="radio" name="payment" id="payment2">
+                        Bank Wire Transfer
+                    </label>
+                </div>
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Cancellation and Refund Policy
+                </h3>
+                <p>
+                    Refunds will be made after the end of ‘ICDE leadership summit 2022’. And all cancellations must be submitted in writing via email (<a href="mailto:icde2022.info@gmail.com"
+                    data-link>icde2022.info@gmail.com</a>) to the Secretariat.
+                </p>
+                <div data-table class="fix">
+                    <table class="center">
+                        <colgroup>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">By 15 December</th>
+                                <th scope="col">From 15 December</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>100% Refund</td>
+                                <td>No Refund</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul data-list>
+                    <li style="padding-left:0;">
+                        * In case of changing participation mode from face-to-face to virtual or from virtual to face-to-face due to COVID-19, registrants are advised to cancel the initial registration and register again regardless of the due date indicated above. However, please email the Secretariat first to inform your plan to change the mode.
+                    </li>
+                </ul>
+                <div data-ctr-btn>
+                    <a href="javascript:history.back();" data-btn>Cancel</a>
+                    <button type="submit" class="submit" data-btn>Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

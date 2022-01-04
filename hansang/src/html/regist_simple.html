@@ -1,0 +1,102 @@
+@@include('header.html')
+<div class="content">
+
+    <!-- 서브 비주얼 영역 -->
+    <div data-sub-visual>
+        <div class="container">
+            <div class="visual_wrap">
+                <div class="tit_wrap">
+                    <h2>등록</h2>
+                    <span class="sub_tit">Registration</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //서브 비주얼 영역 -->
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div data-sub-content>
+
+        <div data-column-box>
+            <div class="container">
+                <h3 class="column_tit">
+                    개인정보입력
+                </h3>
+                <div data-input-form="">
+                    <table>
+                        <colgroup>
+                            <col style="width:120px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <label for="userName">성명</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="userName" class="wide">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="userCompany">소속명</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="userCompany" class="wide">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="userPart">분야</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="userPart" class="wide">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="userMail">이메일</label>
+                                </th>
+                                <td>
+                                    <div class="inline email">
+                                        <input type="text" name="u_email1" value="" title="이메일 주소" required=""
+                                            id="userMail">
+                                        <span>@</span>
+                                        <input type="text" name="u_email2" value="" title="이메일 주소" required=""
+                                            class="mail_account">
+                                        <div data-select-box="">
+                                            <select name="sel_email" title="이메일 주소" required="">
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="userPhone1">연락처</label>
+                                </th>
+                                <td>
+                                    <div class="inline phone">
+                                        <input type="text" name="u_tel1" title="전화번호 첫자리" maxlength="4" class="num"
+                                            required="" id="userPhone1">
+                                        <input type="text" name="u_tel2" title="전화번호 중간자리" maxlength="4" class="num"
+                                            required="">
+                                        <input type="text" name="u_tel3" title="전화번호 끝자리" maxlength="4" class="num"
+                                            required="">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div data-ctr-btn>
+                    <button type="submit" data-btn class="submit">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

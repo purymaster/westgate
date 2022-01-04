@@ -1,0 +1,59 @@
+@@include('header.html')
+<div class="content">
+
+    <div data-sub-visual>
+        <div class="container box">
+            <img src="../img/bg/bg_sub_type1.png" alt="">
+            <div class="txt_wrap">
+                <div class="txt_info">
+                    <div class="tit">박람회</div>
+                    <p class="sub_txt">
+                        대한민국 드론 박람회를 소개합니다.<br>
+                        야외비행시연, 테마별 전시관, 드론체험관 등 <br>
+                        다양한 프로그램을 제공합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub_page">
+        <div class="container">
+
+            <div data-tab-menu>
+                <ul class="type3">
+                    <li><a href="#none">박람회 소개</a></li>
+                    <li class="on"><a href="#none">전시장 배치도</a></li>
+                    <li><a href="#none">COVID-19 방역대책 안내</a></li>
+                </ul>
+            </div>
+
+            <section data-sub-content>
+                <h1>전시장 배치도</h1>
+                <div data-column-box>
+                    <div id="map" style="height:400px;"></div>
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSUnSOhfav4RQsEncwd-mNNHFZfickJoA&callback=initMap&region=kr"></script>
+                    <script>
+                        var map, marker;
+                        function initMap() {
+                            map = new google.maps.Map(document.getElementById('map'), {
+                                center: { lat: 37.524476, lng: 126.9203925 },
+                                zoom: 15
+                            })
+                            marker = new google.maps.Marker({
+                                map: map,
+                                draggable: true,
+                                position: { lat: 37.524476, lng: 126.9203925 },
+                            })
+                        }
+                        initMap();
+                    </script>
+                    <p style="margin-top:1.5em;">여의도공원 광장 문화의 마당(서울 영등포구 여의도동)</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</div>
+@@include('footer.html')

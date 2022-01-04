@@ -1,0 +1,138 @@
+@@include('header.html')
+<div class="content">
+
+    <div data-sub-visual>
+        <div class="container box">
+            <img src="../img/bg/bg_sub_type3.png" alt="">
+            <div class="txt_wrap">
+                <div class="txt_info">
+                    <div class="tit">프레스센터</div>
+                    <!-- <p class="sub_txt">
+                        
+                    </p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div class="sub_page">
+        <div class="container">
+            <section data-sub-content>
+                <h1>영상자료실</h1>
+
+                <div data-search>
+                    <div class="search_wrap">
+                        <!-- <div data-select-box>
+                            <select name="" id="">
+                                <option value="">Category</option>
+                                <option value="">Notice</option>
+                            </select>
+                        </div> -->
+                        <input type="text" title="검색어" placeholder="검색어 입력" name="search_input">
+                        <button type="submit">
+                            <span>검색</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div data-gallery>
+                    <ul>
+                        <li>
+                            <a href="#" data-open-modal data-target="#modal"
+                                data-src="https://www.youtube.com/embed/yrU3ac44mWQ">
+                                <img src="https://via.placeholder.com/1000x600" alt="">
+                                <div class="txt_wrap">
+                                    <p class="tit">영상 제목입니다. 영상 제목입니다. 영상 제목입니다. 영상 제목입니다. 영상 제목입니다. </p>
+                                    <span class="time">9999-99-99</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-open-modal data-target="#modal"
+                                data-src="https://www.youtube.com/embed/8PSYVi7Djr0">
+                                <img src="https://picsum.photos/1000/600" alt="">
+                                <div class="txt_wrap">
+                                    <p class="tit">영상 제목입니다.</p>
+                                    <span class="time">9999-99-99</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-open-modal data-target="#modal"
+                                data-src="https://www.youtube.com/embed/iqXF38SjRdc">
+                                <img src="https://picsum.photos/1000/600" alt="">
+                                <div class="txt_wrap">
+                                    <p class="tit">영상 제목입니다.</p>
+                                    <span class="time">9999-99-99</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-open-modal data-target="#modal"
+                                data-src="https://www.youtube.com/embed/6aGIEFJi4tw">
+                                <img src="https://picsum.photos/1000/600" alt="">
+                                <div class="txt_wrap">
+                                    <p class="tit">영상 제목입니다.</p>
+                                    <span class="time">9999-99-99</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-open-modal data-target="#modal"
+                                data-src="https://www.youtube.com/embed/YVZrx1-UQvU">
+                                <img src="https://picsum.photos/1000/600" alt="">
+                                <div class="txt_wrap">
+                                    <p class="tit">영상 제목입니다.</p>
+                                    <span class="time">9999-99-99</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-open-modal data-target="#modal"
+                                data-src="https://www.youtube.com/embed/DFH2NpzgQ2E">
+                                <img src="https://picsum.photos/1000/600" alt="">
+                                <div class="txt_wrap">
+                                    <p class="tit">영상 제목입니다.</p>
+                                    <span class="time">9999-99-99</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- @@include('paging.html') -->
+
+                <!-- 모달 팝업 -->
+                <div data-modal="" data-type="fix" id="modal">
+                    <article class="modal">
+                        <div class="video_wrap">
+                            <iframe src="" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                        </div>
+                        <button class="close">닫기</button>
+                    </article>
+                </div>
+                <!-- //모달 팝업 -->
+
+                <script>
+                    $(function () {
+                        $('[data-open-modal]').on('click', function () {
+                            var src = $(this).data('src');
+                            $('[data-modal]').find('iframe').attr('src', src);
+                        });
+
+                        $('[data-modal]').find('.close').on('click', function () {
+                            $('[data-modal]').find('iframe').attr('src', "");
+                        });
+                    })
+                </script>
+
+            </section>
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

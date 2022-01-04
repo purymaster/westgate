@@ -1,0 +1,82 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type1",
+    "tit" : "Invitation"
+    })
+
+    <div class="container">
+        <div class="breadcrumb">
+            <ol>
+                <li>Home</li>
+                @@include('breadcrumb.html', {
+                "context" : {
+                "use" : true,
+                "value" : ["About IPS", "Invitation"]
+                }
+                })
+            </ol>
+        </div>
+    </div>
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div data-sub-content class="invitaion">
+        <div class="container">
+
+            <div class="greeting">
+                <p class="main_tit">
+                    Dear police leaders and colleagues around the world,
+                </p>
+                <p>
+                    Please accept my sincerest appreciation and warmest welcome for you to come to the International
+                    Police Summit (IPS) in Seoul, the Republic of
+                    Korea, from 20th to 23rd October 2021. It is my greatest honor to invite you to this unique event
+                    hosted by the Korean National Police Agency to share
+                    a common understanding of the need for global partnership in policing. Primarily, the Summit will
+                    provide a meaningful forum for police leaders
+                    worldwide to resume international exchanges and expand cooperation to cope with new threats in the
+                    new era where we have to live with COVID-19.
+                </p>
+                <p>
+                    Notably, the virus has caused rapid changes in many aspects of our lives. The police worldwide are
+                    facing new challenges in the global crisis with the
+                    advent of the new normal. In times of upheaval, we have to find a new approach to police activities,
+                    which must be supported by sharing, solidarity, and
+                    cooperation at the global level. I believe the 2021 IPS will be an excellent opportunity for all
+                    participants for sustainable communication and friendship.
+                </p>
+
+                <div class="split">
+                    <img src="../img/img/img_general.jpg" alt="Commissioner General's Portrait" class="portrait">
+                    <div class="txt_wrap">
+                        <p>
+                            The Republic of Korea will celebrate its 76th National Police Day during the
+                            event. The Korean National Police will host other online and offline events
+                            for the same week of the 2021 IPS, including the Korean Police World Expo,
+                            the International Symposium on Cybercrime Response, and the International
+                            CSI Conference and Exhibition. The participants in the 2021 IPS will also
+                            have the opportunity to attend these events.
+                        </p>
+                        <p>
+                            Ensuring continuous commitment of the Korean National Police working
+                            together with you for world peace and safety, I look forward to meeting you
+                            all soon.
+                        </p>
+                        <div class="author">
+                            <img src="../img/img/img_signature.png" alt="" class="signature">
+                            <div>
+                                Commissioner General<br>
+                                Korean National Police Agency<br>
+                                <strong>Kim Chang-Yong</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

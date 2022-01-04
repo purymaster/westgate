@@ -1,0 +1,188 @@
+@@include('header.html')
+<div class="content main_page">
+
+	<!-- 메인 슬라이드 -->
+	<div class="container">
+		<div class="main_visual">
+			<div class="slider">
+				<div data-slide>
+					<div class="slide" style="background-image:url(../img/bg/main_slide01.png);">
+						<a href="#"></a>
+					</div>
+					<div class="slide" style="background-image:url(../img/bg/main_slide02.png);">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(function () {
+			$('.main_visual [data-slide]').each(function () {
+				if ($(this).find('.slide').length > 1) {
+					$(this).slick({
+						arrows: false,
+						autoplay: true,
+						autoplaySpeed: 5000,
+						dots: true
+					});
+				}
+			});
+		});
+	</script>
+	<!-- //메인 슬라이드 -->
+
+	<!-- Background -->
+	<div class="container">
+		<section class="background">
+			<h2>Background</h2>
+			<p>
+				The police are required to put more efforts for 'Smart Policing' responding to the fourth indextrial
+				revolution,<br>
+				by effecitive using high-tech equipment and forest and forensic science as well as widely adoping
+				innvatice
+				information technology such as big data and artificial intelligence in crime prevention adn response.
+			</p>
+		</section>
+	</div>
+	<!-- //Background -->
+
+	<!-- 주요 메뉴 -->
+	<div class="container">
+		<ul class="main_menu">
+			<li>
+				<a href="#">
+					<span>Concept</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>Program</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>Registration</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>Notice</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- //주요 메뉴 -->
+
+	<!-- 영상 -->
+	<div class="container">
+		<div class="movie">
+			<div class="video_wrap">
+				<iframe src="https://www.youtube.com/embed/AulHEVz75lY" title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+			<a href="#">
+				WELCOME
+				<strong>IPS 2021</strong>
+			</a>
+		</div>
+	</div>
+	<!-- //영상 -->
+
+	<!-- 사진 -->
+	<section class="photo">
+		<div class="container">
+			<h2>Photo Gallery</h2>
+			<ul class="gallery">
+				<li>
+					<a href="#">
+						<img src="https://via.placeholder.com/600x400" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="https://picsum.photos/600/400" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="https://picsum.photos/600/400" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="https://picsum.photos/600/400" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="https://picsum.photos/600/400" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="https://picsum.photos/600/400" alt="">
+					</a>
+				</li>
+				<!-- <li style="width:100%; text-align:center;">No Data</li> -->
+			</ul>
+			<div class="more">
+				<a href="#" class="btn">More Photo</a>
+			</div>
+		</div>
+	</section>
+	<!-- //사진 -->
+
+	<!-- 스폰서 -->
+	<section class="sponsor">
+		<div class="container">
+			<div class="slide_wrap">
+				<div data-slide>
+					<div class="slide">
+						<a href="#">
+							<img src="../img/logo/sponsor_01.png" alt="">
+						</a>
+					</div>
+					<div class="slide">
+						<a href="#">
+							<img src="../img/logo/sponsor_02.png" alt="">
+						</a>
+					</div>
+					<div class="slide">
+						<a href="#">
+							<img src="../img/logo/sponsor_03.png" alt="">
+						</a>
+					</div>
+					<div class="slide">
+						<a href="#">
+							<img src="../img/logo/sponsor_04.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				$(function () {
+					$('.sponsor [data-slide]').each(function () {
+						if ($(this).find('.slide').length > 1) {
+							$(this).slick({
+								arrows: false,
+								slidesToShow: 3,
+								slidesToScroll: 1,
+								autoplay: true,
+								autoplaySpeed: 2000,
+								variableWidth: true,
+								centerMode: true,
+							});
+						}
+					});
+				});
+			</script>
+		</div>
+	</section>
+	<!-- //스폰서 -->
+
+</div>
+@@include('footer.html')

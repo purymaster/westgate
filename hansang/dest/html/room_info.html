@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>제19차 세계한상대회</title>
+	<link rel="stylesheet" href="../css/ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+	<div class="wrap">
+		<div data-header>
+			<header>
+				<div class="logo">
+					<a href="#">
+						<h1>
+							<img src="../img/img/img_logo.png" alt="제19차 세계한상대회">
+							<div class="txt_wrap">
+								<div class="tit">
+									제19차 <strong>세계<span>한상</span>대회</strong>
+								</div>
+								<div class="sub_txt">
+									THE 19TH WORLD <span>KOREAN BUSINESS</span> CONVENTION
+								</div>
+								<div class="date">
+									2021.10.19(화)-10.21(목) 대전컨벤션센터
+								</div>
+							</div>
+						</h1>
+					</a>
+				</div>
+				<div class="header_wrap">
+					<button type="button" class="mobile open_menu">
+						<span></span>
+						<span></span>
+						<span></span>
+						모바일 메뉴 열기
+					</button>
+					<div class="menu_wrap">
+						<div class="nav_menu">
+							<nav>
+								<ul class="main-menu">
+									<!-- [D] 현재 페이지 a태그에 on 클래스 부여 -->
+									<li>
+										<a href="#none">세계한상대회</a>
+										<ul class="sub-menu">
+											<li><a href="#">인사말(이사장, 대회장)</a></li>
+											<li><a href="#">대회개요</a></li>
+											<li><a href="#">행사장 안내</a></li>
+											<li><a href="#">전체 대회일정</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#none">프로그램</a>
+										<ul class="sub-menu">
+											<li><a href="#">전체 프로그램</a></li>
+											<li>
+												<a href="#none">세부 프로그램</a>
+												<ul class="sub-menu">
+													<li><a href="#">Daily Program</a></li>
+													<li><a href="#">세미나</a></li>
+													<li><a href="#">영비즈니스리더스포럼</a></li>
+													<li><a href="#">리딩 CEO 포럼</a></li>
+													<li><a href="#">기업 IR</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#none">상시 프로그램</a>
+												<ul class="sub-menu">
+													<li><a href="#">일대일비즈니스미팅</a></li>
+													<li><a href="#">현장쇼룸</a></li>
+													<li><a href="#">단체별 총회</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#none">등록/숙박</a>
+										<ul class="sub-menu">
+											<li><a href="#">등록안내</a></li>
+											<li><a href="#">숙박안내</a></li>
+										</ul>
+									</li>
+									<li class="only">
+										<a href="#">한상대회FAQ</a>
+									</li>
+								</ul>
+							</nav>
+							<button type="button" class="mobile close_menu">모바일 메뉴 닫기</button>
+						</div>
+						<ul class="top_menu">
+							<li>
+								<a href="#none">HOME</a>
+							</li>
+							<!-- [D] 로그인 전 -->
+							<li>
+								<a href="#none">LOGIN</a>
+							</li>
+							<li>
+								<a href="#none">SIGNUP</a>
+							</li>
+							<!-- [D] 로그인 후 -->
+							<!--
+							<li>
+								<a href="#none">LOGOUT</a>
+							</li>
+							<li>
+								<a href="#none">MYPAGE</a>
+							</li>
+							-->
+							<li class="lang">
+								<a href="#none">ENGLISH</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="content">
+
+			<!-- 서브 비주얼 영역 -->
+			<div data-sub-visual>
+				<div class="container">
+					<div class="visual_wrap">
+						<div class="tit_wrap">
+							<h2>숙박안내</h2>
+							<span class="sub_tit">Reservation Guideline</span>
+						</div>
+						<div data-tab-link>
+							<!-- [D] 현재 페이지 a태그에 on 클래스 부여 -->
+							<a href="#"><span>등록안내</span></a>
+							<a href="#" class="on"><span>숙박안내</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //서브 비주얼 영역 -->
+
+			<!--  서브 페이지 컨텐츠 -->
+			<div data-sub-content class="room_info">
+
+				<div data-column-box class="grey">
+					<div class="container">
+						<h3 class="column_tit">호텔정보 및 할인가격 안내</h3>
+						<div class="map_view">
+							<div data-tab-menu>
+								<ul class="type2">
+									<li class="on"><a href="#lotte">롯데호텔월드(5성)</a></li>
+									<li><a href="#silla">신라스테이삼성(4성)</a></li>
+								</ul>
+							</div>
+							<div class="map_box">
+								<div class="map" id="map1" lat="37.51160588253649" lng="127.0999831456546"></div>
+								<div class="map" id="map2" lat="37.50998672219405" lng="127.06312233365396" style="display:none;"></div>
+							</div>
+						</div>
+						<script>
+							$('[data-tab-menu] a').on('click', function() {
+								var idx = $(this).parent().index();
+								$('.map_box').find('.map').eq(idx).show().siblings().hide();
+							});
+						</script>
+						<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSUnSOhfav4RQsEncwd-mNNHFZfickJoA&amp;callback=initMap&amp;"></script>
+						<script>
+							var maps = [];
+							var markers = [];
+
+							function initMap() {
+								var $maps = $('.map');
+								$.each($maps, function(i, value) {
+									var spot = {
+										lat: parseFloat($(value).attr('lat')),
+										lng: parseFloat($(value).attr('lng'))
+									};
+
+									var mapDivId = $(value).attr('id');
+
+									maps[mapDivId] = new google.maps.Map(document.getElementById(mapDivId), {
+										zoom: 16,
+										center: spot
+									});
+
+									markers[mapDivId] = new google.maps.Marker({
+										position: spot,
+										map: maps[mapDivId]
+									});
+								})
+							}
+							initMap();
+						</script>
+					</div>
+				</div>
+
+				<div data-column-box>
+					<div class="container">
+						<div data-tab-panel>
+							<div class="tabpanel" id="lotte">
+								<div data-table class="head">
+									<table class="center">
+										<colgroup>
+											<col style="width:20%;">
+											<col style="width:15%;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" colspan="3">롯데호텔월드(5성)</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td rowspan="6"><img src="../img/img/img_hotel_01.jpg" alt=""></td>
+												<th scope="row">전화번호</th>
+												<td class="left">02-419-7000</td>
+											</tr>
+											<tr>
+												<th scope="row">홈페이지</th>
+												<td class="left"><a href="https://www.lottehotel.com/world-hotel/ko.html" data-link>https://www.lottehotel.com/world-hotel/ko.html</a></td>
+											</tr>
+											<tr>
+												<th scope="row">주소</th>
+												<td class="left">서울특별시 송파구 올림픽로 240</td>
+											</tr>
+											<tr>
+												<th scope="row">베뉴와의 거리</th>
+												<td class="left">호텔 내 행사장 이용</td>
+											</tr>
+											<tr>
+												<th scope="row">체크인/아웃</th>
+												<td class="left">
+													입실 : 15:00이후<br>
+													퇴실 : 12:00이전
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">객실 내 정보</th>
+												<td class="left">
+													<ul class="type3" data-list>
+														<li>
+															1) 일반 : 49” UHD TV 손전등 슬리퍼 전화기 티포트 금고 구둣주걱 구두클리너
+														</li>
+														<li>
+															2) 욕실: 1회용 칫솔 및 치약 면도기 목욕 가운 비데 헤어드라이어
+														</li>
+														<li>
+															3) 기타<br>
+															케이블/위성 TV 채널<br>
+															무료 생수 1일 2병 무료 차(TEA) 서비스
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div data-table class="head fix" style="margin-top:30px;">
+									<table class="center">
+										<colgroup>
+											<col style="width:30%;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">구분</th>
+												<th scope="col">객실타입</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td rowspan="2">
+													(1인실, 조식포함)<br>
+													&lt;2박기준&gt;
+												</td>
+												<td>
+													디럭스룸<br>
+													(Deluxe Room)
+												</td>
+											</tr>
+											<tr>
+												<td>
+													클럽룸(Club floor Room)<br>
+													<span class="notice">*</span>1인 클럽라운지 이용 포함
+												</td>
+											</tr>
+											<tr>
+												<td rowspan="2">
+													(2인실, 조식포함)<br>
+													&lt;2박기준&gt;
+												</td>
+												<td>
+													디럭스룸<br>
+													(Deluxe Room)
+												</td>
+											</tr>
+											<tr>
+												<td>
+													클럽룸(Club floor Room)<br>
+													<span class="notice">*</span>2인 클럽라운지 이용 포함
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<ul class="type2" data-list>
+									<li><span class="notice">*</span>본 금액은 2박 기준이며, 1박 예약도 가능합니다.</li>
+								</ul>
+							</div>
+							<div class="tabpanel" id="silla" style="display:none;">
+								<div data-table class="head">
+									<table class="center">
+										<colgroup>
+											<col style="width:20%;">
+											<col style="width:15%;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" colspan="3">신라스테이삼성(4성)</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td rowspan="6"><img src="../img/img/img_hotel_02.jpg" alt=""></td>
+												<th scope="row">전화번호</th>
+												<td class="left">02-2175-9000</td>
+											</tr>
+											<tr>
+												<th scope="row">홈페이지</th>
+												<td class="left"><a href="https://www.shillastay.com/samsung/index.do" data-link>https://www.shillastay.com/samsung/index.do</a></td>
+											</tr>
+											<tr>
+												<th scope="row">주소</th>
+												<td class="left">서울시 강남구 영동대로 506</td>
+											</tr>
+											<tr>
+												<th scope="row">베뉴와의 거리</th>
+												<td class="left">차량/지하철로 15분</td>
+											</tr>
+											<tr>
+												<th scope="row">체크인/아웃</th>
+												<td class="left">
+													입실 : 15:00이후<br>
+													퇴실 : 12:00이전
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">객실 내 정보</th>
+												<td class="left">
+													<ul class="type3" data-list>
+														<li>
+															1) 일반 : 40” LED TV (35채널) 책상 냉장고 , 다리미, 개인금고, 구둣주걱
+														</li>
+														<li>
+															2) 욕실: 아베다 욕실용품, 2개의 목욕가운 , 덴탈 키트 , 헤어드라이기
+														</li>
+														<li>
+															3) 기타<br>
+															무료커피/티백 , 무료 생수 2병 (1박 기준)<br>
+															무료 유무선 인터넷, 유니버셜 어댑터(220V 전용)
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div data-table class="head fix" style="margin-top:30px;">
+									<table class="center">
+										<colgroup>
+											<col style="width:30%;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">구분</th>
+												<th scope="col">객실타입</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													(1인실, 조식포함)<br>
+													&lt;2박기준&gt;
+												</td>
+												<td>
+													스탠다드룸
+												</td>
+											</tr>
+											<tr>
+												<td>
+													(2인실, 조식포함)<br>
+													&lt;2박기준&gt;
+												</td>
+												<td>
+													스탠다드룸
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<ul class="type2" data-list>
+									<li><span class="notice">*</span>본 금액은 2박 기준이며, 1박 예약도 가능합니다.</li>
+								</ul>
+							</div>
+						</div>
+						<div data-ctr-btn>
+							<a href="https://www.kimstravel.com/ko/hansang2021accommodation
+                    " class="submit" target="_blank" data-btn>숙박예약하기</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!--  //서브 페이지 컨텐츠 -->
+
+		</div>
+		<footer>
+			<div class="container footer_wrap">
+				<div class="info">
+					<img src="../img/img/img_footer_logo.png" alt="">
+					<div class="txt_wrap">
+						<address>
+							제주본사: 제주특별자치도 서귀포시 신중로 55 Tel. +82-64-786-0200<br>
+							서울사무소: 서울특별시 서초구 남부순환로 2558 (외교센터 4층) Tel. +82-2-3415-0100<br>
+							세계한상대회 본부사무국: Tel. +82-2-3415-0051, 0052
+						</address>
+					</div>
+					<div class="copyright">
+						Copyright© Overseas Koreans Foundation. All rights reserved.
+					</div>
+				</div>
+				<div class="side">
+					<div class="sns">
+						<a href="#" target="_blank" class="facebook">세계한상대회 Facebook</a>
+						<a href="#" target="_blank" class="tweeter">세계한상대회 Tweeter</a>
+						<a href="#" target="_blank" class="youtube">세계한상대회 Youtube Channel</a>
+						<a href="#" target="_blank" class="linkedin">세계한상대회 Linkedin</a>
+						<a href="#" target="_blank" class="naver">세계한상대회 Naver Blog</a>
+					</div>
+					<div class="bottom_menu">
+						<a href="#">이용약관</a>
+						<a href="#">개인정보처리보호</a>
+						<a href="#">홍보자료 다운로드</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="move_top">
+		<button type="button">Move to page top</button>
+	</div>
+</body>
+
+</html>

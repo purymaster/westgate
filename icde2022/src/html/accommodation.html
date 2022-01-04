@@ -1,0 +1,149 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type4",
+    "tit" : "Accomodation"
+    })
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div data-sub-content>
+        <div class="container">
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Conrad Seoul
+                </h3>
+                <div class="img_cont block">
+                    <div class="txt_wrap" style="margin-bottom:15px;">
+                        <p>
+                            The hotel is at the heart of Yeouido Business District, three blocks from Yeouido Hangang
+                            Park on the banks of Han River.<br>
+                            It is connected to IFC Mall and within four blocks of Yeouido subway station, linking to
+                            central Seoul..<br>
+                            Perks include a 24-hour fitness center, indoor pool, and spa services, and our concierge can
+                            offer local tips.
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <div class="img_wrap">
+                            <img src="../img/photo/conrad/01.jpg" alt="">
+                        </div>
+                        <div class="img_wrap">
+                            <img src="../img/photo/conrad/02.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="txt_wrap">
+                        <ul class="type1" data-list>
+                            <li>ADDRESS : 10 Gukjegeumyung-ro Yeouido Yeongdeungpo-gu Seoul, Republic of Korea</li>
+                            <li>CALL : <a href="tel:+82-2-6137-7000">+82-2-6137-7000</a></li>
+                            <li>WEBSITE : <a href="https://www.hilton.com/en/hotels/selcici-conrad-seoul/"
+                                    target="_blank" data-link>https://www.hilton.com/en/hotels/selcici-conrad-seoul/</a>
+                            </li>
+                        </ul>
+                        <div class="map" id="map1" style="height:400px;" lat="37.52550585688926" lng="126.92658638479415"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Glad Yeouido
+                </h3>
+                <div class="img_cont block">
+                    <div class="txt_wrap" style="margin-bottom:15px;">
+                        <p>
+                            Glad Yeouido is a global hotel brand for smart travelers. Positioned between excessively
+                            luxurious standardized deluxe hotels and boutique hotels that focus too much on design, GLAD
+                            YEOUIDO aims to become a new category of practical hotel. Our uniquely efficient and cozy
+                            rooms with witty and friendly design touches will make you feel at home.
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <div class="img_wrap">
+                            <img src="../img/photo/glad/01.jpg" alt="">
+                        </div>
+                        <div class="img_wrap">
+                            <img src="../img/photo/glad/02.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="txt_wrap">
+                        <ul class="type1" data-list>
+                            <li>ADDRESS : 6, Uisadang-daero, Yeongdeungpo-gu, Seoul, Republic of Korea</li>
+                            <li>CALL : <a href="tel:+82-2-6222-5000">+82-2-6222-5000</a></li>
+                            <li>WEBSITE : <a href="https://www.hilton.com/en/hotels/selcici-conrad-seoul/"
+                                    target="_blank" data-link>https://gladyeouido-hotels.com/en/web/yeouido</a>
+                            </li>
+                        </ul>
+                        <div class="map" id="map2" style="height:400px;" lat="37.527617195224785" lng="126.91731931363046"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Kensington Hotel Yeouido Seoul
+                </h3>
+                <div class="img_cont block">
+                    <div class="txt_wrap" style="margin-bottom:15px;">
+                        <p>
+                            This hotel where you can feel the modern classical atmosphere of New York City.<br>
+                            You can see the splendid night view and the Han River in Seoul at a glance.
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <div class="img_wrap">
+                            <img src="../img/photo/kensington/01.jpg" alt="">
+                        </div>
+                        <div class="img_wrap">
+                            <img src="../img/photo/kensington/02.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="txt_wrap">
+                        <ul class="type1" data-list>
+                            <li>ADDRESS : 16, Gukhoe-daero 76-gil, Yeongdeungpo-gu, Seoul, Republic of Korea</li>
+                            <li>CALL : <a href="tel:+82-2-6670-7100">+82-2-6670-7100</a></li>
+                            <li>WEBSITE : <a href="https://www.kensington.co.kr/hyd/" target="_blank"
+                                    data-link>https://www.kensington.co.kr/hyd/</a>
+                            </li>
+                        </ul>
+                        <div class="map" id="map3" style="height:400px;" lat="37.530371145789374" lng="126.92184889643237"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSUnSOhfav4RQsEncwd-mNNHFZfickJoA&callback=initMap&region=kr"></script>
+    <script>
+        var maps = [];
+        var markers = [];
+        function initMap() {
+            var $maps = $('.map');
+            $.each($maps, function (i, value) {
+                console.log("lat: " + $(value).attr('lat'));
+                var uluru = { lat: parseFloat($(value).attr('lat')), lng: parseFloat($(value).attr('lng')) };
+
+                var mapDivId = $(value).attr('id');
+
+                maps[mapDivId] = new google.maps.Map(document.getElementById(mapDivId), {
+                    zoom: 16,
+                    center: uluru
+                });
+
+                markers[mapDivId] = new google.maps.Marker({
+                    position: uluru,
+                    map: maps[mapDivId]
+                });
+            })
+        }
+        initMap();
+    </script>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

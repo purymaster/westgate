@@ -1,0 +1,84 @@
+@@include('header.html')
+<div class="content">
+
+    <!-- 서브 비주얼 영역 -->
+    <div data-sub-visual>
+        <div class="container">
+            <div class="visual_wrap">
+                <div class="tit_wrap">
+                    <h2>기후변화대응협약 서약</h2>
+                    <span class="sub_tit">Commitment to the Climate Change Response Agreement</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //서브 비주얼 영역 -->
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div data-sub-content class="oath">
+        <div class="container">
+            <img src="https://picsum.photos/1200/500" alt="" style="display:block; margin:0 auto;">
+            <div data-ctr-btn>
+                <button type="button" class="submit" data-btn>서약 참여하기</button>
+            </div>
+        </div>
+
+        <div class="input_popup">
+            <div class="info_wrap">
+                <div data-input-form>
+                    <table>
+                        <colgroup>
+                            <col style="width:80px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <label for="userName">성명</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="userName" class="wide">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="userPart">소속</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="userPart" class="wide">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="userPhone1">연락처</label>
+                                </th>
+                                <td>
+                                    <div class="inline phone">
+                                        <input type="text" name="u_tel1" title="전화번호 첫자리" maxlength="4" class="num"
+                                            required="" id="userPhone1">
+                                        <input type="text" name="u_tel2" title="전화번호 중간자리" maxlength="4" class="num"
+                                            required="">
+                                        <input type="text" name="u_tel3" title="전화번호 끝자리" maxlength="4" class="num"
+                                            required="">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="margin-top:1.5em;">
+                    이 사람은 블라블라 한상대회에서 진행하는
+                    블라블라 기후변화대응 서약서에 참여합니다.
+                </p>
+                <div data-ctr-btn>
+                    <button type="submit" data-btn class="submit">제출하기</button>
+                </div>
+            </div>
+            <button type="button" class="close">close</button>
+        </div>
+
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

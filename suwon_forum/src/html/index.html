@@ -1,0 +1,135 @@
+@@include('header.html')
+<div class="content main_page">
+
+    <!-- 키비주얼 -->
+    <div class="key_visual">
+        <div data-slide>
+            <div class="slide slide01">
+                <div class="container">
+                    <div class="txt_wrap">
+                        <span class="sub_tit">아태도시정상회의</span>
+                        <span class="main_tit">2021 인간도시 수원포럼</span>
+                        <span class="date">2021. 10. 5(화) 수원컨벤션센터(3F)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide02">
+                <div class="container">
+                    <div class="txt_wrap">
+                        <span class="sub_tit">아태도시정상회의</span>
+                        <span class="main_tit">2021 인간도시 수원포럼</span>
+                        <span class="date">2021. 10. 5(화) 수원컨벤션센터(3F)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $('.key_visual [data-slide]').each(function () {
+                if ($(this).find('.slide').length > 1) {
+                    $(this).slick({
+                        dots: true,
+                        autoplay: true,
+                        autoplaySpeed: 5000,
+                    });
+                }
+            });
+        });
+    </script>
+    <!-- //키비주얼 -->
+
+    <!-- 아젠다 -->
+    <section class="agenda">
+        <div class="container">
+            <h2>아젠다</h2>
+            <div class="info_box">
+                <img src="../img/img/img_agenda.jpg" alt="">
+                <div class="txt_wrap">
+                    <p class="tit">
+                        인간도시는 시민들의 삶을 먼저 생각하는 사람중심 도시를 말합니다.
+                    </p>
+                    <!-- <p class="sub_txt">
+                        수원시는 수원시정연구원, 수원시지속가능도시재단 등의 정책연구기관 및 실행 기관을 설립하여 사람중심의 지속가능한 도시 수원을 실현하기 위한 새로운 전기를 마련하였습니다.
+                        또한 사람 중심 도시라는 가치를 중심으로, 세계 최초로 2016 생태교통 세계축제를 개최하였고, 주민이 직접 참여하는 마을르네상스, 주민참여예산, 좋은시정위원회, 500인
+                        원탁토론, 도시정책 시민계획단 등 수원시의 실정에 맞는 정책을 실행중이며, 2016년부터 '인간도시 수원포럼'을 통해 국제사회와 이를 공유하고 있습니다.
+                    </p> -->
+                    <p class="sub_txt">
+                        이번 아·태도시정상회의·2021 인간도시 수원포럼에서는 아·태환경장관포럼의 의제인 ‘자연을 위한 행동 강화로 지속가능발전 목표 달성’과 연계하여 <strong>「자연을 기반으로 한
+                        탄소중립 실현으로 인간도시 구현」</strong>을 위한 정책 발굴과 향후 공동 이행을 위한 기반을 마련하고자 합니다.
+                    </p>
+                    <a href="#" class="link">VIEW MORE</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- //아젠다 -->
+
+    <!-- 영상 -->
+    <section class="video">
+        <div class="container">
+            <h2 class="hidden">수원포럼 소개영상</h2>
+            <div class="video_wrap">
+                <iframe src="https://www.youtube.com/embed/QRE0s2u-5zA" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- //영상 -->
+
+    <!-- 후원 -->
+    <div class="support container">
+        <div class="host">
+            <span class="tit">주최</span>
+            <ul>
+                <li>
+                    <a href="#" target="_blank" title="새창열림">
+                        <img src="../img/logo/logo_sponsor_01.png" alt="수원시 홈페이지">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="manage">
+            <span class="tit">주관</span>
+            <ul>
+                <li>
+                    <a href="#" target="_blank" title="새창열림">
+                        <img src="../img/logo/logo_sponsor_02.png" alt="수원시정연구원 홈페이지">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="새창열림">
+                        <img src="../img/logo/logo_sponsor_03.png" alt="수원시지속가능도시재단 홈페이지">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="새창열림">
+                        <img src="../img/logo/logo_sponsor_04.png" alt="이클레어 한국사무소 홈페이지">
+                    </a>
+                </li>
+                <li>
+                    <div class="sub">
+                        <span class="tit">협력</span>
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank" title="새창열림">
+                                    <img src="../img/logo/logo_sponsor_05.png" alt="수원시지속가능발전협의회 홈페이지">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="새창열림">
+                                    <img src="../img/logo/logo_sponsor_06.png" alt="CITYNET 홈페이지">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- //후원 -->
+</div>
+@@include('footer.html')

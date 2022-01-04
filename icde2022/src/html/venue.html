@@ -1,0 +1,81 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type4",
+    "tit" : "Summit Venue"
+    })
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div data-sub-content>
+        <div class="container">
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Conrad Seoul
+                </h3>
+                <div class="img_cont block">
+                    <div class="txt_wrap" style="margin-bottom:15px;">
+                        <p>
+                            The hotel is at the heart of Yeouido Business District, three blocks from Yeouido Hangang
+                            Park on the banks of Han River.<br>
+                            It is connected to IFC Mall and within four blocks of Yeouido subway station, linking to
+                            central Seoul..<br>
+                            Perks include a 24-hour fitness center, indoor pool, and spa services, and our concierge can
+                            offer local tips.
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <div class="img_wrap">
+                            <img src="../img/photo/conrad/01.jpg" alt="">
+                        </div>
+                        <div class="img_wrap">
+                            <img src="../img/photo/conrad/02.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="txt_wrap">
+                        <ul class="type1" data-list>
+                            <li>ADDRESS : 10 Gukjegeumyung-ro Yeouido Yeongdeungpo-gu Seoul, Republic of Korea</li>
+                            <li>CALL : <a href="tel:+82-2-6137-7000">+82-2-6137-7000</a></li>
+                            <li>WEBSITE : <a href="https://www.hilton.com/en/hotels/selcici-conrad-seoul/"
+                                    target="_blank" data-link>https://www.hilton.com/en/hotels/selcici-conrad-seoul/</a>
+                            </li>
+                        </ul>
+                        <div class="map" id="map1" style="height:400px;" lat="37.52550585688926" lng="126.92658638479415"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSUnSOhfav4RQsEncwd-mNNHFZfickJoA&callback=initMap&region=kr"></script>
+    <script>
+        var maps = [];
+        var markers = [];
+        function initMap() {
+            var $maps = $('.map');
+            $.each($maps, function (i, value) {
+                console.log("lat: " + $(value).attr('lat'));
+                var uluru = { lat: parseFloat($(value).attr('lat')), lng: parseFloat($(value).attr('lng')) };
+
+                var mapDivId = $(value).attr('id');
+
+                maps[mapDivId] = new google.maps.Map(document.getElementById(mapDivId), {
+                    zoom: 16,
+                    center: uluru
+                });
+
+                markers[mapDivId] = new google.maps.Marker({
+                    position: uluru,
+                    map: maps[mapDivId]
+                });
+            })
+        }
+        initMap();
+    </script>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

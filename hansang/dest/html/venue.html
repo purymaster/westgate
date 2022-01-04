@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>제19차 세계한상대회</title>
+	<link rel="stylesheet" href="../css/ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+	<div class="wrap">
+		<div data-header>
+			<header>
+				<div class="logo">
+					<a href="#">
+						<h1>
+							<img src="../img/img/img_logo.png" alt="제19차 세계한상대회">
+							<div class="txt_wrap">
+								<div class="tit">
+									제19차 <strong>세계<span>한상</span>대회</strong>
+								</div>
+								<div class="sub_txt">
+									THE 19TH WORLD <span>KOREAN BUSINESS</span> CONVENTION
+								</div>
+								<div class="date">
+									2021.10.19(화)-10.21(목) 대전컨벤션센터
+								</div>
+							</div>
+						</h1>
+					</a>
+				</div>
+				<div class="header_wrap">
+					<button type="button" class="mobile open_menu">
+						<span></span>
+						<span></span>
+						<span></span>
+						모바일 메뉴 열기
+					</button>
+					<div class="menu_wrap">
+						<div class="nav_menu">
+							<nav>
+								<ul class="main-menu">
+									<!-- [D] 현재 페이지 a태그에 on 클래스 부여 -->
+									<li>
+										<a href="#none">세계한상대회</a>
+										<ul class="sub-menu">
+											<li><a href="#">인사말(이사장, 대회장)</a></li>
+											<li><a href="#">대회개요</a></li>
+											<li><a href="#">행사장 안내</a></li>
+											<li><a href="#">전체 대회일정</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#none">프로그램</a>
+										<ul class="sub-menu">
+											<li><a href="#">전체 프로그램</a></li>
+											<li>
+												<a href="#none">세부 프로그램</a>
+												<ul class="sub-menu">
+													<li><a href="#">Daily Program</a></li>
+													<li><a href="#">세미나</a></li>
+													<li><a href="#">영비즈니스리더스포럼</a></li>
+													<li><a href="#">리딩 CEO 포럼</a></li>
+													<li><a href="#">기업 IR</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#none">상시 프로그램</a>
+												<ul class="sub-menu">
+													<li><a href="#">일대일비즈니스미팅</a></li>
+													<li><a href="#">현장쇼룸</a></li>
+													<li><a href="#">단체별 총회</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#none">등록/숙박</a>
+										<ul class="sub-menu">
+											<li><a href="#">등록안내</a></li>
+											<li><a href="#">숙박안내</a></li>
+										</ul>
+									</li>
+									<li class="only">
+										<a href="#">한상대회FAQ</a>
+									</li>
+								</ul>
+							</nav>
+							<button type="button" class="mobile close_menu">모바일 메뉴 닫기</button>
+						</div>
+						<ul class="top_menu">
+							<li>
+								<a href="#none">HOME</a>
+							</li>
+							<!-- [D] 로그인 전 -->
+							<li>
+								<a href="#none">LOGIN</a>
+							</li>
+							<li>
+								<a href="#none">SIGNUP</a>
+							</li>
+							<!-- [D] 로그인 후 -->
+							<!--
+							<li>
+								<a href="#none">LOGOUT</a>
+							</li>
+							<li>
+								<a href="#none">MYPAGE</a>
+							</li>
+							-->
+							<li class="lang">
+								<a href="#none">ENGLISH</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="content">
+
+			<!-- 서브 비주얼 영역 -->
+			<div data-sub-visual>
+				<div class="container">
+					<div class="visual_wrap">
+						<div class="tit_wrap">
+							<h2>행사장 안내</h2>
+							<span class="sub_tit">Venue</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //서브 비주얼 영역 -->
+
+			<!--  서브 페이지 컨텐츠 -->
+			<div data-sub-content class="venue">
+
+				<div class="container">
+
+					<div data-column-box>
+						<h3 class="column_tit">행사장 위치</h3>
+						<div class="map" id="map1" lat="37.51160588253649" lng="127.0999831456546" style="height:400px;"></div>
+						<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSUnSOhfav4RQsEncwd-mNNHFZfickJoA&amp;callback=initMap&amp;"></script>
+						<script>
+							var maps = [];
+							var markers = [];
+
+							function initMap() {
+								var $maps = $('.map');
+								$.each($maps, function(i, value) {
+									var spot = {
+										lat: parseFloat($(value).attr('lat')),
+										lng: parseFloat($(value).attr('lng'))
+									};
+
+									var mapDivId = $(value).attr('id');
+
+									maps[mapDivId] = new google.maps.Map(document.getElementById(mapDivId), {
+										zoom: 16,
+										center: spot
+									});
+
+									markers[mapDivId] = new google.maps.Marker({
+										position: spot,
+										map: maps[mapDivId]
+									});
+								})
+							}
+							initMap();
+						</script>
+						<p style="margin-top:1.5em;">서울특별시 송파구 올림픽로 240, 롯데호텔 월드</p>
+					</div>
+
+					<div data-column-box>
+						<h3 class="column_tit">행사장<small style="font-size:.8em; color:#999;">&lt;롯데호텔 월드(잠실역)&gt;</small>과 주요 거점지와의 거리</h3>
+						<div data-table class="head fix">
+							<table class="center">
+								<colgroup>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="row">구분</th>
+										<th scope="col">인천국제공항</th>
+										<th scope="col">김포국제공항</th>
+										<th scope="col">서울역</th>
+										<th scope="col">서울고속버스터미널<br>(경부영동선)</th>
+										<th scope="col">동서울종합터미널</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="col">거리</th>
+										<td>72.7km</td>
+										<td>34km</td>
+										<td>20.6km</td>
+										<td>12.9km</td>
+										<td>3.5km</td>
+									</tr>
+									<tr>
+										<th scope="col">자동차</th>
+										<td>약 1시간 20분</td>
+										<td>약 1시간 5분</td>
+										<td>약 40분</td>
+										<td>약 30분</td>
+										<td>약 15분</td>
+									</tr>
+									<tr>
+										<th scope="col">택시요금</th>
+										<td>약 64,000원</td>
+										<td>약 29,000원</td>
+										<td>약 19,000원</td>
+										<td>약 13,000원</td>
+										<td>약 6,500원</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div data-ctr-btn>
+							<a href="https://hansang.net/hansang/hansang_convention/pg_contest_overland.do" class="submit" target="_blank" data-btn>육상경로 안내</a>
+						</div>
+					</div>
+
+					<div data-column-box>
+						<h3 class="column_tit">행사장 내부 안내</h3>
+						<img src="../img/img/img_floor_b1f.jpg" style="display:block; margin:0 auto;" alt="">
+						<img src="../img/img/img_floor_1f.jpg" style="display:block; margin:0 auto;" alt="">
+						<img src="../img/img/img_floor_3f.jpg" style="display:block; margin:0 auto;" alt="">
+					</div>
+
+				</div>
+
+			</div>
+			<!--  //서브 페이지 컨텐츠 -->
+
+		</div>
+		<footer>
+			<div class="container footer_wrap">
+				<div class="info">
+					<img src="../img/img/img_footer_logo.png" alt="">
+					<div class="txt_wrap">
+						<address>
+							제주본사: 제주특별자치도 서귀포시 신중로 55 Tel. +82-64-786-0200<br>
+							서울사무소: 서울특별시 서초구 남부순환로 2558 (외교센터 4층) Tel. +82-2-3415-0100<br>
+							세계한상대회 본부사무국: Tel. +82-2-3415-0051, 0052
+						</address>
+					</div>
+					<div class="copyright">
+						Copyright© Overseas Koreans Foundation. All rights reserved.
+					</div>
+				</div>
+				<div class="side">
+					<div class="sns">
+						<a href="#" target="_blank" class="facebook">세계한상대회 Facebook</a>
+						<a href="#" target="_blank" class="tweeter">세계한상대회 Tweeter</a>
+						<a href="#" target="_blank" class="youtube">세계한상대회 Youtube Channel</a>
+						<a href="#" target="_blank" class="linkedin">세계한상대회 Linkedin</a>
+						<a href="#" target="_blank" class="naver">세계한상대회 Naver Blog</a>
+					</div>
+					<div class="bottom_menu">
+						<a href="#">이용약관</a>
+						<a href="#">개인정보처리보호</a>
+						<a href="#">홍보자료 다운로드</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="move_top">
+		<button type="button">Move to page top</button>
+	</div>
+</body>
+
+</html>

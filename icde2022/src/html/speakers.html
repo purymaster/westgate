@@ -1,0 +1,184 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type3",
+    "tit" : "Speakers"
+    })
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div data-sub-content class="speaker">
+        <div class="container">
+
+            <div data-column-box>
+                <div data-tab-menu>
+                    <ul class="type2">
+                        <li class="on"><a href="#day1">Day 1 <small>20 Jan (Thu.)</small></a></li>
+                        <li><a href="#day2">Day 2 <small>21 Jan (Fri.)</small></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-tab-panel>
+                <div class="tabpanel" id="day1">
+                    <div data-column-box>
+                        <h3 class="schedule_tit">Day 1 <small>20 Jan (Thu.)</small></h3>
+                        <h4 class="column_tit">Session 2</h4>
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <a href="#" data-open-modal data-target="#s01">
+                                        <div class="img_wrap">
+                                            <img src="../img/speaker/speaker_00.jpg" alt="">
+                                            <div class="guide">
+                                                <p>
+                                                    <i></i>
+                                                    Click each photo to see information on speakers.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <span class="role">Prensentation</span>
+                                            <span class="name">Dr. Deborah Adair</span>
+                                            <span class="spec">Executive Director<br>Quality Matters</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_wrap">
+                                            <img src="../img/speaker/speaker_00.jpg" alt="">
+                                            <div class="guide">
+                                                <p>
+                                                    <i></i>
+                                                    Click each photo to see information on speakers.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <span class="role">Prensentation</span>
+                                            <span class="name">Dr. Deborah Adair</span>
+                                            <span class="spec">Executive Director<br>Quality Matters</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_wrap">
+                                            <img src="../img/speaker/speaker_00.jpg" alt="">
+                                            <div class="guide">
+                                                <p>
+                                                    <i></i>
+                                                    Click each photo to see information on speakers.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <span class="role">Prensentation</span>
+                                            <span class="name">Dr. Deborah Adair</span>
+                                            <span class="spec">Executive Director<br>Quality Matters</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_wrap">
+                                            <img src="../img/speaker/speaker_00.jpg" alt="">
+                                            <div class="guide">
+                                                <p>
+                                                    <i></i>
+                                                    Click each photo to see information on speakers.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <span class="role">Prensentation</span>
+                                            <span class="name">Dr. Deborah Adair</span>
+                                            <span class="spec">Executive Director<br>Quality Matters</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_wrap">
+                                            <img src="../img/speaker/speaker_00.jpg" alt="">
+                                            <div class="guide">
+                                                <p>
+                                                    <i></i>
+                                                    Click each photo to see information on speakers.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <span class="role">Prensentation</span>
+                                            <span class="name">Dr. Deborah Adair</span>
+                                            <span class="spec">Executive Director<br>Quality Matters</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_wrap">
+                                            <img src="../img/speaker/speaker_00.jpg" alt="">
+                                            <div class="guide">
+                                                <p>
+                                                    <i></i>
+                                                    Click each photo to see information on speakers.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <span class="role">Prensentation</span>
+                                            <span class="name">Dr. Deborah Adair</span>
+                                            <span class="spec">Executive Director<br>Quality Matters</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabpanel" id="day2" style="display:none;">
+                    <div data-column-box>
+                        <h3 class="schedule_tit">Day 2 <small>21 Jan (Fri.)</small></h3>
+                        <h4 class="column_tit">Opening</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 연사자 팝업 -->
+
+            <div data-modal data-type="fix" id="s01">
+                <article class="modal">
+                    <div class="img_wrap">
+                        <img src="../img/speaker/speaker_00.jpg" alt="">
+                    </div>
+                    <div class="txt_wrap">
+                        <div class="role">Presentation</div>
+                        <h1 class="name">Dr. Deborah Adair</h1>
+                        <div class="spec">
+                            Executive Director<br>Quality Matters
+                        </div>
+                        <div class="history">
+                            <p>
+                                Dr. Deborah Adair is the Executive Director of Quality Matters, an international
+                                non-profit organization providing a scalable quality assurance system for online and
+                                blended learning. Utilized by over 1500 institutions across education sectors in more
+                                than 30 countries. QM’s tools and training support education professionals in improving
+                                digital education and meeting QM’s nationally-recognized standards. Dr. Adair serves on
+                                the Board of Directors for the International Network for Quality Assurance Agencies in
+                                Higher Education (INQAAHE) and has served on advisory bodies for the WICHE Cooperative
+                                for Educational Technologies, the National University Technology Network, the Presidents
+                                Forum, and Credential Engine.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="close">닫기</button>
+                </article>
+            </div>
+
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

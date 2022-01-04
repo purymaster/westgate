@@ -1,0 +1,206 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type1",
+    "tit" : "Program"
+    })
+
+    <div class="container">
+        <div class="breadcrumb">
+            <ol>
+                <li>Home</li>
+                @@include('breadcrumb.html', {
+                "context" : {
+                "use" : true,
+                "value" : ["Agenda", "Program"]
+                }
+                })
+            </ol>
+        </div>
+    </div>
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div data-sub-content>
+        <div class="container">
+
+            <div data-column-box>
+                <div class="timetable_tit">
+                    <div class="main_tit">
+                        International Police Summit, Seoul 2021
+                    </div>
+                    <div class="sub_tit">
+                        - New Normal : Police Resilience Strategy to Address Emerging Threats -
+                    </div>
+                    <span class="date">20 (Wed.) - 23 (Sat.) October 2021</span>
+                </div>
+                <div class="timetable">
+                    <table>
+                        <colgroup>
+                            <col style="width:15%;">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">Time</th>
+                                <th scope="col">Program</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="column on">
+                                <th colspan="2">
+                                    Wendesday, 20th October
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="row">ETA</th>
+                                <td>
+                                    <strong>Arrival / Check-in</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">17:30-21:00</th>
+                                <td>
+                                    <strong>Welcome reception* hosted by Com. Gen. Kim Chang-Yong</strong>
+                                    <ul class="type1" data-list>
+                                        <li>Venue : Sapphire Ballroom, 3<sup>rd</sup> floor, the Lotte Hotel Seoul**</li>
+                                        <li>Dress Code : Business casual recommended</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="column on">
+                                <th colspan="2">
+                                    Thursday, 21st October
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Morning</th>
+                                <td>
+                                    <strong>The 76<sup>th</sup> National Police Day Ceremony</strong>
+                                    <ul class="type1" data-list>
+                                        <li>Venue : To be confimed(TBC)</li>
+                                        <li>Dress Code : Class A uniform</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">12:00-13:00</th>
+                                <td>
+                                    <strong>Lunch</strong>
+                                    <ul class="type1" data-list>
+                                        <li>Venue : To be confimed(TBC)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">16:00-16:30</th>
+                                <td>
+                                    <strong>Opening Ceremony</strong>
+                                    <ul class="type1" data-list>
+                                        <li>Venue until the dinner : Crystal Ballroom, 2<sup>nd</sup> floor, the Lotte Hotel Seoul</li>
+                                        <li>Dress Code : Class A uniform</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">16:30-17:15</th>
+                                <td>
+                                    <strong>Key note speech and plenary session</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">17:15-17:30</th>
+                                <td>
+                                    <strong>Coffee Break</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">17:30-18:20</th>
+                                <td>
+                                    <strong>Panel discussion</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">18:20-19:30</th>
+                                <td>
+                                    <strong>Welcome perfomance and official dinner</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="column on">
+                                <th colspan="2">
+                                    Friday, 22nd October
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="row">09:00-18:00</th>
+                                <td>
+                                    <strong>Bilateral meetings with the KNPA leadership</strong>
+                                    <ul class="type1" data-list>
+                                        <li>Venue : Meeting Suites, 36<sup>th</sup> floor, the Lotte Hotel Seoul</li>
+                                        <li>Dress Code : Class A uniform</li>
+                                    </ul>
+                                    <strong>Cultural excursion I***</strong>
+                                    <ul class="type1" data-list>
+                                        <li>Venue : TBC</li>
+                                        <li>Dress Code : Casual</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="column on">
+                                <th colspan="2">
+                                    Saturday, 23rd October
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Morning</th>
+                                <td>
+                                    <strong>Bilateral meetings with the KNPA leadership</strong>
+                                    <ul class="type1" data-list>
+                                        <li>Venue : Meeting Suites, 36<sup>th</sup> floor, the Lotte Hotel Seoul</li>
+                                        <li>Dress Code : Class A uniform</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Afternoon</th>
+                                <td>
+                                    <strong>Cultural excursion II</strong>
+                                    <ul class="type1" data-list>
+                                        <li>Venue : TBC</li>
+                                        <li>Dress Code : Casual</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">18:30-20:00</th>
+                                <td>
+                                    <strong>Farewell Dinner</strong>
+                                    <ul class="type1" data-list>
+                                        <li>Venue : Walker Hall, 1<sup>st</sup> floor, the Grand Walkerhill Seoul****</li>
+                                        <li>Dress Code : Business suit recommended</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div data-column-box>
+                <p>* Standing reception with light foods and drinks</p>
+                <p>** 30 Eulji-ro Jung-Gu Seoul 04533 Republic of Korea, <a href="https://www.lottehotel.com/seoul-hotel/en.html" target="_blank" data-link>https://www.lottehotel.com/seoul-hotel/en.html</a></p>
+                <p>*** Voluntary and guided tours in or nearby Seoul for those not having the bilateral meetings.</p>
+                <p>**** 177 Walkerhill-ro, Gwangjin-Gu, Seoul, 04963 Republic of Korea, <a href="https://www.walkerhill.com/grandwalkerhillseoul/en/" target="_blank" data-link>https://www.walkerhill.com/grandwalkerhillseoul/en/</a></p>
+            </div>
+
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

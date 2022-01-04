@@ -1,0 +1,283 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type3",
+    "tit" : "Register"
+    })
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div data-sub-content>
+        <div class="container">
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Individual Information
+                </h3>
+                <div data-input-form>
+                    <table>
+                        <colgroup>
+                            <col style="width:270px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <span class="must">Essential</span>
+                                    <label for="givenName">Name</label>
+                                </th>
+                                <td>
+                                    <div>
+                                        <strong style="font-size:14px;">Given Name</strong>
+                                        <div>
+                                            <input type="text" class="wide" id="givenName">
+                                        </div>
+                                    </div>
+                                    <div style="margin-top:15px;">
+                                        <strong style="font-size:14px;">Family Name</strong>
+                                        <div>
+                                            <input type="text" class="wide" id="familyName">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="must">Essential</span>
+                                    <label for="organName">Origanization Name</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="wide" id="organName">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="department">Department</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="wide" id="department">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="must">Essential</span>
+                                    <label for="jobTitle1">Professional Title</label>
+                                </th>
+                                <td>
+                                    <label class="option"><input type="radio" name="jobTitle"
+                                            id="jobTitle1">Prof.</label>
+                                    <label class="option"><input type="radio" name="jobTitle" id="jobTitle2">Dr.</label>
+                                    <label class="option"><input type="radio" name="jobTitle" id="jobTitle3">Mr.</label>
+                                    <label class="option"><input type="radio" name="jobTitle" id="jobTitle4">Ms.</label>
+                                    <label class="option"><input type="radio" name="jobTitle"
+                                            id="jobTitle5">Mrs.</label>
+                                    <label class="option"><input type="radio" name="jobTitle"
+                                            id="jobTitle6">Other</label>
+                                    <input type="text" readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="must">Essential</span>
+                                    <label for="nationality">Nationality</label>
+                                </th>
+                                <td>
+                                    <div data-select-box>
+                                        <select id="nationality" title="Select Country">
+                                            <option>Select Country</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="must">Essential</span>
+                                    <label for="userPhone">Mobile Phone</label>
+                                </th>
+                                <td>
+                                    <div class="inline phone">
+                                        <input type="text" title="국가지역번호" maxlength="4" readonly value="+82">
+                                        <input type="text" id="userPhone" title="전화번호 첫자리" maxlength="4"
+                                            placeholder="Area Code" style="width:100px;">
+                                        <input type="text" title="전화번호 중간자리" maxlength="8" style="width:180px;"
+                                            placeholder="Mobile Phone Number">
+                                    </div>
+                                    <p>ex) +82-10-22223333</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="must">Essential</span>
+                                    <label for="emailAddress">Email Address</label>
+                                </th>
+                                <td>
+                                    <div class="inline email">
+                                        <input type="text" id="emailAddress" title="이메일 주소">
+                                        <span>@</span>
+                                        <input type="text" class="mail_account" title="이메일 계정">
+                                        <div data-select-box="">
+                                            <input type="hidden">
+                                            <label></label>
+                                            <select id="emailSelect" title="이메일 계정 선택">
+                                                <option>Other</option>
+                                                <option>naver.com</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="must">Essential</span>
+                                    <label for="address">Address(Office)</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="wide" id="address">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="modeType1">If virtual, participation mode</label>
+                                </th>
+                                <td>
+                                    <label class="option"><input type="radio" name="modeType"
+                                            id="modeType1">Livestream</label>
+                                    <label class="option"><input type="radio" name="modeType"
+                                            id="modeType2">Broadcast</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="food1">Special Request for Food</label>
+                                </th>
+                                <td>
+                                    <label class="option"><input type="radio" name="food" id="food1">None</label>
+                                    <label class="option"><input type="radio" name="food" id="food2">Vegetarian</label>
+                                    <label class="option"><input type="radio" name="food" id="food3">Other</label>
+                                    <input type="text" readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">
+                                    <span class="must">Essential</span>
+                                    <label for="termAgree">Collection and Use of Personal Information</label>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="term">
+                                        ICDE Leadership Summit 2022 Secretariat collects and manages personal
+                                        information within the minimum extent in order to arrange our events.<br><br>
+
+                                        The items of personal information to be collected and the purposes are as
+                                        follows :<br><br>
+
+                                        1. Items of personal information to be collected
+                                        Name, organization name(department, professional title), nationality, contact
+                                        details(mobile phone, email address, etc.) (The owner of information has a right
+                                        to reject to give his/her personal information. However, the owner of
+                                        information may not be able to participate in the events, if he/she does not
+                                        provide us with essential information as above.)<br><br>
+
+                                        2. Purposes for which personal information is collected and used
+                                        The aforementioned items would be used for confirming the participation in the
+                                        events, authentication process to verify identification, appropriate preparation
+                                        to proceed with successful event progress, and follow-up management
+                                        (Response on questions from participants regarding the events, sending a letter
+                                        of appreciation, providing further information in relation with the events, and
+                                        etc.)<br><br>
+
+                                        3. Period for which personal information is held and used
+                                        In principle, personal information would be discarded as soon as the purpose of
+                                        collecting information is attained.
+                                    </div>
+                                    <label class="option"><input type="checkbox" name="termAgree" id="termAgree">I
+                                        agree</label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Attendance Category
+                </h3>
+                <div data-table class="fix">
+                    <table class="center">
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col style="width:30%;">
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="colgroup" colspan="2">Category</th>
+                                <th scope="col">Member Status</th>
+                                <th scope="colgroup" colspan="2">Fee</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="4">Face-to-Face</td>
+                                <td rowspan="2">Early Bird</td>
+                                <td>ICDE Member</td>
+                                <td>$180</td>
+                                <td><label class="option"><input type="radio" name="fee" id="fee1"></label></td>
+                            </tr>
+                            <tr>
+                                <td>Non-Member</td>
+                                <td>$240</td>
+                                <td><label class="option"><input type="radio" name="fee" id="fee2"></label></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Regular</td>
+                                <td>ICDE Member</td>
+                                <td>$240</td>
+                                <td><label class="option"><input type="radio" name="fee" id="fee3"></label></td>
+                            </tr>
+                            <tr>
+                                <td>Non-Member</td>
+                                <td>$300</td>
+                                <td><label class="option"><input type="radio" name="fee" id="fee4"></label></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">Virtual</td>
+                                <td rowspan="2">Early Bird</td>
+                                <td>ICDE Member</td>
+                                <td>$60</td>
+                                <td><label class="option"><input type="radio" name="fee" id="fee5"></label></td>
+                            </tr>
+                            <tr>
+                                <td>Non-Member</td>
+                                <td>$90</td>
+                                <td><label class="option"><input type="radio" name="fee" id="fee6"></label></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Regular</td>
+                                <td>ICDE Member</td>
+                                <td>$90</td>
+                                <td><label class="option"><input type="radio" name="fee" id="fee7"></label></td>
+                            </tr>
+                            <tr>
+                                <td>Non-Member</td>
+                                <td>$120</td>
+                                <td><label class="option"><input type="radio" name="fee" id="fee8"></label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div data-ctr-btn>
+                    <a href="javascript:history.back();" data-btn>Cancel</a>
+                    <button type="submit" class="submit" data-btn>Payment</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

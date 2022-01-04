@@ -1,0 +1,344 @@
+@@include('header.html')
+<div class="content main_page">
+
+	<!-- 키비주얼 -->
+	<div class="main_visual">
+		<img src="../img/img/img_keyvisual.jpg" alt="">
+		<div class="hidden">
+			ICDE 2022 LEADERSHIP SUMMIT
+			Leadership for EdTech Oriented Innovation in Education
+			20~21 January, 2022
+		</div>
+		<!-- <div class="slider">
+			<div data-slide>
+				<div class="slide" style="background-image:url(../img/bg/main_slide01.jpg);">
+					<a href="#">
+						<div class="txt_wrap">
+							<div class="tit">
+								ICDE LEADERSHIP<br>
+								SUMMIT 2022
+							</div>
+							<p class="sub_txt">
+								"Leadership for EdTech Oriented Innovation in Education"
+							</p>
+							<div class="date">
+								20-21 January, 2022 Seoul, South Korea
+							</div>
+							<span class="type">
+								Hybrid format (Face-to-face/virtual)
+							</span>
+						</div>
+					</a>
+				</div>
+				<div class="slide" style="background-image:url(../img/bg/main_slide02.jpg);">
+					<a href="#">
+						<div class="txt_wrap">
+							<div class="tit">
+								ICDE LEADERSHIP<br>
+								SUMMIT 2022
+							</div>
+							<p class="sub_txt">
+								"Leadership for EdTech oriented Innovation in Education"
+							</p>
+							<div class="date">
+								20-21 January, 2022 Seoul, South Korea
+							</div>
+							<span class="type">
+								Hybrid format (Face-to-face/virtual)
+							</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div> -->
+	</div>
+
+	<!-- <script>
+		$(function () {
+			$('.main_visual [data-slide]').each(function () {
+				if ($(this).find('.slide').length > 1) {
+					$(this).slick({
+						arrows: false,
+						autoplay: true,
+						autoplaySpeed: 5000,
+						dots: true
+					});
+				}
+			});
+		});
+	</script> -->
+	<!-- //키비주얼 -->
+
+	<!-- D-Day -->
+	<section class="dday">
+		<div class="container">
+			<h2 class="hidden">D-Day</h2>
+			<div class="cnt_wrap">
+				<ul class="cnt"></ul>
+				<div class="live">
+					<a href="#">
+						<img src="../img/img/img_live_button.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		$(function () {
+
+			function setDDay() {
+				var setDate = new Date("2022-01-20T00:00:00+0900"),
+					now = new Date(),
+					distance = setDate.getTime() - now.getTime(),
+					day = Math.floor(distance / (1000 * 60 * 60 * 24)),
+					hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+					minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+					seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				if (Math.floor(distance / 1000) > 0) {
+					var tag = `
+						<li><strong>${day}</strong>Day</li><li><strong>${hours}</strong>Hours</li><li><strong>${minutes}</strong>Minutes</li><li><strong>${seconds}</strong>Seconds</li>
+					`
+				} else {
+					var tag = `
+						<li style="width:100%;padding:5px 0;"><strong>D-Day</strong></li>
+					`
+				};
+
+				$('.dday .cnt').html(tag);
+			}
+
+			(function () {
+				setDDay();
+				setInterval(setDDay, 1000);
+			})();
+		});
+	</script>
+	<!-- D-Day -->
+
+	<!-- 주요 메뉴 -->
+	<div class="container">
+		<ul class="main_menu">
+			<li>
+				<a href="#">
+					<span>Programme</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>Speakers</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>Registration<br>Guideline</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>Summit<br>Venue</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- //주요 메뉴 -->
+
+	<!-- 요약 -->
+	<section class="summary">
+		<div class="container">
+			<div class="tit">
+				<span>ICDE Leadership Summit 2022: </span>Leadership for EdTech Oriented Innovation in Education
+			</div>
+			<p>
+				The ICDE Leadership Summit 2022 will be co-hosted by the Korea National Open University (KNOU) and the
+				International Council for Open and Distance Education (ICDE) and sponsored by the Ministry of
+				Education(MOE) of Republic of Korea.
+			</p>
+			<p>
+				More information will be made available shortly.
+			</p>
+		</div>
+	</section>
+	<!-- //요약 -->
+
+	<!-- 발표자 -->
+	<section class="speaker">
+		<div class="container">
+			<h2>Invited Speakers</h2>
+			<div class="slide_wrap">
+				<div data-slide>
+					<div class="slide">
+						<img src="../img/speaker/speaker_00.jpg" alt="">
+						<div class="info">
+							<span class="name">TBA</span>
+							<span class="spec">TBA</span>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="../img/speaker/speaker_00.jpg" alt="">
+						<div class="info">
+							<span class="name">TBA</span>
+							<span class="spec">TBA</span>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="../img/speaker/speaker_00.jpg" alt="">
+						<div class="info">
+							<span class="name">TBA</span>
+							<span class="spec">TBA</span>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="../img/speaker/speaker_00.jpg" alt="">
+						<div class="info">
+							<span class="name">TBA</span>
+							<span class="spec">TBA</span>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="../img/speaker/speaker_00.jpg" alt="">
+						<div class="info">
+							<span class="name">TBA</span>
+							<span class="spec">TBA</span>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="../img/speaker/speaker_00.jpg" alt="">
+						<div class="info">
+							<span class="name">TBA</span>
+							<span class="spec">TBA</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		$(function () {
+			$('.speaker [data-slide]').each(function () {
+				if ($(this).find('.slide').length > 1) {
+					$(this).slick({
+						slidesToShow: 5,
+						slidesToScroll: 1,
+						autoplay: true,
+						autoplaySpeed: 2000,
+						responsive: [
+							{
+								breakpoint: 1024,
+								settings: {
+									slidesToShow: 2
+								},
+							},
+							{
+								breakpoint: 599,
+								settings: {
+									slidesToShow: 1
+								},
+							}
+						],
+					});
+				}
+			});
+		});
+	</script>
+	<!-- //발표자 -->
+
+	<!-- 뉴스 -->
+	<!-- <section class="news">
+		<div class="container">
+			<h2>What's New</h2>
+			<ul class="news_list">
+				<li>
+					<a href="#">
+						<img src="https://via.placeholder.com/1000x500" alt="">
+						<div class="txt_wrap">
+							<p class="tit">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							</p>
+							<p class="txt">
+								Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+								unknown printer took a galley of type and scrambled it to make a type specimen book. It
+								has survived not only five centuries, but also the leap into electronic typesetting,
+								remaining essentially unchanged.
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="https://picsum.photos/1000/500" alt="">
+						<div class="txt_wrap">
+							<p class="tit">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							</p>
+							<p class="txt">
+								Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+								unknown printer took a galley of type and scrambled it to make a type specimen book. It
+								has survived not only five centuries, but also the leap into electronic typesetting,
+								remaining essentially unchanged.
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="https://picsum.photos/1000/500" alt="">
+						<div class="txt_wrap">
+							<p class="tit">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							</p>
+							<p class="txt">
+								Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+								unknown printer took a galley of type and scrambled it to make a type specimen book. It
+								has survived not only five centuries, but also the leap into electronic typesetting,
+								remaining essentially unchanged.
+							</p>
+						</div>
+					</a>
+				</li>
+				<li style="width:100%; text-align:center;">No Data</li>
+			</ul>
+			<div class="more">
+				<a href="#" class="btn">VIEW MORE</a>
+			</div>
+		</div>
+	</section> -->
+	<!-- //뉴스 -->
+
+	<!-- 스폰서 -->
+	<section class="sponsor">
+		<div class="container">
+			<div class="box">
+				<span>Co-hosted by</span>
+				<ul>
+					<li>
+						<a href="#" target="_blank">
+							<img src="../img/logo/sponsor_50.png" alt="Korea National Open University (KNOU)">
+						</a>
+					<li>
+						<a href="#" target="_blank">
+							<img src="../img/logo/sponsor_icde.png" alt="The International Council for Open and Distance Education (ICDE) 
+							">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="box">
+				<span>Sponsored by</span>
+				<ul>
+					<li>
+						<a href="#" target="_blank">
+							<img src="../img/logo/sponsor_edu.png"
+								alt="Ministry of Education(MOE) of Republic of Korea.">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- //스폰서 -->
+
+</div>
+@@include('footer.html')

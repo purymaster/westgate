@@ -1,0 +1,154 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type1",
+    "tit" : "Korea Police Week"
+    })
+
+    <div class="container">
+        <div class="breadcrumb">
+            <ol>
+                <li>Home</li>
+                @@include('breadcrumb.html', {
+                "context" : {
+                "use" : true,
+                "value" : ["About IPS", "Korea Police Week"]
+                }
+                })
+            </ol>
+        </div>
+    </div>
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div data-sub-content>
+        <div class="container">
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    International Symposium on Cybercrime Response 2021 (ISCR 2021)
+                </h3>
+
+                <div class="img_cont block">
+                    <div class="img_box">
+                        <div class="img_wrap">
+                            <img src="../img/photo/iscr2021/01.jpg" alt="">
+                        </div>
+                        <div class="img_wrap">
+                            <img src="../img/photo/iscr2021/02.jpg" alt="">
+                        </div>
+                        <div class="img_wrap">
+                            <img src="../img/photo/iscr2021/03.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="txt_wrap">
+                        <p>
+                            The Korean National Police Agency(KNPA) has been annually hosting the International
+                            Symposium on
+                            Cybercrime Response(ISCR) as a part of its effort to combat borderless cybercrime. Since its
+                            initiation back in 2000, the ISCR has now established itself as one of the largest law
+                            enforcement
+                            symposiums in the area of cyber security. Mainly due to the outbreak of COVID-19 across the
+                            world,
+                            the ISCR 2021 will be operated in hybrid(online and offline) basis. All contents will be
+                            available
+                            from October 18th to 22nd, at the official website(<a href="https://iscr.cyber.go.kr/eng"
+                                target="_blank" data-link>https://iscr.cyber.go.kr/eng</a>). Also the symposium
+                            will be held on-site(Four Seasons Hotel in Seoul, Korea) from October 18th to 19th. Across
+                            the
+                            globe, addressing growing and evolving cybercrime amid these difficult times has become a
+                            major
+                            concern for law enforcement agencies and their partners. The KNPA and ISCR Secretariat
+                            deeply
+                            believe that the cooperation between multiple law enforcement agencies, as well as the
+                            active
+                            involvement of private sector and academia will strengthen us all in the fight against
+                            cybercrime.
+                        </p>
+                        <div>
+                            Official website : <a href="https://iscr.cyber.go.kr/eng" target="_blank"
+                                data-link>https://iscr.cyber.go.kr/eng</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    CSI KOREA 2021
+                </h3>
+
+                <div class="img_cont block">
+                    <div class="img_box">
+                        <div class="img_wrap">
+                            <img src="../img/photo/csi2021/01.jpg" alt="">
+                        </div>
+                        <div class="img_wrap">
+                            <img src="../img/photo/csi2021/02.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="txt_wrap">
+                        <p>
+                            The 7th International CSI Conference will be held from October 20 to 22, 2021, as a webinar
+                            through the video conference system. This year, the agenda of the Conference is "Innovation
+                            in Forensic Science : From the Crime Scene to the Court". "CSI KOREA" has been annually held
+                            since 2015, co-hosted by Korean National Police Agency & Korean Association of CSI. It is
+                            now the largest forensic science conference in Korea. It will be a meaningful occasion for
+                            scholars and researchers to share major research results and up-to-date study trends in both
+                            Korea and overseas. This year, the Conference will provide better opportunities for experts
+                            to interact and develop a network to meet the expectation of forensic investigators.
+                        </p>
+                        <div>
+                            Official website : <a href="https://www.kcsi.go.kr/" target="_blank"
+                                data-link>https://www.kcsi.go.kr/</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Korea Police World Expo 2021
+                </h3>
+
+                <div class="img_cont block">
+                    <div class="img_box">
+                        <div class="img_wrap">
+                            <img src="../img/photo/kpex2021/01.jpg" alt="">
+                        </div>
+                        <div class="img_wrap">
+                            <img src="../img/photo/kpex2021/02.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="txt_wrap">
+                        <p>
+                            Korea Police World Expo (KPEX) introduces Smart Policing Technology that will lead the
+                            revitalization of the security industry through the core technology of the Fourth Industrial
+                            Revolution.The need is increasing day by day for the development of high-tech police
+                            security systems, scientific investigation techniques, and related technologies to cope with
+                            various evolving and diversifying crimes.In response, KPEX aims to promote the K-Cop Wave
+                            Program around the world and strengthen the international security cooperation network,
+                            bringing together high-tech security industry, police equipment and solutions for business
+                            exchanges.The 3rd KPEX will be held from October 20 to 23 in Songdo ConvensiA, Incheon,
+                            Korea.
+                        </p>
+                        <p>※ The Expo is open from 9:00 to 17:00 (Last entrance : 16:30)</p>
+                        <div>
+                            Official website : <a href="https://eng.police-expo.com/" target="_blank"
+                                data-link>https://eng.police-expo.com/</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

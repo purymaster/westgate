@@ -1,0 +1,202 @@
+@@include('header.html')
+<div class="content main_page">
+
+	<!-- 키비주얼 -->
+	<div class="container wide">
+		<div class="main_visual">
+			<div data-slide>
+				<div class="slide">
+					<img src="../img/img/img_slide_01.jpg" alt="">
+				</div>
+				<div class="slide">
+					<img src="../img/img/img_slide_01.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(function () {
+			$('.main_visual [data-slide]').each(function () {
+				if ($(this).find('.slide').length > 1) {
+					$(this).slick({
+						autoplay: true,
+						autoplaySpeed: 5000,
+					});
+				}
+			});
+		});
+	</script>
+	<!-- //키비주얼 -->
+
+	<!-- 메인메뉴 -->
+	<div class="container">
+		<div class="main_menu">
+			<div class="menu">
+				<ul>
+					<li><a href="#">박람회 소개</a></li>
+					<li><a href="#">오시는 길</a></li>
+					<li><a href="#">참가사 신청</a></li>
+					<li><a href="#">참관 사전등록</a></li>
+					<li><a href="#">부대행사</a></li>
+					<li><a href="#">컨퍼런스</a></li>
+				</ul>
+			</div>
+			<div class="txt_box">
+				<div class="txt_wrap">
+					<div class="tit">
+						<strong>WELCOME TO KDE2021</strong><br>
+						“드론산업 세계의 미래를 한곳에서”
+					</div>
+					<p class="txt">
+						국내외 드론 전문가들이 한자리에!<br>
+						드론에 관한 모든 것을 확인할 수 있는 지식과 정보의 장<br>
+						부대행사 및 컨퍼런스를 통해<br>
+						드론 산업의 현재와 미래를 분석 예측하는...
+					</p>
+				</div>
+				<div class="img_wrap">
+					<img src="../img/img/img_main_drone.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //메인메뉴 -->
+
+	<!-- 참가/참관 신청 -->
+	<div class="container wide">
+		<div class="attend">
+			<div class="container">
+				<div class="attend_wrap">
+					<div class="box">
+						<div class="txt_wrap">
+							<img src="../img/ico/ico_attend_01.png" alt="">
+							<div class="tit">참가사 신청등록 (업체)</div>
+							<p>
+								국내 최대 드론박람회 전시에 참가할 업체를 신청받습니다.<br>
+								각 분야별 40여 참가 업체 예정입니다.<br>
+								온라인으로 신청 받습니다.
+							</p>
+							<a href="#">참가사 신청등록</a>
+						</div>
+					</div>
+					<div class="box">
+						<div class="txt_wrap">
+							<img src="../img/ico/ico_attend_02.png" alt="">
+							<div class="tit">참관 사전등록 (개인)</div>
+							<p>
+								대한민국 최대 드론박람회에 참가하고자 하시는 분께서는 사전등록을 하시기 바랍니다.<br>
+								40여 참가 전시업체를 관람하실 수 있으며, 각종 부대행사와 컨퍼런스도 참여 가능합니다.<br>
+								참가등록은 무료입니다.
+							</p>
+							<a href="#">참관 사전등록</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //참가/참관 신청 -->
+
+	<!-- 정보 -->
+	<div class="container">
+		<section class="video">
+			<div class="video_wrap">
+				<iframe src="https://www.youtube.com/embed/6aGIEFJi4tw" title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+		</section>
+
+		<section class="info">
+			<img src="../img/img/img_conf.png" alt="">
+			<div class="txt_wrap">
+				<h2>드론박람회 컨퍼런스</h2>
+				<ul data-list class="type1">
+					<li>주제 : Drone Sports, Infinite Possibilities</li>
+					<li>장소 : 코엑스 그랜드볼룸</li>
+					<li>일시 : 2021년 12월 8일</li>
+				</ul>
+				<p>
+					The purpose of this association is to promote the development and activation of drone racing, the
+					rights
+					of drones pilots, to promote international drone racing, to propose drone racing in future, and to
+					contribute
+				</p>
+				<a href="#" class="more">자세히 보기</a>
+			</div>
+		</section>
+
+		<section class="gallery">
+			<h2>드론박람회 포토갤러리</h2>
+			<ul>
+				<li><a href=""><img src="https://via.placeholder.com/500x300" alt=""></a></li>
+				<li><a href=""><img src="https://picsum.photos/500/300" alt=""></a></li>
+				<li><a href=""><img src="https://picsum.photos/500/300" alt=""></a></li>
+				<li><a href=""><img src="https://picsum.photos/500/300" alt=""></a></li>
+				<li><a href=""><img src="https://picsum.photos/500/300" alt=""></a></li>
+				<li><a href=""><img src="https://picsum.photos/500/300" alt=""></a></li>
+				<li><a href=""><img src="https://picsum.photos/500/300" alt=""></a></li>
+				<li><a href=""><img src="https://picsum.photos/500/300" alt=""></a></li>
+			</ul>
+		</section>
+
+		<div class="sns">
+			<ul>
+				<li><a href="#" target="_blank"><img src="../img/ico/ico_sns_insta.png" alt=""></a></li>
+				<li><a href="#" target="_blank"><img src="../img/ico/ico_sns_facebook.png" alt=""></a></li>
+				<li><a href="#" target="_blank"><img src="../img/ico/ico_sns_youtube.png" alt=""></a></li>
+				<li><a href="#" target="_blank"><img src="../img/ico/ico_sns_twitter.png" alt=""></a></li>
+			</ul>
+		</div>
+
+		<section class="sponsor">
+			<div class="container">
+				<div class="box">
+					<span>주관</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">
+								<img src="../img/logo/sponsor_01.png" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="box">
+					<span>주최</span>
+					<ul>
+						<li>
+							<a href="#" target="_blank">
+								<img src="../img/logo/sponsor_01.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="../img/logo/sponsor_01.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="../img/logo/sponsor_01.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="../img/logo/sponsor_01.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="../img/logo/sponsor_01.png" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+	</div>
+	<!-- //정보 -->
+
+</div>
+@@include('footer.html')

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>제19차 세계한상대회</title>
+	<link rel="stylesheet" href="../css/ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+	<div class="wrap">
+		<div data-header>
+			<header>
+				<div class="logo">
+					<a href="#">
+						<h1>
+							<img src="../img/img/img_logo.png" alt="제19차 세계한상대회">
+							<div class="txt_wrap">
+								<div class="tit">
+									제19차 <strong>세계<span>한상</span>대회</strong>
+								</div>
+								<div class="sub_txt">
+									THE 19TH WORLD <span>KOREAN BUSINESS</span> CONVENTION
+								</div>
+								<div class="date">
+									2021.10.19(화)-10.21(목) 대전컨벤션센터
+								</div>
+							</div>
+						</h1>
+					</a>
+				</div>
+				<div class="header_wrap">
+					<button type="button" class="mobile open_menu">
+						<span></span>
+						<span></span>
+						<span></span>
+						모바일 메뉴 열기
+					</button>
+					<div class="menu_wrap">
+						<div class="nav_menu">
+							<nav>
+								<ul class="main-menu">
+									<!-- [D] 현재 페이지 a태그에 on 클래스 부여 -->
+									<li>
+										<a href="#none">세계한상대회</a>
+										<ul class="sub-menu">
+											<li><a href="#">인사말(이사장, 대회장)</a></li>
+											<li><a href="#">대회개요</a></li>
+											<li><a href="#">행사장 안내</a></li>
+											<li><a href="#">전체 대회일정</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#none">프로그램</a>
+										<ul class="sub-menu">
+											<li><a href="#">전체 프로그램</a></li>
+											<li>
+												<a href="#none">세부 프로그램</a>
+												<ul class="sub-menu">
+													<li><a href="#">Daily Program</a></li>
+													<li><a href="#">세미나</a></li>
+													<li><a href="#">영비즈니스리더스포럼</a></li>
+													<li><a href="#">리딩 CEO 포럼</a></li>
+													<li><a href="#">기업 IR</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#none">상시 프로그램</a>
+												<ul class="sub-menu">
+													<li><a href="#">일대일비즈니스미팅</a></li>
+													<li><a href="#">현장쇼룸</a></li>
+													<li><a href="#">단체별 총회</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#none">등록/숙박</a>
+										<ul class="sub-menu">
+											<li><a href="#">등록안내</a></li>
+											<li><a href="#">숙박안내</a></li>
+										</ul>
+									</li>
+									<li class="only">
+										<a href="#">한상대회FAQ</a>
+									</li>
+								</ul>
+							</nav>
+							<button type="button" class="mobile close_menu">모바일 메뉴 닫기</button>
+						</div>
+						<ul class="top_menu">
+							<li>
+								<a href="#none">HOME</a>
+							</li>
+							<!-- [D] 로그인 전 -->
+							<li>
+								<a href="#none">LOGIN</a>
+							</li>
+							<li>
+								<a href="#none">SIGNUP</a>
+							</li>
+							<!-- [D] 로그인 후 -->
+							<!--
+							<li>
+								<a href="#none">LOGOUT</a>
+							</li>
+							<li>
+								<a href="#none">MYPAGE</a>
+							</li>
+							-->
+							<li class="lang">
+								<a href="#none">ENGLISH</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="content">
+
+			<!-- 서브 비주얼 영역 -->
+			<div data-sub-visual>
+				<div class="container">
+					<div class="visual_wrap">
+						<div class="tit_wrap">
+							<h2>등록</h2>
+							<span class="sub_tit">Registration</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //서브 비주얼 영역 -->
+
+			<!--  서브 페이지 컨텐츠 -->
+			<div data-sub-content>
+
+				<div data-column-box>
+					<div class="container">
+						<h3 class="column_tit">
+							개인정보입력
+						</h3>
+						<div data-input-form="">
+							<table>
+								<colgroup>
+									<col style="width:120px;">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">
+											<label for="userName">성명</label>
+										</th>
+										<td>
+											<input type="text" id="userName" class="wide">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<label for="userCompany">소속명</label>
+										</th>
+										<td>
+											<input type="text" id="userCompany" class="wide">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<label for="userPart">분야</label>
+										</th>
+										<td>
+											<input type="text" id="userPart" class="wide">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<label for="userMail">이메일</label>
+										</th>
+										<td>
+											<div class="inline email">
+												<input type="text" name="u_email1" value="" title="이메일 주소" required="" id="userMail">
+												<span>@</span>
+												<input type="text" name="u_email2" value="" title="이메일 주소" required="" class="mail_account">
+												<div data-select-box="">
+													<select name="sel_email" title="이메일 주소" required="">
+														<option value="Other">Other</option>
+													</select>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<label for="userPhone1">연락처</label>
+										</th>
+										<td>
+											<div class="inline phone">
+												<input type="text" name="u_tel1" title="전화번호 첫자리" maxlength="4" class="num" required="" id="userPhone1">
+												<input type="text" name="u_tel2" title="전화번호 중간자리" maxlength="4" class="num" required="">
+												<input type="text" name="u_tel3" title="전화번호 끝자리" maxlength="4" class="num" required="">
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div data-ctr-btn>
+							<button type="submit" data-btn class="submit">등록</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  //서브 페이지 컨텐츠 -->
+
+		</div>
+		<footer>
+			<div class="container footer_wrap">
+				<div class="info">
+					<img src="../img/img/img_footer_logo.png" alt="">
+					<div class="txt_wrap">
+						<address>
+							제주본사: 제주특별자치도 서귀포시 신중로 55 Tel. +82-64-786-0200<br>
+							서울사무소: 서울특별시 서초구 남부순환로 2558 (외교센터 4층) Tel. +82-2-3415-0100<br>
+							세계한상대회 본부사무국: Tel. +82-2-3415-0051, 0052
+						</address>
+					</div>
+					<div class="copyright">
+						Copyright© Overseas Koreans Foundation. All rights reserved.
+					</div>
+				</div>
+				<div class="side">
+					<div class="sns">
+						<a href="#" target="_blank" class="facebook">세계한상대회 Facebook</a>
+						<a href="#" target="_blank" class="tweeter">세계한상대회 Tweeter</a>
+						<a href="#" target="_blank" class="youtube">세계한상대회 Youtube Channel</a>
+						<a href="#" target="_blank" class="linkedin">세계한상대회 Linkedin</a>
+						<a href="#" target="_blank" class="naver">세계한상대회 Naver Blog</a>
+					</div>
+					<div class="bottom_menu">
+						<a href="#">이용약관</a>
+						<a href="#">개인정보처리보호</a>
+						<a href="#">홍보자료 다운로드</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="move_top">
+		<button type="button">Move to page top</button>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<title>AOS 2022</title>
+	<link rel="stylesheet" href="../css/ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+	<div class="wrap">
+		<div data-header>
+			<header>
+				<div class="header_wrap">
+					<div class="container">
+						<h1>
+							<a href="#none">
+								<img src="../img/img/img_logo.png" alt="INTERNATIONAL POLICE SUMMIT Global Partnership for Smart Policing" class="logo">
+							</a>
+						</h1>
+						<button type="button" class="mobile open_menu">
+							<span></span>
+							<span></span>
+							<span></span>
+							Mobile menu open
+						</button>
+					</div>
+					<div class="menu_wrap">
+						<div class="nav_menu">
+							<nav class="container">
+								<ul class="main-menu">
+									<li>
+										<a href="#none">
+											AOS
+										</a>
+										<ul class="sub-menu">
+											<li>
+												<a href="#none">
+													Welcome
+												</a>
+											</li>
+											<li>
+												<a href="#none">
+													Overview
+												</a>
+											</li>
+											<li>
+												<a href="#none">
+													Committee
+												</a>
+											</li>
+											<li>
+												<a href="#none">
+													About AOS
+												</a>
+											</li>
+											<li>
+												<a href="#none">
+													News & Notice
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#none">
+											PROGRAM
+										</a>
+										<ul class="sub-menu">
+											<li>
+												<a href="#none">
+													Program at a Glance
+												</a>
+											</li>
+											<li>
+												<a href="#none">
+													Scientific Program
+												</a>
+											</li>
+											<li>
+												<a href="#none">
+													Satellite Symposium
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#none">
+											ATTENDEES
+										</a>
+										<ul class="sub-menu">
+											<li>
+												<a href="#none">
+													Registration
+												</a>
+											</li>
+											<li>
+												<a href="#none">
+													Accommodations
+												</a>
+											</li>
+											<li>
+												<a href="#none">
+													Venue
+												</a>
+											</li>
+											<li>
+												<a href="#none">
+													Seoul, Korea
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#none">
+											PRESENTERS
+										</a>
+										<ul class="sub-menu">
+											<li>
+												<a href="#none">
+													Submit Abstract
+												</a>
+											</li>
+											<li>
+												<a href="#none">
+													Presentation Guidelines
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#none">
+											SPONSORS
+										</a>
+										<ul class="sub-menu">
+											<li>
+												<a href="#none">
+													Sponsorship
+												</a>
+											</li>
+											<li>
+												<a href="#none">
+													Our Sponsors
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<div class="top_wrap">
+									<ul class="top_menu left">
+										<li><a href="#">Home</a></li>
+										<li><a href="#">News & Notices</a></li>
+										<li><a href="#">Contact us</a></li>
+									</ul>
+									<ul class="top_menu right">
+										<li><a href="#">Login</a></li>
+										<li><a href="#">Sign up</a></li>
+										<li><a href="#">Site Map</a></li>
+									</ul>
+								</div>
+							</nav>
+							<button type="button" class="mobile close_menu">Mobile menu close</button>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="content main_page">
+
+			<!-- 메인 슬라이드 -->
+			<div class="main_visual">
+				<div class="slider">
+					<div data-slide>
+						<div class="slide" style="background-image:url(../img/bg/bg_slide_01.png);">
+							<a href="#"></a>
+						</div>
+						<div class="slide" style="background-image:url(../img/bg/bg_slide_02.png);">
+							<a href="#"></a>
+						</div>
+						<div class="slide" style="background-image:url(../img/bg/bg_slide_03.png);">
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				$(function() {
+					$('.main_visual [data-slide]').each(function() {
+						if ($(this).find('.slide').length > 1) {
+							$(this).slick({
+								arrows: false,
+								autoplay: true,
+								autoplaySpeed: 5000,
+								dots: true
+							});
+						}
+					});
+				});
+			</script>
+			<!-- //메인 슬라이드 -->
+
+			<!-- Invite -->
+			<section class="invite">
+				<div class="container invite_wrap">
+					<h2 class="tit">We invite you to<br> AOS 2022!</h2>
+					<ul>
+						<li>
+							<a href="#">
+								<img src="../img/ico/ico_invite_01.png" alt="">
+								<span class="txt">Abstract Submission</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../img/ico/ico_invite_02.png" alt="">
+								<span class="txt">Registration</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../img/ico/ico_invite_03.png" alt="">
+								<span class="txt">Asian Oncology Society</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- //Invite -->
+
+			<div class="container">
+				<div class="cont_wrap">
+
+					<!-- News & Notice -->
+					<section class="board">
+						<div class="board_wrap">
+							<h2 class="tit">News & Notice</h2>
+							<ul>
+								<li>
+									<a href="#">
+										<p class="tit">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+										<span class="date">9999. 99. 99</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p class="tit">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+										<span class="date">9999. 99. 99</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p class="tit">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+										<span class="date">9999. 99. 99</span>
+									</a>
+								</li>
+								<!-- <li style="text-align:center; line-height:3em;">No Data</li> -->
+							</ul>
+						</div>
+					</section>
+					<!-- //News & Notice -->
+
+					<!-- News & Notice -->
+					<section class="date">
+						<h2 class="tit">Important Dates</h2>
+						<ul>
+							<li>
+								<a href="#">
+									<span class="day">FEB 28</span>
+									<div class="img_wrap">
+										<img src="../img/ico/ico_date_01.png" alt="">
+									</div>
+									<span class="txt">Deadline for<br> Abstract Submission</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="day">MAR 31</span>
+									<div class="img_wrap">
+										<img src="../img/ico/ico_date_02.png" alt="">
+									</div>
+									<span class="txt">Notification of<br> Abstract Acceptance</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="day">APR 30</span>
+									<div class="img_wrap">
+										<img src="../img/ico/ico_date_03.png" alt="">
+									</div>
+									<span class="txt">Deadline for<br> Pre-Registration</span>
+								</a>
+							</li>
+						</ul>
+					</section>
+					<!-- //News & Notice -->
+
+				</div>
+			</div>
+
+			<!-- Speaker -->
+			<section class="speaker">
+				<div class="container">
+					<h2 class="tit">MEET OUR SPEAKERS</h2>
+					<div class="slider">
+						<div data-slide>
+							<div class="slide">
+								<div class="cont">
+									<div class="img_wrap">
+										<img src="https://picsum.photos/id/1005/200/200" alt="">
+									</div>
+									<div class="txt_wrap">
+										<div class="part">PLENARY 1</div>
+										<div class="name">Lorem Ipsum</div>
+										<div class="spec">
+											Lorem ipsum<br>
+											dolor sit amet
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="cont">
+									<div class="img_wrap">
+										<img src="https://picsum.photos/id/1005/200/200" alt="">
+									</div>
+									<div class="txt_wrap">
+										<div class="part">PLENARY 2</div>
+										<div class="name">Lorem Ipsum</div>
+										<div class="spec">
+											Lorem ipsum<br>
+											dolor sit amet
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="cont">
+									<div class="img_wrap">
+										<img src="https://picsum.photos/id/1005/200/200" alt="">
+									</div>
+									<div class="txt_wrap">
+										<div class="part">PLENARY 3</div>
+										<div class="name">Lorem Ipsum</div>
+										<div class="spec">
+											Lorem ipsum<br>
+											dolor sit amet
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="cont">
+									<div class="img_wrap">
+										<img src="https://picsum.photos/id/1005/200/200" alt="">
+									</div>
+									<div class="txt_wrap">
+										<div class="part">PLENARY 4</div>
+										<div class="name">Lorem Ipsum</div>
+										<div class="spec">
+											Lorem ipsum<br>
+											dolor sit amet
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="cont">
+									<div class="img_wrap">
+										<img src="https://picsum.photos/id/1005/200/200" alt="">
+									</div>
+									<div class="txt_wrap">
+										<div class="part">PLENARY 5</div>
+										<div class="name">Lorem Ipsum</div>
+										<div class="spec">
+											Lorem ipsum<br>
+											dolor sit amet
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<script>
+				$(function() {
+					$('.speaker [data-slide]').each(function() {
+						if ($(this).find('.slide').length > 4) {
+							$(this).slick({
+								autoplay: true,
+								autoplaySpeed: 3000,
+								slidesToShow: 4,
+								slidesToScroll: 1,
+								responsive: [{
+										breakpoint: 1024,
+										settings: {
+											slidesToShow: 3,
+										}
+									},
+									{
+										breakpoint: 599,
+										settings: {
+											slidesToShow: 2,
+										}
+									}
+								]
+							});
+						}
+					});
+				});
+			</script>
+			<!-- //Speaker -->
+
+			<!-- Summary -->
+			<section class="summary">
+				<div class="container">
+					<h2 class="hidden">Summary</h2>
+					<div class="cont">
+						<div class="img_wrap"></div>
+						<div class="txt_wrap">
+							<div class="spot">
+								June 16 <small>Thu</small> - 18 <small>Sat, 2022</small><br>
+								Lotte Hotel Seoul, Korea
+							</div>
+							<div class="tit">
+								2<sup>nd</sup> International Congress of
+								Asian Oncology Society
+							</div>
+							<div class="sub_txt">
+								in conjunction with 48th Annual Meeting of
+								Korean Caner Association
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- //Summary -->
+
+
+		</div>
+		<footer>
+			<div class="sponsor">
+				<div class="container sponsor_wrap">
+					<dl>
+						<dt>Organized by</dt>
+						<dd>
+							<a href="#"><img src="../img/logo/sponsor_01.png" alt=""></a>
+						</dd>
+						<dd>
+							<a href="#"><img src="../img/logo/sponsor_02.png" alt=""></a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>Sponsored by</dt>
+						<dd>
+							<a href="#"><img src="../img/logo/sponsor_03.png" alt=""></a>
+						</dd>
+						<dd>
+							<a href="#"><img src="../img/logo/sponsor_04.png" alt=""></a>
+						</dd>
+						<dd>
+							<a href="#"><img src="../img/logo/sponsor_05.png" alt=""></a>
+						</dd>
+						<dd>
+							<a href="#"><img src="../img/logo/sponsor_06.png" alt=""></a>
+						</dd>
+						<dd>
+							<a href="#"><img src="../img/logo/sponsor_07.png" alt=""></a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="footer_wrap">
+				<div class="container">
+					<div class="txt_wrap">
+						<div class="tit">AOS 2022 Secretariat </div>
+						<div class="link">
+							<a href="tel:+82-2-557-8422">
+								<img src="../img/ico/ico_footer_tel.png" alt="Tel">
+								+82-2-557-8422, 8423
+							</a>
+							<a href="mailto:aos@aos2022.com" class="mail">
+								<img src="../img/ico/ico_footer_mail.png" alt="Mail">
+								aos@aos2022.com
+							</a>
+						</div>
+						<address>
+							3F, 12, Eunju-ro 79 gil, Yeoksam-dong, Gangnam-gu, Seoul, 06222 Korea
+						</address>
+						<div class="copyright">
+							© Copyright P&M 2021 All Rights Reserved
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="move_top">
+		<button type="button">Move to Page Top</button>
+	</div>
+</body>
+
+</html>

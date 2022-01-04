@@ -1,0 +1,106 @@
+@@include('header.html')
+<div class="content">
+
+    <div data-sub-visual>
+        <div class="container box">
+            <img src="../img/bg/bg_sub_type3.png" alt="">
+            <div class="txt_wrap">
+                <div class="txt_info">
+                    <div class="tit">프레스센터</div>
+                    <!-- <p class="sub_txt">
+                        
+                    </p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div class="sub_page">
+        <div class="container">
+            <section data-sub-content>
+                <h1>공지사항</h1>
+
+                <div data-search>
+                    <div class="search_wrap">
+                        <!-- <div data-select-box>
+                            <select name="" id="">
+                                <option value="">Category</option>
+                                <option value="">Notice</option>
+                            </select>
+                        </div> -->
+                        <input type="text" title="검색어" placeholder="검색어 입력" name="search_input">
+                        <button type="submit">
+                            <span>검색</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div data-board-list>
+                    <table>
+                        <colgroup>
+                            <col class="no">
+                            <col>
+                            <col class="cnt">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="number" scope="row">9999</th>
+                                <td class="tit">
+                                    <a href="#">
+                                        국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.
+                                    </a>
+                                    <span class="date">9999-99-99</span>
+                                </td>
+                                <td class="misc">
+                                    <div class="misc_wrap">
+                                        <ul>
+                                            <li class="file">
+                                                <a class="item" href="#" title="Download">file</a>
+                                            </li>
+                                            <li class="view">
+                                                <span class="item">9999</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="number" scope="row">9999</th>
+                                <td class="tit">
+                                    <a href="#">
+                                        국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 대통령은 법률이 정하는 바에 의하여 사면·감형 또는 복권을 명할 수
+                                        있다. 대한민국은 통일을 지향하며, 자유민주적 기본질서에 입각한 평화적 통일 정책을 수립하고 이를 추진한다.
+                                    </a>
+                                    <span class="date">9999-99-99</span>
+                                </td>
+                                <td class="misc">
+                                    <div class="misc_wrap">
+                                        <ul>
+                                            <li class="file">
+                                                <a class="item" href="#" title="Download">file</a>
+                                            </li>
+                                            <li class="view">
+                                                <span class="item">9999</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- <tr>
+                                <td colspan="3" style="text-align:center;">No data.</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+
+                    @@include('paging.html')
+
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

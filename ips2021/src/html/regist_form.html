@@ -1,0 +1,641 @@
+@@include('header.html')
+<div class="content">
+    @@include('sub_visual.html', {
+    "type" : "type1",
+    "tit" : "Registration"
+    })
+
+    <div class="container">
+        <div class="breadcrumb">
+            <ol>
+                <li>Home</li>
+                @@include('breadcrumb.html', {
+                "context" : {
+                "use" : true,
+                "value" : ["Registration", "Sign Up"]
+                }
+                })
+            </ol>
+        </div>
+    </div>
+
+    <!--  서브 페이지 컨텐츠 -->
+    <div data-sub-content>
+        <div class="container">
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Individual Information
+                </h3>
+                <div data-input-form>
+                    <p class="notice">
+                        * All blanks should be filled out in English.
+                    </p>
+                    <p class="notice">
+                        * Registration confirmation to be sent via email every Friday.
+                    </p>
+                    <table>
+                        <colgroup>
+                            <col style="width:270px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <label for="profTit">
+                                        <span class="must">Required Field</span>
+                                        Professional Title
+                                    </label>
+                                </th>
+                                <td>
+                                    <input type="text" id="profTit" class="wide">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="lastName">
+                                        <span class="must">Required Field</span>
+                                        Last Name (Family Name)
+                                    </label>
+                                </th>
+                                <td>
+                                    <input type="text" id="lastName" class="wide">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="midName">
+                                        Middle Name (If any)
+                                    </label>
+                                </th>
+                                <td>
+                                    <input type="text" id="midName" class="wide">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="firstName">
+                                        <span class="must">Required Field</span>
+                                        First Name (Given Name)
+                                    </label>
+                                </th>
+                                <td>
+                                    <input type="text" id="firstName" class="wide">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="must">Required Field</span>
+                                    <label for="countrySelect">Nationality</label>
+                                </th>
+                                <td>
+                                    <div data-select-box="">
+                                        <input type="hidden">
+                                        <label></label>
+                                        <select id="countrySelect" title="이메일 계정 선택">
+                                            <option>Select Country</option>
+                                            <option>Name</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="genderMale">
+                                        <span class="must">Required Field</span>
+                                        Gender
+                                    </label>
+                                </th>
+                                <td>
+                                    <div data-radio="">
+                                        <ul>
+                                            <li>
+                                                <input type="radio" id="genderMale" name="select_gender" checked>
+                                                <label for="genderMale">Mr.</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="genderFemale" name="select_gender">
+                                                <label for="genderFemale">Ms.</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="rank">
+                                        <span class="must">Required Field</span>
+                                        Position/Rank
+                                    </label>
+                                </th>
+                                <td>
+                                    <input type="text" id="rank" class="wide">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="job">
+                                        <span class="must">Required Field</span>
+                                        Department
+                                    </label>
+                                </th>
+                                <td>
+                                    <input type="text" id="job" class="wide">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="phoneNum">
+                                        <span class="must">Required Field</span>
+                                        Telephone Number
+                                    </label>
+                                </th>
+                                <td>
+                                    <div class="inline phone">
+                                        <input type="text" title="국가번호" readonly>
+                                        <input type="text" title="전화번호 첫자리" maxlength="4">
+                                        <input type="text" title="전화번호 중간자리" maxlength="4">
+                                        <input type="text" title="전화번호 끝자리" maxlength="4">
+                                    </div>
+                                    <p>ex) Country Code-Area Code-1234-5678</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="must">Required Field</span>
+                                    <label for="emailAddress">Email (ID)</label>
+                                </th>
+                                <td>
+                                    <div class="inline email">
+                                        <input type="text" id="emailAddress" title="이메일 주소">
+                                        <span>@</span>
+                                        <input type="text" class="mail_account" title="이메일 계정">
+                                        <div data-select-box="">
+                                            <input type="hidden">
+                                            <label></label>
+                                            <select id="emailSelect" title="이메일 계정 선택">
+                                                <option>Other</option>
+                                                <option>naver.com</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="password">
+                                        <span class="must">Required Field</span>
+                                        Password
+                                    </label>
+                                </th>
+                                <td>
+                                    <input type="password" id="password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="passwordRe">
+                                        <span class="must">Required Field</span>
+                                        Confirmed Password
+                                    </label>
+                                </th>
+                                <td>
+                                    <input type="password" id="passwordRe">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="birthday">
+                                        Date of Birth
+                                    </label>
+                                </th>
+                                <td>
+                                    <input type="text" id="birthday" class="datepicker" placeholder="DD/MM/YY">
+                                    <p>If you need assistance in visa application.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="passport">
+                                        Passport Number
+                                    </label>
+                                </th>
+                                <td>
+                                    <input type="text" id="passport" class="wide">
+                                    <p>If you need assistance in visa application.</p>
+                                </td>
+                            </tr>
+                            <!-- <tr>
+                                <th scope="row">
+                                    <label for="company">
+                                        <span class="must">Required Field</span>
+                                        Name of Organization
+                                    </label>
+                                </th>
+                                <td>
+                                    <input type="text" id="company" class="wide">
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <script>
+                    /******************** Datepicker ********************/
+
+                    $('.datepicker').datepicker({
+                        changeYear: true,
+                        yearRange: "-100:+0",
+                        dateFormat: 'dd/mm/y',
+                        showMonthAfterYear: true,
+                        monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                        // monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                        // dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                        // dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'],
+                        // buttonText: "선택",
+                        // yearSuffix: "년",
+                    });
+                </script>
+            </div>
+
+            <!-- <div data-column-box>
+                <h3 class="column_tit">
+                    Attendance Programs
+                </h3>
+                <div data-input-form>
+                    <table>
+                        <colgroup>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div data-radio class="block">
+                                        <ul>
+                                            <li>
+                                                <input type="radio" id="attend1" name="select_attend" checked>
+                                                <label for="attend1">Oct 20 Welcome Reception</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="attend2" name="select_attend">
+                                                <label for="attend2">Oct 21 the 76th National Police Day</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="attend3" name="select_attend">
+                                                <label for="attend3">Oct 21 IPS Ceremony</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="attend4" name="select_attend">
+                                                <label for="attend4">Oct 22 Bilateral Meeting</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="attend5" name="select_attend">
+                                                <label for="attend5">Oct 23 Bilateral Meeting</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="attend5" name="select_attend">
+                                                <label for="attend6">Oct 23 Farewell Dinner</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> -->
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Participation Type
+                </h3>
+                <div data-input-form>
+                    <table>
+                        <colgroup>
+                            <col style="width:270px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <label for="type1">
+                                        <span class="must">Required Field</span>
+                                        Type
+                                    </label>
+                                </th>
+                                <td>
+                                    <div data-radio="">
+                                        <ul>
+                                            <li>
+                                                <input type="radio" id="type1" name="select_type" checked>
+                                                <label for="type1">Onsite Attendance</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="type2" name="select_type">
+                                                <label for="type2">Online Attendance</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="localPhoneNum">
+                                        <span class="must">Required Field</span>
+                                        Local Phone Number
+                                    </label>
+                                </th>
+                                <td>
+                                    <div class="inline phone">
+                                        <input type="text" title="국가번호" readonly>
+                                        <input type="text" title="전화번호 첫자리" maxlength="4">
+                                        <input type="text" title="전화번호 중간자리" maxlength="4">
+                                        <input type="text" title="전화번호 끝자리" maxlength="4">
+                                    </div>
+                                    <p>ex) Country Code-Area Code-1234-5678</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="site">
+                                        <span class="must">Required Field</span>
+                                        Visit Site
+                                    </label>
+                                </th>
+                                <td>
+                                    <input type="text" id="site" class="wide">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="feverNo">
+                                        <span class="must">Required Field</span>
+                                        Fever
+                                    </label>
+                                </th>
+                                <td>
+                                    <div data-radio>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" id="feverNo" name="select_fever" checked>
+                                                <label for="feverNo">No</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="feverYes" name="select_fever">
+                                                <label for="feverYes">Yes</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="symptomNo">
+                                        <span class="must">Required Field</span>
+                                        Respiratory symptoms
+                                    </label>
+                                </th>
+                                <td>
+                                    <div data-radio>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" id="symptomNo" name="select_symptom" checked>
+                                                <label for="symptomNo">No</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="symptomYes" name="select_symptom">
+                                                <label for="symptomYes">Yes</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="vacNo">
+                                        <span class="must">Required Field</span>
+                                        Vaccination
+                                    </label>
+                                </th>
+                                <td>
+                                    <div data-radio style="margin-right:15px;">
+                                        <ul>
+                                            <li>
+                                                <input type="radio" id="vacNo" name="select_vaccine" checked>
+                                                <label for="vacNo">No</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="vacYes" name="select_vaccine">
+                                                <label for="vacYes">Yes</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" style="vertical-align:middle;" placeholder="Pfizer" readonly>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Excursions
+                </h3>
+                <div data-input-form>
+                    <table>
+                        <colgroup>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div data-radio class="block">
+                                        <ul>
+                                            <li>
+                                                <input type="radio" id="excursion0" name="select_excursion" checked>
+                                                <label for="excursion0">Korea Police World Expo 2021</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="excursion1" name="select_excursion">
+                                                <label for="excursion1">Helicopter tour</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="excursion2" name="select_excursion">
+                                                <label for="excursion2">The Blue House tour</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="excursion3" name="select_excursion">
+                                                <label for="excursion3">Seoul Metropolitan Police tour</label>
+                                            </li>
+                                            <li class="other">
+                                                <input type="radio" id="excursion4" name="select_excursion">
+                                                <label for="excursion4">Other personal schedule </label>
+                                                <input type="text" style="vertical-align:middle;" readonly>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Dietary Requirements
+                </h3>
+                <div data-input-form>
+                    <table>
+                        <colgroup>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div data-radio="" style="margin-right:15px;">
+                                        <ul>
+                                            <li>
+                                                <input type="radio" id="food1" name="select_food" checked>
+                                                <label for="food1">None</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="food2" name="select_food">
+                                                <label for="food2">Halal</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="food3" name="select_food">
+                                                <label for="food3">Lacto</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="food4" name="select_food">
+                                                <label for="food4">Vegan</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="food5" name="select_food">
+                                                <label for="food5">Etc</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" style="vertical-align:middle;" readonly>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    File Upload
+                </h3>
+                <div data-input-form>
+                    <table>
+                        <colgroup>
+                            <col style="width:270px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">
+                                    <p>
+                                        Check if you want to visit JSA* for the excursion<br>
+                                        If yes, please upload and submit the scanned copy your passport.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="must">Required Field</span>
+                                    <label for="visaUpload">
+                                        Visa (A1 or A2 visa ONLY)
+                                    </label>
+                                </th>
+                                <td>
+                                    <div data-file-upload>
+                                        <input type="text" class="dummy" disabled>
+                                        <input type="file" id="visaUpload">
+                                        <label for="visaUpload" class="btn">Search</label>
+                                    </div>
+                                    <p>※ The copy should be readable and not exceed 5MB in size.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="must">Required Field</span>
+                                    <label for="certUpload">
+                                        Travel Insurance Certificate
+                                    </label>
+                                </th>
+                                <td>
+                                    <div data-file-upload>
+                                        <input type="text" class="dummy" disabled>
+                                        <input type="file" id="certUpload">
+                                        <label for="certUpload" class="btn">Search</label>
+                                    </div>
+                                    <p>※ The copy should be readable and not exceed 5MB in size.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="must">Required Field</span>
+                                    <label for="vacUpload">
+                                        Vaccine Certificate
+                                    </label>
+                                </th>
+                                <td>
+                                    <div data-file-upload>
+                                        <input type="text" class="dummy" disabled>
+                                        <input type="file" id="vacUpload">
+                                        <label for="vacUpload" class="btn">Search</label>
+                                    </div>
+                                    <p>※ The copy should be readable and not exceed 5MB in size.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div data-column-box>
+                <h3 class="column_tit">
+                    Collection and Use of Personal Information
+                </h3>
+                <div data-term>
+                    <div class="term_wrap">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.
+                        </p>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="termAgree">
+                        <label for="termAgree">I fully understand and agree with the terms and conditions stated above.</label>
+                    </div>
+                </div>
+                <div data-ctr-btn>
+                    <button type="submit" data-btn>Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')
